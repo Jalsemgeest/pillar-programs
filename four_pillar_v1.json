@@ -1,0 +1,3655 @@
+{
+  "schemaVersion": "1.0",
+  "programs": [
+    {
+      "id": "four_pillar",
+      "name": "Four Pillar Training Program",
+      "version": "1.12.0",
+      "baseId": null,
+      "upgradeFromVersion": "1.9.0",
+      "description": "An evidence-based training system built around four pillars — Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Not a bodybuilder program. A longevity program.",
+      "tags": [
+        "longevity",
+        "strength",
+        "endurance",
+        "mobility",
+        "healthspan"
+      ],
+      "targetProfile": "Intermediate, desk worker, climber, parent — 30s–40s",
+      "createdAt": "2026-05-18T00:00:00Z",
+      "citations": [
+        {
+          "id": "mandsager_2018",
+          "principle": "VO₂ max is the strongest predictor of all-cause mortality — no upper bound of benefit",
+          "authors": "Mandsager et al.",
+          "journal": "JAMA Network Open",
+          "year": 2018,
+          "keyFinding": "Low-fit men had 5.04× mortality vs. elite-fit; stronger predictor than smoking or diabetes",
+          "url": null
+        },
+        {
+          "id": "kokkinos_2022",
+          "principle": "Each 1-MET VO₂ max increase = 13–15% lower all-cause mortality",
+          "authors": "Kokkinos et al.",
+          "journal": "J Am Coll Cardiol",
+          "year": 2022,
+          "keyFinding": "n=750,302 US veterans; linear association, no plateau",
+          "url": null
+        },
+        {
+          "id": "helgerud_2007",
+          "principle": "Norwegian 4×4 protocol produces 7–13% VO₂ max gain in 8 weeks",
+          "authors": "Helgerud et al.",
+          "journal": "Med Sci Sports Exerc",
+          "year": 2007,
+          "keyFinding": "4×4 outperformed all other interval protocols tested",
+          "url": null
+        },
+        {
+          "id": "sanmillan_2018",
+          "principle": "Zone 2 drives mitochondrial biogenesis and fat oxidation via MCT1",
+          "authors": "San Millán & Brooks",
+          "journal": "Front Physiol",
+          "year": 2018,
+          "keyFinding": "Lactate shuttle theory; Zone 2 uniquely targets Type I mitochondria",
+          "url": null
+        },
+        {
+          "id": "toien_2023",
+          "principle": "Lifelong strength training preserves Type II fiber proportion vs. endurance or untrained",
+          "authors": "Tøien, Aagaard et al.",
+          "journal": "J Appl Physiol",
+          "year": 2023,
+          "keyFinding": "Strength-trained masters: 52% Type II fibers; recreationally active: 39.3%",
+          "url": null
+        },
+        {
+          "id": "schoenfeld_2017",
+          "principle": "Hypertrophy equal across load spectrum when taken to failure; strength favors heavy load",
+          "authors": "Schoenfeld, Grgic et al.",
+          "journal": "J Strength Cond Res",
+          "year": 2017,
+          "keyFinding": "21 RCTs; high load ~2× more effective for 1RM strength",
+          "url": null
+        },
+        {
+          "id": "pelland_2024",
+          "principle": "Minimum effective dose: 4 sets/muscle/week for growth; 1 set/week for maintenance",
+          "authors": "Pelland, Schoenfeld, Krieger",
+          "journal": "SportRxiv",
+          "year": 2024,
+          "keyFinding": "Dose-response; diminishing returns pronounced past ~15 sets/week for strength",
+          "url": null
+        },
+        {
+          "id": "leong_2015",
+          "principle": "Each 5 kg lower grip strength = 16% higher all-cause mortality, 17% cardiovascular mortality",
+          "authors": "Leong et al. (PURE study)",
+          "journal": "The Lancet",
+          "year": 2015,
+          "keyFinding": "n=139,691 across 17 countries; grip stronger predictor than systolic BP",
+          "url": null
+        },
+        {
+          "id": "watson_2018",
+          "principle": "Heavy resistance training (≥85% 1RM) significantly improved BMD; low-intensity did not",
+          "authors": "Watson et al. LIFTMOR trial",
+          "journal": "J Bone Miner Res",
+          "year": 2018,
+          "keyFinding": "5×5 deadlift + squat + OHP; significant lumbar + femoral neck BMD gains",
+          "url": null
+        },
+        {
+          "id": "vandyk_2019",
+          "principle": "Nordic curl inclusion halves hamstring injury rates",
+          "authors": "van Dyk et al.",
+          "journal": "Br J Sports Med",
+          "year": 2019,
+          "keyFinding": "n=8,459 athletes; 51% reduction in hamstring strain risk",
+          "url": null
+        },
+        {
+          "id": "swinton_2011",
+          "principle": "Trap-bar deadlift: ~10% lower spinal moment, higher power vs. conventional",
+          "authors": "Swinton et al.",
+          "journal": "J Strength Cond Res",
+          "year": 2011,
+          "keyFinding": "19 powerlifters; trap bar allows higher loads at lower joint stress",
+          "url": null
+        },
+        {
+          "id": "speirs_2016",
+          "principle": "Unilateral training matches bilateral for strength; outperforms for speed + agility",
+          "authors": "Speirs et al.",
+          "journal": "J Strength Cond Res",
+          "year": 2016,
+          "keyFinding": "Bulgarian split squat group superior on sprint + change-of-direction tests",
+          "url": null
+        },
+        {
+          "id": "schumann_2022",
+          "principle": "Concurrent training causes negligible hypertrophy or strength loss when programmed correctly",
+          "authors": "Schumann et al.",
+          "journal": "Sports Med",
+          "year": 2022,
+          "keyFinding": "43 studies; interference effect mainly in explosive strength, not hypertrophy",
+          "url": null
+        }
+      ],
+      "exercises": [
+        {
+          "id": "trap_bar_deadlift",
+          "name": "Trap-Bar Deadlift",
+          "category": "hinge",
+          "equipment": [
+            "trap_bar"
+          ],
+          "notes": "",
+          "citationIds": [
+            "swinton_2011",
+            "watson_2018"
+          ]
+        },
+        {
+          "id": "conventional_deadlift",
+          "name": "Conventional Deadlift",
+          "category": "hinge",
+          "equipment": [
+            "barbell"
+          ],
+          "notes": "",
+          "citationIds": []
+        },
+        {
+          "id": "bulgarian_split_squat",
+          "name": "Bulgarian Split Squat",
+          "category": "squat",
+          "equipment": [
+            "barbell",
+            "dumbbell",
+            "bench"
+          ],
+          "notes": "Rear foot elevated",
+          "citationIds": [
+            "speirs_2016"
+          ]
+        },
+        {
+          "id": "kettlebell_swing",
+          "name": "Kettlebell Swing",
+          "category": "power",
+          "equipment": [
+            "kettlebell"
+          ],
+          "notes": "Hip hinge explosive",
+          "citationIds": []
+        },
+        {
+          "id": "nordic_curl",
+          "name": "Nordic Curl",
+          "category": "hinge",
+          "equipment": [],
+          "notes": "Eccentric hamstring — anchor feet",
+          "citationIds": [
+            "vandyk_2019"
+          ]
+        },
+        {
+          "id": "farmers_carry",
+          "name": "Farmer's Carry",
+          "category": "carry",
+          "equipment": [
+            "dumbbell",
+            "trap_bar",
+            "kettlebell"
+          ],
+          "notes": "40m per set",
+          "citationIds": [
+            "leong_2015"
+          ]
+        },
+        {
+          "id": "mcgill_big_3",
+          "name": "McGill Big 3",
+          "category": "core",
+          "equipment": [],
+          "notes": "Bird Dog · Side Plank · Modified Curl-Up",
+          "citationIds": []
+        },
+        {
+          "id": "bird_dog",
+          "name": "Bird Dog",
+          "category": "core",
+          "equipment": [],
+          "notes": "Opposite arm and leg. Brace before moving. Straight line from heel to fingertips. Hold 2–3 s at top.",
+          "citationIds": []
+        },
+        {
+          "id": "side_plank",
+          "name": "Side Plank",
+          "category": "core",
+          "equipment": [],
+          "notes": "Stack feet or stagger for an easier variation. Keep hips high — don't let them sag.",
+          "citationIds": []
+        },
+        {
+          "id": "modified_curl_up",
+          "name": "Modified Curl-Up",
+          "category": "core",
+          "equipment": [],
+          "notes": "Hands under lumbar spine to maintain natural curve. Lift head and shoulders only — not a full crunch. Brief hold at top.",
+          "citationIds": []
+        },
+        {
+          "id": "weighted_pullup",
+          "name": "Weighted Pull-Up / Chin-Up",
+          "category": "pull",
+          "equipment": [
+            "pullup_bar",
+            "dip_belt"
+          ],
+          "notes": "",
+          "citationIds": []
+        },
+        {
+          "id": "db_bench_press",
+          "name": "Neutral-Grip DB Bench Press",
+          "category": "push",
+          "equipment": [
+            "dumbbell",
+            "bench"
+          ],
+          "notes": "",
+          "citationIds": []
+        },
+        {
+          "id": "chest_supported_row",
+          "name": "Chest-Supported DB Row",
+          "category": "pull",
+          "equipment": [
+            "dumbbell",
+            "bench"
+          ],
+          "notes": "Full scapular retraction",
+          "citationIds": []
+        },
+        {
+          "id": "landmine_press",
+          "name": "Landmine Press",
+          "category": "push",
+          "equipment": [
+            "barbell",
+            "landmine"
+          ],
+          "notes": "Shoulder-friendly arc",
+          "citationIds": []
+        },
+        {
+          "id": "face_pulls",
+          "name": "Face Pulls",
+          "category": "pull",
+          "equipment": [
+            "cable",
+            "band"
+          ],
+          "notes": "Light, form focus",
+          "citationIds": []
+        },
+        {
+          "id": "band_pull_aparts",
+          "name": "Band Pull-Aparts",
+          "category": "pull",
+          "equipment": [
+            "band"
+          ],
+          "notes": "",
+          "citationIds": []
+        },
+        {
+          "id": "dead_hang",
+          "name": "Dead Hang",
+          "category": "pull",
+          "equipment": [
+            "pullup_bar"
+          ],
+          "notes": "Timed continuous hang",
+          "citationIds": [
+            "leong_2015"
+          ]
+        },
+        {
+          "id": "norwegian_4x4",
+          "name": "Norwegian 4×4 VO₂ Max Intervals",
+          "category": "cardio",
+          "equipment": [
+            "bike",
+            "rower",
+            "treadmill"
+          ],
+          "notes": "4 min @ 85–95% HRmax / 3 min easy ×4",
+          "citationIds": [
+            "helgerud_2007"
+          ]
+        },
+        {
+          "id": "zone2_cardio",
+          "name": "Zone 2 Cardio",
+          "category": "cardio",
+          "equipment": [],
+          "notes": "120–140 bpm, conversational pace",
+          "citationIds": [
+            "sanmillan_2018"
+          ]
+        },
+        {
+          "id": "rucking",
+          "name": "Rucking",
+          "category": "cardio",
+          "equipment": [
+            "rucksack"
+          ],
+          "notes": "25–40 lb pack, conversational pace",
+          "citationIds": []
+        },
+        {
+          "id": "front_squat",
+          "name": "Front Squat",
+          "category": "squat",
+          "equipment": [
+            "barbell"
+          ],
+          "notes": "Lower knee compressive force vs. back squat",
+          "citationIds": []
+        },
+        {
+          "id": "single_leg_rdl",
+          "name": "Single-Leg RDL",
+          "category": "hinge",
+          "equipment": [
+            "dumbbell",
+            "barbell"
+          ],
+          "notes": "Hip stability, asymmetry correction",
+          "citationIds": []
+        },
+        {
+          "id": "db_row",
+          "name": "DB Row",
+          "category": "pull",
+          "equipment": [
+            "dumbbell"
+          ],
+          "notes": "",
+          "citationIds": []
+        },
+        {
+          "id": "suitcase_carry",
+          "name": "Suitcase Carry",
+          "category": "carry",
+          "equipment": [
+            "dumbbell",
+            "kettlebell"
+          ],
+          "notes": "Single arm, anti-lateral-flexion",
+          "citationIds": []
+        },
+        {
+          "id": "db_rdl",
+          "name": "DB Romanian Deadlift",
+          "category": "hinge",
+          "equipment": [
+            "dumbbell"
+          ],
+          "notes": "Primary hinge for home days",
+          "citationIds": []
+        },
+        {
+          "id": "goblet_squat",
+          "name": "Goblet Squat",
+          "category": "squat",
+          "equipment": [
+            "dumbbell",
+            "kettlebell"
+          ],
+          "notes": "Hold at chest",
+          "citationIds": []
+        },
+        {
+          "id": "db_bulgarian_split_squat",
+          "name": "DB Bulgarian Split Squat",
+          "category": "squat",
+          "equipment": [
+            "dumbbell",
+            "bench"
+          ],
+          "notes": "Home squat alternative",
+          "citationIds": [
+            "speirs_2016"
+          ]
+        },
+        {
+          "id": "copenhagen_plank",
+          "name": "Copenhagen Plank",
+          "category": "core",
+          "equipment": [
+            "bench"
+          ],
+          "notes": "Adductor + lateral core",
+          "citationIds": []
+        },
+        {
+          "id": "pushups",
+          "name": "Push-Ups",
+          "category": "push",
+          "equipment": [],
+          "notes": "Antagonist circuit for climbers",
+          "citationIds": []
+        },
+        {
+          "id": "band_external_rotation",
+          "name": "Band External Rotation",
+          "category": "pull",
+          "equipment": [
+            "band"
+          ],
+          "notes": "Climber antagonist — carry a band",
+          "citationIds": []
+        },
+        {
+          "id": "reverse_wrist_curls",
+          "name": "Reverse Wrist Curls",
+          "category": "other",
+          "equipment": [
+            "dumbbell"
+          ],
+          "notes": "Climber forearm balance",
+          "citationIds": []
+        },
+        {
+          "id": "finger_extensor",
+          "name": "Finger Extensor Work",
+          "category": "other",
+          "equipment": [
+            "rubber_band"
+          ],
+          "notes": "Open and close against rubber band",
+          "citationIds": []
+        },
+        {
+          "id": "prone_ytw",
+          "name": "Prone Y-T-W Raises",
+          "category": "pull",
+          "equipment": [],
+          "notes": "Rear delt + rotator cuff",
+          "citationIds": []
+        },
+        {
+          "id": "bouldering",
+          "name": "Bouldering / Route Climbing",
+          "category": "other",
+          "equipment": [],
+          "notes": "Technique + power focus",
+          "citationIds": []
+        },
+        {
+          "id": "weighted_dip",
+          "name": "Weighted Dip",
+          "category": "push",
+          "equipment": [
+            "dip_bar",
+            "dip_belt"
+          ],
+          "notes": "Full ROM — shoulders below elbows at bottom",
+          "citationIds": []
+        },
+        {
+          "id": "db_floor_press",
+          "name": "DB Floor Press",
+          "category": "push",
+          "equipment": [
+            "dumbbell"
+          ],
+          "notes": "Upper arms contact floor each rep — removes leg drive",
+          "citationIds": []
+        },
+        {
+          "id": "seated_db_ohp",
+          "name": "Seated DB Overhead Press",
+          "category": "push",
+          "equipment": [
+            "dumbbell",
+            "bench"
+          ],
+          "notes": "Seated for ceiling clearance",
+          "citationIds": []
+        },
+        {
+          "id": "single_arm_db_row",
+          "name": "Single-Arm DB Row",
+          "category": "pull",
+          "equipment": [
+            "dumbbell",
+            "bench"
+          ],
+          "notes": "Brace opposite hand on bench — neutral spine",
+          "citationIds": []
+        },
+        {
+          "id": "ring_row",
+          "name": "Ring Row / Inverted Row",
+          "category": "pull",
+          "equipment": [
+            "rings"
+          ],
+          "notes": "Adjust body angle for difficulty",
+          "citationIds": []
+        },
+        {
+          "id": "db_cs_row",
+          "name": "DB Chest-Supported Row",
+          "category": "pull",
+          "equipment": [
+            "dumbbell",
+            "bench"
+          ],
+          "notes": "Face-down on incline bench — no lower-back fatigue",
+          "citationIds": []
+        },
+        {
+          "id": "band_face_pull",
+          "name": "Band Face Pull",
+          "category": "pull",
+          "equipment": [
+            "band"
+          ],
+          "notes": "Anchor at eye height, elbows high and wide",
+          "citationIds": []
+        },
+        {
+          "id": "db_lateral_raise",
+          "name": "DB Lateral Raise",
+          "category": "push",
+          "equipment": [
+            "dumbbell"
+          ],
+          "notes": "Medial delt — supports overhead stability",
+          "citationIds": []
+        },
+        {
+          "id": "barbell_squat",
+          "name": "Barbell Back / Front Squat",
+          "category": "squat",
+          "equipment": [
+            "barbell",
+            "squat_rack"
+          ],
+          "notes": "Primary strength progression at climbing gym",
+          "citationIds": []
+        },
+        {
+          "id": "barbell_bench",
+          "name": "Barbell Bench Press",
+          "category": "push",
+          "equipment": [
+            "barbell",
+            "bench",
+            "squat_rack"
+          ],
+          "notes": "Heavier than home DB bench — use safety bars",
+          "citationIds": []
+        },
+        {
+          "id": "barbell_row",
+          "name": "Barbell Bent-Over / Pendlay Row",
+          "category": "pull",
+          "equipment": [
+            "barbell"
+          ],
+          "notes": "Bilateral row — loads beyond DB limits",
+          "citationIds": []
+        },
+        {
+          "id": "hip_cars_warmup",
+          "name": "Hip CARs",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Controlled articular rotation — primes hip joint",
+          "citationIds": []
+        },
+        {
+          "id": "hip_90_90_stretch",
+          "name": "90/90 Hip Stretch",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Sit in 90/90, lean forward on front shin",
+          "citationIds": []
+        },
+        {
+          "id": "glute_bridge_march",
+          "name": "Glute Bridge March",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Bridge up, hold, alternately lift knees",
+          "citationIds": []
+        },
+        {
+          "id": "glute_bridge_band",
+          "name": "Glute Bridge with Band",
+          "category": "other",
+          "equipment": [
+            "band"
+          ],
+          "notes": "Band above knees — posterior-chain volume, zero axial load",
+          "citationIds": []
+        },
+        {
+          "id": "step_up",
+          "name": "Step-Up onto Bench",
+          "category": "squat",
+          "equipment": [
+            "bench",
+            "dumbbell"
+          ],
+          "notes": "Drive through heel, stand tall at top",
+          "citationIds": []
+        },
+        {
+          "id": "single_leg_calf_raise",
+          "name": "Single-Leg Calf Raise",
+          "category": "other",
+          "equipment": [],
+          "notes": "Off step edge — slow 3s up/3s down for tendon health",
+          "citationIds": []
+        },
+        {
+          "id": "shoulder_cars_warmup",
+          "name": "Shoulder CARs",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Full shoulder circle — critical pre-press/pull",
+          "citationIds": []
+        },
+        {
+          "id": "scap_pushup_wallslide",
+          "name": "Scap Push-Ups + Wall Slides",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Serratus anterior + upward rotation",
+          "citationIds": []
+        },
+        {
+          "id": "doorframe_pec_stretch",
+          "name": "Doorframe Pec Stretch",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Arm at 90° on doorframe, rotate away",
+          "citationIds": []
+        },
+        {
+          "id": "childs_pose_lat",
+          "name": "Child's Pose Lat Stretch",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Walk hands to one side to bias the lat",
+          "citationIds": []
+        },
+        {
+          "id": "thoracic_rotation_sl",
+          "name": "Thoracic Rotation (side-lying)",
+          "category": "mobility",
+          "equipment": [],
+          "notes": "Side-lying, rotate top shoulder toward floor",
+          "citationIds": []
+        }
+      ],
+      "mobilityRoutines": [
+        {
+          "id": "morning_cars",
+          "name": "Morning Routine",
+          "timing": "general",
+          "durationDescription": "5–7 min",
+          "notes": "Do before coffee. Daily consistency beats occasional long sessions.",
+          "exercises": [
+            {
+              "name": "Hip CARs",
+              "duration": "5 circles each direction/side",
+              "frequency": "Daily",
+              "focusArea": "Hip joint health",
+              "notes": "Full hip circle — signals nervous system you own full ROM",
+              "priority": "core",
+              "orderIndex": 0
+            },
+            {
+              "name": "Shoulder CARs",
+              "duration": "5 circles each direction",
+              "frequency": "Daily",
+              "focusArea": "Shoulder/scap health",
+              "notes": "Separates scapula from humeral motion — critical for climbers",
+              "priority": "core",
+              "orderIndex": 1
+            },
+            {
+              "name": "Thoracic Spine CARs",
+              "duration": "5 rotations/side",
+              "frequency": "Daily",
+              "focusArea": "Mid-back mobility",
+              "notes": "Desk work kills T-spine extension; opens breathing and posture",
+              "priority": "core",
+              "orderIndex": 2
+            },
+            {
+              "name": "Chin Tucks",
+              "duration": "10 reps × 2 sec hold",
+              "frequency": "Daily",
+              "focusArea": "Forward head posture",
+              "notes": "Activates deep neck flexors; reverses upper crossed syndrome",
+              "priority": "core",
+              "orderIndex": 3
+            },
+            {
+              "name": "Band Pull-Aparts",
+              "duration": "2 × 20 reps",
+              "frequency": "Daily",
+              "focusArea": "Mid/lower trap activation",
+              "notes": "Highest-leverage desk-worker corrective",
+              "priority": "core",
+              "orderIndex": 4
+            },
+            {
+              "name": "Glute Bridge",
+              "duration": "1 × 15 reps",
+              "frequency": "Daily",
+              "focusArea": "Glute activation",
+              "notes": "Wakes glutes after sitting; prevents anterior pelvic tilt",
+              "priority": "core",
+              "orderIndex": 5
+            }
+          ]
+        },
+        {
+          "id": "desk_habits",
+          "name": "Desk Worker Micro-Habits",
+          "timing": "general",
+          "durationDescription": "2–3 min every 60–90 min",
+          "notes": "Set a timer. These compound over a full work day into meaningful volume.",
+          "exercises": [
+            {
+              "name": "Desk Hip Flexor Stretch",
+              "duration": "60 sec/side lunge at chair",
+              "frequency": "Every 90 min",
+              "focusArea": "Hip flexors",
+              "notes": "Counteracts hip flexor shortening from sitting",
+              "priority": "core",
+              "orderIndex": 0
+            },
+            {
+              "name": "Chin Tuck + Neck Roll",
+              "duration": "30 sec",
+              "frequency": "Every 60 min",
+              "focusArea": "Cervical spine",
+              "notes": "1 inch forward head = 10 lb extra spinal load",
+              "priority": "core",
+              "orderIndex": 1
+            },
+            {
+              "name": "Thoracic Rotation in Chair",
+              "duration": "5 reps/side",
+              "frequency": "Every 90 min",
+              "focusArea": "T-spine rotation",
+              "notes": "Do while on a call",
+              "priority": "core",
+              "orderIndex": 2
+            },
+            {
+              "name": "Standing Glute Squeeze",
+              "duration": "10 sec holds × 5",
+              "frequency": "Every 2 hours",
+              "focusArea": "Glute activation",
+              "notes": "Prevents glute amnesia — key driver of lower back pain",
+              "priority": "core",
+              "orderIndex": 3
+            },
+            {
+              "name": "Wrist Extension Stretch",
+              "duration": "30 sec/hand",
+              "frequency": "Every 90 min",
+              "focusArea": "Wrist / forearm",
+              "notes": "Critical for climbers — prevents flexor overuse imbalance",
+              "priority": "core",
+              "orderIndex": 4
+            }
+          ]
+        },
+        {
+          "id": "pre_lower_ramp",
+          "name": "Lower Body RAMP",
+          "timing": "pre_workout",
+          "durationDescription": "8 min",
+          "notes": "Run before any lower body session.",
+          "exercises": [
+            {
+              "name": "Light Cardio",
+              "duration": "3 min easy",
+              "frequency": "Every lower day",
+              "focusArea": "Core temperature",
+              "notes": "Bike, row, or walk — just get warm",
+              "priority": "core",
+              "orderIndex": 0
+            },
+            {
+              "name": "Glute Bridges",
+              "duration": "1 × 15",
+              "frequency": "Every lower day",
+              "focusArea": "Glute activation",
+              "notes": "",
+              "priority": "core",
+              "orderIndex": 1
+            },
+            {
+              "name": "Leg Swings (front-back + lateral)",
+              "duration": "10 reps/direction/leg",
+              "frequency": "Every lower day",
+              "focusArea": "Hip dynamic ROM",
+              "notes": "Neural warm-up for hip flexors and adductors",
+              "priority": "core",
+              "orderIndex": 2
+            },
+            {
+              "name": "World's Greatest Stretch",
+              "duration": "5 reps/side",
+              "frequency": "Every lower day",
+              "focusArea": "Hip, thoracic, ankle",
+              "notes": "Best single-movement for lower-body prep",
+              "priority": "core",
+              "orderIndex": 3
+            },
+            {
+              "name": "Ankle Dorsiflexion Wall Drill",
+              "duration": "10 reps/side",
+              "frequency": "Every squat day",
+              "focusArea": "Ankle mobility",
+              "notes": "DF restriction accounts for up to 43% of squat depth variance",
+              "priority": "core",
+              "orderIndex": 4
+            }
+          ]
+        },
+        {
+          "id": "pre_upper_ramp",
+          "name": "Upper Body RAMP",
+          "timing": "pre_workout",
+          "durationDescription": "8 min",
+          "notes": "Run before any upper body or climbing session.",
+          "exercises": [
+            {
+              "name": "Band Pull-Aparts",
+              "duration": "2 × 20",
+              "frequency": "Every upper day",
+              "focusArea": "Rear delt + scap",
+              "notes": "Activates rear delts and scapular retractors before pressing",
+              "priority": "core",
+              "orderIndex": 0
+            },
+            {
+              "name": "Scap Push-Ups",
+              "duration": "1 × 10",
+              "frequency": "Every upper day",
+              "focusArea": "Serratus anterior",
+              "notes": "Activates serratus — most neglected UCS corrective muscle",
+              "priority": "core",
+              "orderIndex": 1
+            },
+            {
+              "name": "Doorway Pec Stretch",
+              "duration": "30 sec × 3 angles",
+              "frequency": "Every upper day",
+              "focusArea": "Pec minor/major",
+              "notes": "Opens thorax; prevents shoulder impingement from climbing",
+              "priority": "core",
+              "orderIndex": 2
+            },
+            {
+              "name": "Arm Circles",
+              "duration": "10 reps each direction",
+              "frequency": "Every upper day",
+              "focusArea": "Shoulder joint",
+              "notes": "",
+              "priority": "core",
+              "orderIndex": 3
+            }
+          ]
+        },
+        {
+          "id": "post_workout_cooldown",
+          "name": "Post-Workout Cooldown",
+          "timing": "post_workout",
+          "durationDescription": "10–15 min",
+          "notes": "3×/week minimum. Converts passive ROM to active usable range.",
+          "exercises": [
+            {
+              "name": "Couch Stretch",
+              "duration": "90 sec/side",
+              "frequency": "Every session",
+              "focusArea": "Hip flexor length",
+              "notes": "Best hip flexor release after heavy split squats",
+              "priority": "core",
+              "orderIndex": 0
+            },
+            {
+              "name": "90/90 Hip Switches",
+              "duration": "5 transitions + 5 lift-offs/side",
+              "frequency": "3×/week",
+              "focusArea": "Hip IR + ER",
+              "notes": "Converts passive hip mobility to active usable range",
+              "priority": "core",
+              "orderIndex": 1
+            },
+            {
+              "name": "Pigeon Pose / Figure-4",
+              "duration": "90 sec/side",
+              "frequency": "3×/week",
+              "focusArea": "Hip external rotation",
+              "notes": "Complements climbing which tends to use IR dominantly",
+              "priority": "core",
+              "orderIndex": 2
+            },
+            {
+              "name": "Foam Roller T-Spine Extensions",
+              "duration": "10 reps over roller",
+              "frequency": "Daily",
+              "focusArea": "Thoracic extension",
+              "notes": "Reverses kyphosis from desk + climbing",
+              "priority": "core",
+              "orderIndex": 3
+            },
+            {
+              "name": "Dead Hang",
+              "duration": "3 × max hold",
+              "frequency": "3×/week",
+              "focusArea": "Shoulder decompression + grip",
+              "notes": "Decompresses spine, builds scap stability, trains grip",
+              "priority": "core",
+              "orderIndex": 4
+            },
+            {
+              "name": "Jefferson Curl",
+              "duration": "5 reps slow",
+              "frequency": "2×/week",
+              "focusArea": "Spinal flexion under load",
+              "notes": "Use very light weight. Controlled spinal flexion strength.",
+              "priority": "optional",
+              "orderIndex": 5
+            },
+            {
+              "name": "Supine Hamstring Stretch",
+              "duration": "60 sec/side",
+              "frequency": "3×/week",
+              "focusArea": "Hamstrings",
+              "notes": "",
+              "priority": "optional",
+              "orderIndex": 6
+            }
+          ]
+        }
+      ],
+      "benchmarks": [
+        {
+          "id": "trap_bar_dl_5rm",
+          "name": "Trap-Bar Deadlift",
+          "description": "Best set weight across any rep range. Target is your 5RM.",
+          "type": "exercise_pr",
+          "exerciseId": "trap_bar_deadlift",
+          "metric": "weight",
+          "unit": "lbs",
+          "citationIds": [
+            "watson_2018"
+          ],
+          "orderIndex": 0,
+          "targets": [
+            {
+              "label": "Current target",
+              "value": 315,
+              "orderIndex": 0
+            },
+            {
+              "label": "Elite (2× BW)",
+              "value": 350,
+              "orderIndex": 1
+            }
+          ]
+        },
+        {
+          "id": "dead_hang_time",
+          "name": "Dead Hang",
+          "description": "Continuous timed hang from pull-up bar.",
+          "type": "standalone_test",
+          "exerciseId": null,
+          "metric": "time",
+          "unit": "sec",
+          "citationIds": [
+            "leong_2015"
+          ],
+          "orderIndex": 1,
+          "targets": [
+            {
+              "label": "Current target",
+              "value": 90,
+              "orderIndex": 0
+            },
+            {
+              "label": "Elite (2 min)",
+              "value": 120,
+              "orderIndex": 1
+            }
+          ]
+        },
+        {
+          "id": "farmers_carry_bw",
+          "name": "Farmer's Carry",
+          "description": "Bodyweight per hand × 1 minute. Uses best carry weight from workout log.",
+          "type": "exercise_pr",
+          "exerciseId": "farmers_carry",
+          "metric": "weight",
+          "unit": "lbs",
+          "citationIds": [
+            "leong_2015"
+          ],
+          "orderIndex": 2,
+          "targets": [
+            {
+              "label": "Bodyweight/hand",
+              "value": 175,
+              "orderIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "chin_up_pr",
+          "name": "Weighted Pull-Up",
+          "description": "Best additional weight used for any rep.",
+          "type": "exercise_pr",
+          "exerciseId": "weighted_pullup",
+          "metric": "weight",
+          "unit": "lbs",
+          "citationIds": [],
+          "orderIndex": 3,
+          "targets": [
+            {
+              "label": "Target +45 lb",
+              "value": 45,
+              "orderIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "vo2max_estimate",
+          "name": "VO₂ Max",
+          "description": "Estimated from wearable or lab test. Target top 25th percentile for age.",
+          "type": "standalone_test",
+          "exerciseId": null,
+          "metric": "score",
+          "unit": "ml/kg/min",
+          "citationIds": [
+            "mandsager_2018",
+            "kokkinos_2022"
+          ],
+          "orderIndex": 4,
+          "targets": [
+            {
+              "label": "Current target",
+              "value": 50,
+              "orderIndex": 0
+            },
+            {
+              "label": "Elite by 40",
+              "value": 55,
+              "orderIndex": 1
+            }
+          ]
+        }
+      ],
+      "plans": [
+        {
+          "id": "four_day",
+          "name": "4-Day Plan",
+          "scheduleDescription": "Mon · Wed · Thu (Climbing) · Sat",
+          "daysPerWeek": 4,
+          "orderIndex": 0,
+          "workouts": [
+            {
+              "id": "four_day_mon",
+              "dayLabel": "Monday",
+              "sessionType": "Lower Body — Hinge + Power",
+              "durationRange": "60–70 min",
+              "location": "Gym",
+              "keyMetrics": [
+                "Trap-bar DL 5RM",
+                "Farmer carry 40m"
+              ],
+              "orderIndex": 0,
+              "preMobilityIds": [
+                "pre_lower_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "HINGE — PRIMARY",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "trap_bar_deadlift",
+                      "sets": 4,
+                      "repsMin": 4,
+                      "repsMax": 6,
+                      "repsText": null,
+                      "load": "≥85% 1RM top set",
+                      "tempo": "3-1-1",
+                      "notes": "Heaviest compound of the week. Prioritize form.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No trap bar",
+                          "exerciseId": "conventional_deadlift"
+                        },
+                        {
+                          "context": "Dumbbell only",
+                          "exerciseId": "db_rdl"
+                        }
+                      ],
+                      "citationIds": [
+                        "swinton_2011",
+                        "watson_2018"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SQUAT PATTERN",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "bulgarian_split_squat",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "RPE 8 — challenging",
+                      "tempo": "3-0-1",
+                      "notes": "Rear foot on bench. At high load rivals barbell squat for quad + glute stimulus.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Add dumbbell load",
+                          "exerciseId": "db_bulgarian_split_squat"
+                        },
+                        {
+                          "context": "Less balance required",
+                          "exerciseId": "step_up"
+                        }
+                      ],
+                      "citationIds": [
+                        "speirs_2016"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "POWER",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "kettlebell_swing",
+                      "sets": 5,
+                      "repsMin": 5,
+                      "repsMax": 5,
+                      "repsText": null,
+                      "load": "Heavy — maximum intent",
+                      "tempo": "Explosive",
+                      "notes": "Hip hinge, not squat. Drive hips through aggressively.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No kettlebell",
+                          "exerciseId": "db_rdl"
+                        },
+                        {
+                          "context": "Barbell available",
+                          "exerciseId": "conventional_deadlift"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "HAMSTRING / ECCENTRIC",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "nordic_curl",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 6,
+                      "repsText": null,
+                      "load": "Bodyweight (eccentric focus)",
+                      "tempo": "5-0-1",
+                      "notes": "Anchor feet under bench or partner. Slow negative is the stimulus.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Too difficult / regression",
+                          "exerciseId": "single_leg_rdl"
+                        },
+                        {
+                          "context": "No anchor point",
+                          "exerciseId": "db_rdl"
+                        }
+                      ],
+                      "citationIds": [
+                        "vandyk_2019"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LOADED CARRY",
+                  "orderIndex": 5,
+                  "exercises": [
+                    {
+                      "exerciseId": "farmers_carry",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "3 × 40m",
+                      "load": "Heaviest DBs — grip is the limiter",
+                      "tempo": "Upright, controlled",
+                      "notes": "Grip, traps, core, posture. Targets Centenarian Decathlon carry benchmark.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Unilateral / core challenge",
+                          "exerciseId": "suitcase_carry"
+                        }
+                      ],
+                      "citationIds": [
+                        "leong_2015"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "McGILL BIG 3",
+                  "orderIndex": 6,
+                  "exercises": [
+                    {
+                      "exerciseId": "bird_dog",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow & controlled",
+                      "notes": "Non-negotiable. Hold 2–3 s at top each rep.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "perSide": true,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "side_plank",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Isometric",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "durationSeconds": 20,
+                      "perSide": true,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "modified_curl_up",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "ZONE 2 FINISHER",
+                  "orderIndex": 7,
+                  "exercises": [
+                    {
+                      "exerciseId": "zone2_cardio",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "120–140 bpm",
+                      "tempo": null,
+                      "notes": "Target 20–25 min. Bike or incline walk. Counts toward 150 min/week Zone 2 target.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "outdoor",
+                          "exerciseId": "rucking"
+                        }
+                      ],
+                      "citationIds": [
+                        "sanmillan_2018"
+                      ],
+                      "durationSeconds": 1200,
+                      "perSide": false,
+                      "showHeartRateZones": true,
+                      "targetZoneLow": 2,
+                      "targetZoneHigh": 2,
+                      "timerStartMode": "waitForZone"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "four_day_wed",
+              "dayLabel": "Wednesday",
+              "sessionType": "Upper Body — Push + Pull",
+              "durationRange": "60–70 min",
+              "location": "Gym",
+              "keyMetrics": [
+                "Chin-up +weight 5RM",
+                "Dead hang time"
+              ],
+              "orderIndex": 1,
+              "preMobilityIds": [
+                "pre_upper_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "PULL — PRIMARY",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "weighted_pullup",
+                      "sets": 4,
+                      "repsMin": 4,
+                      "repsMax": 6,
+                      "repsText": null,
+                      "load": "+10–25 kg (dip belt)",
+                      "tempo": "3-0-1",
+                      "notes": "Best upper-body pull indicator for longevity (grip + back strength). Add weight when you hit 6 reps.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Cable machine available",
+                          "exerciseId": "lat_pulldown"
+                        },
+                        {
+                          "context": "Reduce load / regression",
+                          "exerciseId": "ring_row"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "PUSH",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_bench_press",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "RPE 8",
+                      "tempo": "3-0-1",
+                      "notes": "Neutral grip. Safer to push solo than barbell. Full ROM — touch chest.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Barbell available",
+                          "exerciseId": "barbell_bench"
+                        },
+                        {
+                          "context": "No bench",
+                          "exerciseId": "db_floor_press"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pushups"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "HORIZONTAL PULL",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "chest_supported_row",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "repsText": null,
+                      "load": "RPE 8 — full retraction",
+                      "tempo": "2-1-1",
+                      "notes": "Chest on incline bench removes lower back from the equation.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No incline bench",
+                          "exerciseId": "single_arm_db_row"
+                        },
+                        {
+                          "context": "Rings available",
+                          "exerciseId": "ring_row"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "OVERHEAD",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "landmine_press",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "Moderate — pain-free arc",
+                      "tempo": "2-0-1",
+                      "notes": "Arc-friendly shoulder press. Lower impingement risk than vertical press.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No barbell",
+                          "exerciseId": "seated_db_ohp"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pike_pushup"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "SHOULDER HEALTH",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "face_pulls",
+                      "sets": 3,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Light — form focus",
+                      "tempo": "2-1-2",
+                      "notes": "External rotation + horizontal abduction. Essential for climbers.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No cable/band",
+                          "exerciseId": "prone_ytw"
+                        },
+                        {
+                          "context": "Simpler movement",
+                          "exerciseId": "band_pull_aparts"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "band_pull_aparts",
+                      "sets": 2,
+                      "repsMin": 20,
+                      "repsMax": 20,
+                      "repsText": null,
+                      "load": "Light band",
+                      "tempo": "Controlled",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "More external rotation",
+                          "exerciseId": "band_face_pull"
+                        },
+                        {
+                          "context": "No band",
+                          "exerciseId": "prone_ytw"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "GRIP / HANG",
+                  "orderIndex": 5,
+                  "exercises": [
+                    {
+                      "exerciseId": "dead_hang",
+                      "logMode": "duration",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "Max hold",
+                      "load": "Bodyweight",
+                      "tempo": "Slow release",
+                      "notes": "Decompresses spine, trains grip, builds scap stability. Log your time.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [
+                        "leong_2015"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ZONE 2 FINISHER",
+                  "orderIndex": 6,
+                  "exercises": [
+                    {
+                      "exerciseId": "zone2_cardio",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "120–140 bpm",
+                      "tempo": null,
+                      "notes": "Bike or easy row after lifting.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 1200,
+                      "perSide": false,
+                      "showHeartRateZones": true,
+                      "targetZoneLow": 2,
+                      "targetZoneHigh": 2,
+                      "timerStartMode": "waitForZone"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "four_day_thu",
+              "dayLabel": "Thursday",
+              "sessionType": "Rock Climbing + Antagonist Circuit",
+              "durationRange": "70–100 min",
+              "location": "Climbing Gym",
+              "keyMetrics": [
+                "Sends / grade",
+                "Antagonist circuit ✓"
+              ],
+              "orderIndex": 2,
+              "preMobilityIds": [
+                "pre_upper_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "CLIMBING",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "bouldering",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "60–90 min",
+                      "load": "Technique + power focus",
+                      "tempo": null,
+                      "notes": "Counts as upper-body pulling volume for today. Replaces — not supplements — a separate pull session.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "logMode": "duration"
+                    }
+                  ]
+                },
+                {
+                  "name": "ANTAGONIST CIRCUIT (10 min)",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "pushups",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "2-0-1",
+                      "notes": "Balances the climbing pulling volume.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Add load",
+                          "exerciseId": "db_bench_press"
+                        },
+                        {
+                          "context": "No bench needed",
+                          "exerciseId": "db_floor_press"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "band_external_rotation",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Light band",
+                      "tempo": "Slow controlled",
+                      "notes": "Essential for climbers. Carry a band in your chalk bag.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "More posterior chain",
+                          "exerciseId": "band_face_pull"
+                        },
+                        {
+                          "context": "No band",
+                          "exerciseId": "prone_ytw"
+                        }
+                      ],
+                      "citationIds": [],
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "reverse_wrist_curls",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Light DB or plate",
+                      "tempo": "2-0-2",
+                      "notes": "Extensor balance for climbing flexors.",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "finger_extensor",
+                      "sets": 2,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Rubber band on fingers",
+                      "tempo": "Open and close",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 3,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 30,
+                      "logMode": "timer"
+                    },
+                    {
+                      "exerciseId": "prone_ytw",
+                      "sets": 2,
+                      "repsMin": 10,
+                      "repsMax": 10,
+                      "repsText": "10 each position",
+                      "load": "Bodyweight or 1–2 kg",
+                      "tempo": "Slow controlled",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 4,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                }
+              ],
+              "activityType": "climbing"
+            },
+            {
+              "id": "four_day_sat_a",
+              "dayLabel": "Saturday — Week A",
+              "sessionType": "VO₂ Max — Norwegian 4×4",
+              "durationRange": "38–45 min",
+              "location": "Gym / Bike",
+              "keyMetrics": [
+                "HRmax reached",
+                "4 intervals completed"
+              ],
+              "orderIndex": 3,
+              "preMobilityIds": [],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "WARM-UP",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "zone2_cardio",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Easy cardio",
+                      "tempo": null,
+                      "notes": "5 min bike or row + dynamic stretches",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 600,
+                      "perSide": false,
+                      "showHeartRateZones": true
+                    }
+                  ]
+                },
+                {
+                  "name": "NORWEGIAN 4×4",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "norwegian_4x4",
+                      "sets": 4,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "85–95% HRmax during intervals",
+                      "tempo": null,
+                      "notes": "Bike, rower, or incline treadmill. You should not be able to speak during the 4 min intervals. 3 min recovery at easy pace between each.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [
+                        "helgerud_2007",
+                        "mandsager_2018"
+                      ],
+                      "showHeartRateZones": true,
+                      "durationSeconds": 240,
+                      "restSeconds": 180,
+                      "targetZoneLow": 4,
+                      "targetZoneHigh": 5
+                    }
+                  ]
+                },
+                {
+                  "name": "COOL-DOWN",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "zone2_cardio",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Very easy",
+                      "tempo": null,
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 300,
+                      "perSide": false,
+                      "showHeartRateZones": true
+                    }
+                  ]
+                }
+              ],
+              "activityType": "hiit"
+            },
+            {
+              "id": "four_day_sat_b",
+              "dayLabel": "Saturday — Week B",
+              "sessionType": "Full-Body Strength",
+              "durationRange": "55–65 min",
+              "location": "Gym",
+              "keyMetrics": [
+                "Front squat weight",
+                "Session logged"
+              ],
+              "orderIndex": 4,
+              "preMobilityIds": [
+                "pre_lower_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "SQUAT",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "front_squat",
+                      "sets": 4,
+                      "repsMin": 5,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "Challenging — RPE 8",
+                      "tempo": "3-1-1",
+                      "notes": "Lower knee compressive force vs. back squat. Good for long-term knee health.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No barbell",
+                          "exerciseId": "goblet_squat"
+                        },
+                        {
+                          "context": "Unilateral variation",
+                          "exerciseId": "db_bulgarian_split_squat"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "UNILATERAL HINGE",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "single_leg_rdl",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "Moderate",
+                      "tempo": "3-1-1",
+                      "notes": "Hip stability and left-right asymmetry correction.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Bilateral version",
+                          "exerciseId": "db_rdl"
+                        },
+                        {
+                          "context": "Add eccentric overload",
+                          "exerciseId": "nordic_curl"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "PUSH + PULL",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "landmine_press",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Moderate",
+                      "tempo": "2-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No barbell",
+                          "exerciseId": "seated_db_ohp"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pike_pushup"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "db_row",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "RPE 8",
+                      "tempo": "2-1-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "Single-arm focus",
+                          "exerciseId": "single_arm_db_row"
+                        },
+                        {
+                          "context": "Lower back sensitive",
+                          "exerciseId": "chest_supported_row"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "LOADED CARRY",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "suitcase_carry",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "3 × 40m",
+                      "load": "Heavy single arm",
+                      "tempo": "Upright, controlled",
+                      "notes": "Anti-lateral-flexion core demand.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Bilateral option",
+                          "exerciseId": "farmers_carry"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "ZONE 2 FINISHER",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "zone2_cardio",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "120–140 bpm",
+                      "tempo": null,
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 1200,
+                      "perSide": false,
+                      "showHeartRateZones": true,
+                      "targetZoneLow": 2,
+                      "targetZoneHigh": 2,
+                      "timerStartMode": "waitForZone"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "three_day",
+          "name": "3-Day Plan",
+          "scheduleDescription": "Mon · Wed/Thu (Climbing) · Sat",
+          "daysPerWeek": 3,
+          "orderIndex": 1,
+          "workouts": [
+            {
+              "id": "three_day_mon",
+              "dayLabel": "Monday",
+              "sessionType": "Full Lower Body + Core",
+              "durationRange": "60–70 min",
+              "location": "Gym",
+              "keyMetrics": [
+                "Trap-bar DL 5RM"
+              ],
+              "orderIndex": 0,
+              "preMobilityIds": [
+                "pre_lower_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "HINGE",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "trap_bar_deadlift",
+                      "sets": 3,
+                      "repsMin": 4,
+                      "repsMax": 6,
+                      "repsText": null,
+                      "load": "Heavy",
+                      "tempo": "3-1-1",
+                      "notes": "3-day plan uses 3 sets vs 4 to leave energy for the rest of the session.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No trap bar",
+                          "exerciseId": "conventional_deadlift"
+                        },
+                        {
+                          "context": "Dumbbell only",
+                          "exerciseId": "db_rdl"
+                        }
+                      ],
+                      "citationIds": [
+                        "swinton_2011"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SQUAT",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "bulgarian_split_squat",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "RPE 8",
+                      "tempo": "3-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Add dumbbell load",
+                          "exerciseId": "db_bulgarian_split_squat"
+                        },
+                        {
+                          "context": "Less balance required",
+                          "exerciseId": "step_up"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "POWER + HAMSTRING",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "kettlebell_swing",
+                      "sets": 4,
+                      "repsMin": 5,
+                      "repsMax": 5,
+                      "repsText": null,
+                      "load": "Heavy — max intent",
+                      "tempo": "Explosive",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No kettlebell",
+                          "exerciseId": "db_rdl"
+                        },
+                        {
+                          "context": "Barbell available",
+                          "exerciseId": "conventional_deadlift"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "nordic_curl",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 6,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "5-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "Too difficult / regression",
+                          "exerciseId": "single_leg_rdl"
+                        },
+                        {
+                          "context": "No anchor point",
+                          "exerciseId": "db_rdl"
+                        }
+                      ],
+                      "citationIds": [
+                        "vandyk_2019"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CARRY + McGILL BIG 3",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "farmers_carry",
+                      "sets": 2,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "2 × 40m",
+                      "load": "Heavy",
+                      "tempo": "Upright",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Unilateral / core challenge",
+                          "exerciseId": "suitcase_carry"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "bird_dog",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow & controlled",
+                      "notes": "Hold 2–3 s at top each rep.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "perSide": true,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "side_plank",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Isometric",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "durationSeconds": 20,
+                      "perSide": true,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "modified_curl_up",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 3,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "ZONE 2 FINISHER",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "zone2_cardio",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "120–140 bpm",
+                      "tempo": null,
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 1200,
+                      "perSide": false,
+                      "showHeartRateZones": true,
+                      "targetZoneLow": 2,
+                      "targetZoneHigh": 2,
+                      "timerStartMode": "waitForZone"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "three_day_wed_thu",
+              "dayLabel": "Wednesday / Thursday",
+              "sessionType": "Rock Climbing + Antagonist Circuit",
+              "durationRange": "70–100 min",
+              "location": "Climbing Gym",
+              "keyMetrics": [
+                "Sends / grade",
+                "Antagonist circuit ✓"
+              ],
+              "orderIndex": 1,
+              "preMobilityIds": [
+                "pre_upper_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "CLIMBING",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "bouldering",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "60–90 min",
+                      "load": "Technique + power",
+                      "tempo": null,
+                      "notes": "Replaces upper-body pull day entirely. If no climbing this week, substitute Wednesday Upper Body from 4-day plan.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "logMode": "duration"
+                    }
+                  ]
+                },
+                {
+                  "name": "ANTAGONIST CIRCUIT",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "pushups",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "2-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Add load",
+                          "exerciseId": "db_bench_press"
+                        },
+                        {
+                          "context": "No bench needed",
+                          "exerciseId": "db_floor_press"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "band_external_rotation",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Light band",
+                      "tempo": "Slow",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "More posterior chain",
+                          "exerciseId": "band_face_pull"
+                        },
+                        {
+                          "context": "No band",
+                          "exerciseId": "prone_ytw"
+                        }
+                      ],
+                      "citationIds": [],
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "reverse_wrist_curls",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Light",
+                      "tempo": "2-0-2",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "finger_extensor",
+                      "sets": 2,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Rubber band",
+                      "tempo": null,
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 3,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 30,
+                      "logMode": "timer"
+                    }
+                  ]
+                }
+              ],
+              "activityType": "climbing"
+            },
+            {
+              "id": "three_day_sat",
+              "dayLabel": "Saturday",
+              "sessionType": "Upper Body Push + Pull + VO₂ Max (alternating)",
+              "durationRange": "60–80 min",
+              "location": "Gym",
+              "keyMetrics": [
+                "Chin-up +weight",
+                "VO₂ session or Zone 2 logged"
+              ],
+              "orderIndex": 2,
+              "preMobilityIds": [
+                "pre_upper_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "UPPER BODY — ALWAYS",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "weighted_pullup",
+                      "sets": 3,
+                      "repsMin": 4,
+                      "repsMax": 6,
+                      "repsText": null,
+                      "load": "+weight via belt",
+                      "tempo": "3-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Cable machine available",
+                          "exerciseId": "lat_pulldown"
+                        },
+                        {
+                          "context": "Reduce load / regression",
+                          "exerciseId": "ring_row"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "db_bench_press",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "RPE 8",
+                      "tempo": "3-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "Barbell available",
+                          "exerciseId": "barbell_bench"
+                        },
+                        {
+                          "context": "No bench",
+                          "exerciseId": "db_floor_press"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pushups"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "chest_supported_row",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "repsText": null,
+                      "load": "RPE 8",
+                      "tempo": "2-1-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "No incline bench",
+                          "exerciseId": "single_arm_db_row"
+                        },
+                        {
+                          "context": "Rings available",
+                          "exerciseId": "ring_row"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "landmine_press",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Moderate",
+                      "tempo": "2-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 3,
+                      "alternatives": [
+                        {
+                          "context": "No barbell",
+                          "exerciseId": "seated_db_ohp"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pike_pushup"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "face_pulls",
+                      "sets": 3,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Light",
+                      "tempo": "2-1-2",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 4,
+                      "alternatives": [
+                        {
+                          "context": "No cable/band",
+                          "exerciseId": "prone_ytw"
+                        },
+                        {
+                          "context": "Simpler movement",
+                          "exerciseId": "band_pull_aparts"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "dead_hang",
+                      "logMode": "duration",
+                      "sets": 2,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "Max hold",
+                      "load": "Bodyweight",
+                      "tempo": null,
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 5,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "WEEK A — VO₂ MAX (before lifting)",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "norwegian_4x4",
+                      "sets": 4,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "85–95% HRmax",
+                      "tempo": null,
+                      "notes": "Do BEFORE lifting on Week A.",
+                      "priority": "optional",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [
+                        "helgerud_2007"
+                      ],
+                      "showHeartRateZones": true,
+                      "durationSeconds": 240,
+                      "restSeconds": 180,
+                      "targetZoneLow": 4,
+                      "targetZoneHigh": 5
+                    }
+                  ]
+                },
+                {
+                  "name": "WEEK B — ZONE 2 (after lifting)",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "zone2_cardio",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "120–140 bpm",
+                      "tempo": null,
+                      "notes": "Do AFTER lifting on Week B.",
+                      "priority": "optional",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 1500,
+                      "perSide": false,
+                      "showHeartRateZones": true,
+                      "targetZoneLow": 2,
+                      "targetZoneHigh": 2,
+                      "timerStartMode": "waitForZone"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "home_plan",
+          "name": "Home Plan",
+          "scheduleDescription": "Home Day A · Home Day B · Climbing Gym (Sat)  |  Any 3 days that work",
+          "daysPerWeek": 3,
+          "orderIndex": 2,
+          "workouts": [
+            {
+              "id": "home_day_a",
+              "dayLabel": "Home Day A",
+              "sessionType": "Lower Body — Hinge + Squat",
+              "durationRange": "45–55 min",
+              "location": "Home",
+              "keyMetrics": [
+                "DB RDL weight",
+                "Farmer carry weight"
+              ],
+              "orderIndex": 0,
+              "preMobilityIds": [],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "WARM-UP",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "hip_cars_warmup",
+                      "sets": 2,
+                      "repsMin": 5,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow & controlled",
+                      "notes": "Full hip circle — primes the joint before loading.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "hip_90_90_stretch",
+                      "sets": 2,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Hold",
+                      "notes": "Sit in 90/90, lean forward on front shin. Clears internal rotation before loading.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 90,
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "glute_bridge_march",
+                      "sets": 2,
+                      "repsMin": 10,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Controlled",
+                      "notes": "Bridge up, hold, alternately lift knees. Activates glutes before hinge work.",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "Add band resistance",
+                          "exerciseId": "glute_bridge_band"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "HINGE — replaces Trap-Bar Deadlift",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_rdl",
+                      "sets": 4,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "Heavy — RPE 8 (~70–80 lb/hand)",
+                      "tempo": "3-1",
+                      "notes": "Primary hinge at home. Hip hinge from hips, soft knees, DBs track close to legs. Go as heavy as form allows.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Single-leg progression",
+                          "exerciseId": "single_leg_rdl"
+                        },
+                        {
+                          "context": "Barbell available",
+                          "exerciseId": "conventional_deadlift"
+                        },
+                        {
+                          "context": "Power focus",
+                          "exerciseId": "kettlebell_swing"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "single_leg_rdl",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Moderate (~40–50 lb/hand)",
+                      "tempo": "3-1",
+                      "notes": "Free-standing, slight knee bend. Trains hip stability and corrects left-right asymmetry.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "Bilateral version",
+                          "exerciseId": "db_rdl"
+                        },
+                        {
+                          "context": "Add eccentric overload",
+                          "exerciseId": "nordic_curl"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "glute_bridge_band",
+                      "sets": 3,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Band + bodyweight",
+                      "tempo": "2-2",
+                      "notes": "Adds posterior-chain volume with zero axial load. Good if fatigued from RDLs.",
+                      "priority": "optional",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "No band",
+                          "exerciseId": "glute_bridge_march"
+                        },
+                        {
+                          "context": "More range of motion",
+                          "exerciseId": "hip_thrust"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "SQUAT — replaces Barbell / Front Squat",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_bulgarian_split_squat",
+                      "sets": 4,
+                      "repsMin": 8,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Challenging (~50–70 lb/hand)",
+                      "tempo": "3-1",
+                      "notes": "Rear foot on bench. At this load rivals barbell squat for quad + glute stimulus at roughly half the spinal load.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "bulgarian_split_squat"
+                        },
+                        {
+                          "context": "Less balance required",
+                          "exerciseId": "step_up"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "goblet_squat",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "repsText": null,
+                      "load": "Moderate (~50–60 lb)",
+                      "tempo": "3-1",
+                      "notes": "Hold one DB at chest, sit deep. Reinforces squat pattern and adds quad volume.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "Barbell available (harder)",
+                          "exerciseId": "barbell_squat"
+                        },
+                        {
+                          "context": "Unilateral challenge",
+                          "exerciseId": "db_bulgarian_split_squat"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "step_up",
+                      "sets": 2,
+                      "repsMin": 10,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Light–Moderate (~30–40 lb/hand)",
+                      "tempo": "Controlled",
+                      "notes": "Drive through heel, stand tall at top. Extra unilateral quad volume.",
+                      "priority": "optional",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "More hip mobility demand",
+                          "exerciseId": "db_bulgarian_split_squat"
+                        },
+                        {
+                          "context": "Bilateral option",
+                          "exerciseId": "goblet_squat"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "LOADED CARRY + CORE",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "farmers_carry",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "3 × 40m",
+                      "load": "Heavy — RPE 8–9 (~80–90 lb/hand)",
+                      "tempo": "Upright, controlled",
+                      "notes": "Grip should be the limiting factor. Targets Centenarian Decathlon carry benchmark.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Unilateral / core challenge",
+                          "exerciseId": "suitcase_carry"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "copenhagen_plank",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Isometric",
+                      "notes": "Top foot on bench, bottom foot off floor. Best adductor + lateral core exercise at home.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 60,
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "bird_dog",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow & controlled",
+                      "notes": "Hold 2–3 s at top each rep.",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "perSide": true,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "side_plank",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Isometric",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 3,
+                      "durationSeconds": 20,
+                      "perSide": true,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "modified_curl_up",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 4,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "single_leg_calf_raise",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "3 sec up / 3 sec down",
+                      "notes": "Off step edge. Slow tempo is the point for Achilles and patellar tendon health.",
+                      "priority": "optional",
+                      "orderIndex": 5,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "COOL-DOWN",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "hip_90_90_stretch",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Hold",
+                      "notes": "Couch stretch alternative — best hip flexor release after split squats.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 180,
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "hip_cars_warmup",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "5 transitions + 5 lift-offs/side",
+                      "load": "Bodyweight",
+                      "tempo": "Controlled",
+                      "notes": "90/90 hip switches — converts passive hip mobility to active usable range.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "single_leg_rdl",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Hold",
+                      "notes": "Supine hamstring stretch. Drop if short on time.",
+                      "priority": "optional",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "Bilateral version",
+                          "exerciseId": "db_rdl"
+                        },
+                        {
+                          "context": "Add eccentric overload",
+                          "exerciseId": "nordic_curl"
+                        }
+                      ],
+                      "citationIds": [],
+                      "durationSeconds": 120,
+                      "perSide": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "home_day_b",
+              "dayLabel": "Home Day B",
+              "sessionType": "Upper Body — Press + Pull",
+              "durationRange": "45–55 min",
+              "location": "Home",
+              "keyMetrics": [
+                "Dip weight",
+                "DB row weight"
+              ],
+              "orderIndex": 1,
+              "preMobilityIds": [],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "WARM-UP",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "shoulder_cars_warmup",
+                      "sets": 2,
+                      "repsMin": 5,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Slow & controlled",
+                      "notes": "Full shoulder circle — critical joint prep before pressing and pulling.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "band_pull_aparts",
+                      "sets": 2,
+                      "repsMin": 20,
+                      "repsMax": 20,
+                      "repsText": null,
+                      "load": "Light band",
+                      "tempo": "Controlled",
+                      "notes": "Activates rear delts and scapular retractors before pressing.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "More external rotation",
+                          "exerciseId": "band_face_pull"
+                        },
+                        {
+                          "context": "No band",
+                          "exerciseId": "prone_ytw"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "scap_pushup_wallslide",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "10 each",
+                      "load": "Bodyweight",
+                      "tempo": "Slow",
+                      "notes": "Activates serratus anterior and trains upward rotation — counters desk posture.",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "HORIZONTAL PRESS — replaces Neutral-Grip DB Bench + Landmine Press",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_bench_press",
+                      "sets": 4,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "Heavy — RPE 8 (~70–80 lb/hand)",
+                      "tempo": "3-1",
+                      "notes": "Full ROM — touch chest, full lockout. Safer to push hard solo than a barbell: can dump DBs safely.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Barbell available",
+                          "exerciseId": "barbell_bench"
+                        },
+                        {
+                          "context": "No bench",
+                          "exerciseId": "db_floor_press"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pushups"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "weighted_dip",
+                      "sets": 4,
+                      "repsMin": 6,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "BW + load via belt or DB between feet",
+                      "tempo": "3-1",
+                      "notes": "One of the best pressing movements available at home. Shoulders below elbows at the bottom.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "No dip bar",
+                          "exerciseId": "db_bench_press"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pushups"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "db_floor_press",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "repsText": null,
+                      "load": "Moderate (~55–65 lb/hand)",
+                      "tempo": "3-1",
+                      "notes": "Upper arms contact floor each rep — removes leg drive, isolates chest/triceps.",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "Have a bench",
+                          "exerciseId": "db_bench_press"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pushups"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "seated_db_ohp",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 10,
+                      "repsText": null,
+                      "load": "Moderate (~40–50 lb/hand)",
+                      "tempo": "2-1",
+                      "notes": "Seated for ceiling clearance. Overhead strength and shoulder stability. Replaces landmine press.",
+                      "priority": "optional",
+                      "orderIndex": 3,
+                      "alternatives": [
+                        {
+                          "context": "Barbell available",
+                          "exerciseId": "landmine_press"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pike_pushup"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "PULL — replaces Weighted Pull-Up + Chest-Supported Row",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "single_arm_db_row",
+                      "sets": 4,
+                      "repsMin": 10,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Heavy — RPE 8 (~70–80 lb/hand)",
+                      "tempo": "2-1",
+                      "notes": "Brace opposite hand on bench. Elbow drives back and up. Primary pull at home.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Bilateral option",
+                          "exerciseId": "db_row"
+                        },
+                        {
+                          "context": "Lower back sensitive",
+                          "exerciseId": "db_cs_row"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "ring_row",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 12,
+                      "repsText": null,
+                      "load": "Bodyweight (adjust body angle)",
+                      "tempo": "3-1",
+                      "notes": "Rings at hip height, body horizontal. Steeper = harder. Best horizontal pull at home. Weather-dependent.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "No rings",
+                          "exerciseId": "single_arm_db_row"
+                        },
+                        {
+                          "context": "Vertical pull progression",
+                          "exerciseId": "weighted_pullup"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "db_cs_row",
+                      "sets": 3,
+                      "repsMin": 12,
+                      "repsMax": 12,
+                      "repsText": null,
+                      "load": "Moderate (~50–60 lb/hand)",
+                      "tempo": "2-1",
+                      "notes": "Face-down on incline bench. No lower-back fatigue. Good when rings aren't available.",
+                      "priority": "optional",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "No incline bench",
+                          "exerciseId": "single_arm_db_row"
+                        },
+                        {
+                          "context": "Rings available",
+                          "exerciseId": "ring_row"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "SHOULDER HEALTH — climber antagonist (never skip)",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "band_face_pull",
+                      "sets": 3,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Light–medium band",
+                      "tempo": "Controlled",
+                      "notes": "Anchor at eye height, pull to face with elbows high and wide. Best exercise for rotator cuff + rear delt health.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No band",
+                          "exerciseId": "prone_ytw"
+                        },
+                        {
+                          "context": "Simpler movement",
+                          "exerciseId": "band_pull_aparts"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "band_external_rotation",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Light band",
+                      "tempo": "Slow",
+                      "notes": "Elbow tucked, forearm rotates out. Protects external rotators that climbing neglects.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "More posterior chain",
+                          "exerciseId": "band_face_pull"
+                        },
+                        {
+                          "context": "No band",
+                          "exerciseId": "prone_ytw"
+                        }
+                      ],
+                      "citationIds": [],
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "dead_hang",
+                      "logMode": "duration",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "30–60 sec",
+                      "load": "Bodyweight",
+                      "tempo": "Relaxed shoulders",
+                      "notes": "Decompress spine, maintain grip and shoulder health. Progress toward 2-min continuous hang benchmark.",
+                      "priority": "optional",
+                      "orderIndex": 2,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "db_lateral_raise",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Light (~15–20 lb/hand)",
+                      "tempo": "2-1",
+                      "notes": "Medial delt — supports overhead stability. Quick to do.",
+                      "priority": "optional",
+                      "orderIndex": 3,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "COOL-DOWN",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "doorframe_pec_stretch",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Hold",
+                      "notes": "Arm at 90° on doorframe, rotate away. Opens anterior shoulder — essential after pressing.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 120,
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "childs_pose_lat",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Hold",
+                      "notes": "Walk hands to one side to bias the lat. Climber staple — keeps lats long.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 120,
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "thoracic_rotation_sl",
+                      "sets": 1,
+                      "repsMin": 10,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "Controlled",
+                      "notes": "Side-lying, rotate top shoulder toward floor. Decompresses thoracic spine.",
+                      "priority": "optional",
+                      "orderIndex": 2,
+                      "alternatives": [],
+                      "citationIds": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "home_climbing_barbell",
+              "dayLabel": "Saturday",
+              "sessionType": "Climbing Gym — Barbell Priority",
+              "durationRange": "2–2.5 hrs",
+              "location": "Climbing Gym",
+              "keyMetrics": [
+                "Barbell squat weight",
+                "Deadlift weight",
+                "Sends / grade"
+              ],
+              "orderIndex": 2,
+              "preMobilityIds": [
+                "pre_lower_ramp"
+              ],
+              "postMobilityIds": [
+                "post_workout_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "BARBELL — do before climbing",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "barbell_squat",
+                      "sets": 4,
+                      "repsMin": 5,
+                      "repsMax": 5,
+                      "repsText": null,
+                      "load": "Heavy — RPE 8–9",
+                      "tempo": "3-1",
+                      "notes": "Primary reason to be here. Keep progressing — home Bulgarian split squats are maintenance; this is progression.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "No barbell / home day",
+                          "exerciseId": "goblet_squat"
+                        },
+                        {
+                          "context": "More unilateral focus",
+                          "exerciseId": "db_bulgarian_split_squat"
+                        },
+                        {
+                          "context": "Knee sensitivity",
+                          "exerciseId": "goblet_squat"
+                        }
+                      ],
+                      "citationIds": [
+                        "swinton_2011"
+                      ]
+                    },
+                    {
+                      "exerciseId": "trap_bar_deadlift",
+                      "sets": 3,
+                      "repsMin": 5,
+                      "repsMax": 5,
+                      "repsText": null,
+                      "load": "Heavy — RPE 8–9",
+                      "tempo": "Reset each rep",
+                      "notes": "Home RDLs preserve the pattern; this is where you push weight. Reset fully between reps.",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "No trap bar",
+                          "exerciseId": "conventional_deadlift"
+                        },
+                        {
+                          "context": "Dumbbell only",
+                          "exerciseId": "db_rdl"
+                        }
+                      ],
+                      "citationIds": [
+                        "swinton_2011",
+                        "watson_2018"
+                      ]
+                    },
+                    {
+                      "exerciseId": "barbell_bench",
+                      "sets": 4,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "Moderate–Heavy — RPE 7–8",
+                      "tempo": "3-1",
+                      "notes": "With safeties + rack you can push harder than at home. Your heavy press day.",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [
+                        {
+                          "context": "No barbell / spotter",
+                          "exerciseId": "db_bench_press"
+                        },
+                        {
+                          "context": "No bench",
+                          "exerciseId": "db_floor_press"
+                        },
+                        {
+                          "context": "Bodyweight only",
+                          "exerciseId": "pushups"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "barbell_row",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "repsText": null,
+                      "load": "Heavy — RPE 8",
+                      "tempo": "Controlled",
+                      "notes": "The one bilateral row where you can load beyond what DBs allow. Mid-back in a way DB rows can't fully replicate.",
+                      "priority": "core",
+                      "orderIndex": 3,
+                      "alternatives": [
+                        {
+                          "context": "No barbell",
+                          "exerciseId": "single_arm_db_row"
+                        },
+                        {
+                          "context": "Lower back sensitive",
+                          "exerciseId": "chest_supported_row"
+                        },
+                        {
+                          "context": "Rings available",
+                          "exerciseId": "ring_row"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "CLIMBING — main event",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "bouldering",
+                      "sets": 1,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "60–90 min",
+                      "load": "Technique + power focus",
+                      "tempo": null,
+                      "notes": "This IS your Zone 2 + VO₂ stimulus + grip volume + upper pulling for the week. Don't skip climbing for more barbell work.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "logMode": "duration"
+                    }
+                  ]
+                },
+                {
+                  "name": "LOADED CARRY — if energy allows",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "farmers_carry",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "3 × 40m",
+                      "load": "Heavy — RPE 9",
+                      "tempo": "Controlled",
+                      "notes": "Heavier than home. Home carries cover maintenance; this pushes the Centenarian Decathlon benchmark.",
+                      "priority": "optional",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Unilateral / core challenge",
+                          "exerciseId": "suitcase_carry"
+                        }
+                      ],
+                      "citationIds": []
+                    }
+                  ]
+                },
+                {
+                  "name": "ANTAGONIST CIRCUIT — finish climbing session",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "pushups",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "repsText": null,
+                      "load": "Bodyweight",
+                      "tempo": "2-0-1",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [
+                        {
+                          "context": "Add load",
+                          "exerciseId": "db_bench_press"
+                        },
+                        {
+                          "context": "No bench needed",
+                          "exerciseId": "db_floor_press"
+                        }
+                      ],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "band_external_rotation",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Light band",
+                      "tempo": "Slow controlled",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 1,
+                      "alternatives": [
+                        {
+                          "context": "More posterior chain",
+                          "exerciseId": "band_face_pull"
+                        },
+                        {
+                          "context": "No band",
+                          "exerciseId": "prone_ytw"
+                        }
+                      ],
+                      "citationIds": [],
+                      "perSide": true
+                    },
+                    {
+                      "exerciseId": "reverse_wrist_curls",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 15,
+                      "repsText": null,
+                      "load": "Light",
+                      "tempo": "2-0-2",
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 2,
+                      "alternatives": [],
+                      "citationIds": []
+                    },
+                    {
+                      "exerciseId": "finger_extensor",
+                      "sets": 2,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Rubber band",
+                      "tempo": null,
+                      "notes": "",
+                      "priority": "core",
+                      "orderIndex": 3,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "durationSeconds": 30,
+                      "logMode": "timer"
+                    }
+                  ]
+                }
+              ],
+              "activityType": "climbing"
+            }
+          ]
+        }
+      ],
+      "releaseNotes": "Cardio now shows a target zone band on the live bar (Norwegian 4×4 → Z4–Z5). Dedicated Zone 2 blocks hold the countdown until you reach Zone 2 (tap Start Now to skip) so the prescribed time is time *in* zone.",
+      "sourceUrl": "https://jalsemgeest.github.io/pillar-programs/four_pillar_v1.json"
+    }
+  ]
+}
