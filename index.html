@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pillar Program Builder</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #f2f2f7;
+      --surface:  #ffffff;
+      --surface2: #f2f2f7;
+      --border:   #d1d1d6;
+      --text:     #1c1c1e;
+      --text2:    #3c3c43;
+      --text3:    #8e8e93;
+      --accent:   #007aff;
+      --danger:   #ff3b30;
+      --green:    #34c759;
+      --orange:   #ff9500;
+      --r:        12px;
+      --r-sm:     8px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:      #000000;
+        --surface: #1c1c1e;
+        --surface2:#2c2c2e;
+        --border:  #38383a;
+        --text:    #ffffff;
+        --text2:   #ebebf5cc;
+        --text3:   #8e8e93;
+      }
+    }
+
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           background: var(--bg); color: var(--text); min-height: 100vh; }
+
+    /* ── Header ── */
+    header { background: var(--surface); border-bottom: 1px solid var(--border);
+             padding: 0 20px; height: 52px; display: flex; align-items: center;
+             gap: 12px; position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 17px; font-weight: 700; }
+    .logo-sub { font-size: 14px; color: var(--text3); flex: 1; }
+    .header-actions { display: flex; gap: 8px; }
+
+    /* ── Buttons ── */
+    .btn { padding: 7px 14px; border-radius: var(--r-sm); font-size: 14px; font-weight: 500;
+           border: none; cursor: pointer; transition: opacity .15s; white-space: nowrap; }
+    .btn:hover { opacity: .82; }
+    .btn:disabled { opacity: .35; cursor: not-allowed; }
+    .btn-primary  { background: var(--accent);  color: #fff; }
+    .btn-secondary{ background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+    .btn-danger   { background: var(--danger);  color: #fff; }
+    .btn-sm { padding: 4px 10px; font-size: 12px; border-radius: 6px; }
+    .btn-icon { background: transparent; border: none; cursor: pointer; color: var(--text3);
+                font-size: 16px; padding: 4px 6px; border-radius: 6px; line-height: 1; }
+    .btn-icon:hover { background: var(--surface2); color: var(--text); }
+    .btn-icon.danger:hover { background: rgba(255,59,48,.1); color: var(--danger); }
+
+    /* ── Main ── */
+    main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; display: flex;
+           flex-direction: column; gap: 16px; }
+
+    /* ── Cards ── */
+    .card { background: var(--surface); border-radius: var(--r); border: 1px solid var(--border); overflow: hidden; }
+    .card-header { display: flex; align-items: center; gap: 10px; padding: 13px 16px;
+                   border-bottom: 1px solid var(--border); }
+    .card-title { font-size: 15px; font-weight: 600; flex: 1; }
+    .card-body { padding: 16px; }
+
+    /* ── Section labels ── */
+    .section-label { font-size: 12px; font-weight: 600; color: var(--text3);
+                     text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
+
+    /* ── Field grid ── */
+    .field-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px 14px; }
+    .field-row { display: flex; flex-direction: column; gap: 4px; }
+    .field-row label { font-size: 11px; font-weight: 600; color: var(--text3);
+                       text-transform: uppercase; letter-spacing: .4px; }
+    input[type=text], input[type=number], textarea, select {
+      width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: var(--r-sm);
+      background: var(--surface2); color: var(--text); font-size: 14px; font-family: inherit;
+      outline: none; transition: border-color .15s; }
+    input:focus, textarea:focus, select:focus { border-color: var(--accent); }
+    textarea { resize: vertical; min-height: 60px; }
+
+    /* ── Plan cards ── */
+    .plan-card { background: var(--surface); border-radius: var(--r);
+                 border: 1px solid var(--border); overflow: hidden; margin-bottom: 12px; }
+    .plan-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+                   background: var(--surface); cursor: pointer; user-select: none; }
+    .plan-header:hover { background: var(--surface2); }
+    .plan-title { font-size: 15px; font-weight: 600; flex: 1; }
+    .plan-meta  { font-size: 12px; color: var(--text3); }
+    .plan-fields { padding: 14px 16px; border-top: 1px solid var(--border);
+                   background: var(--surface2); }
+    .plan-body { padding: 12px 16px 16px; border-top: 1px solid var(--border); }
+
+    /* ── Workout cards ── */
+    .workout-card { border: 1px solid var(--border); border-radius: var(--r-sm);
+                    overflow: hidden; margin-bottom: 8px; }
+    .workout-header { display: flex; align-items: center; gap: 8px; padding: 10px 13px;
+                      background: var(--surface2); cursor: pointer; user-select: none; }
+    .workout-header:hover { filter: brightness(.97); }
+    @media (prefers-color-scheme: dark) { .workout-header:hover { filter: brightness(1.05); } }
+    .workout-title { font-size: 14px; font-weight: 600; flex: 1; }
+    .workout-meta  { font-size: 11px; color: var(--text3); }
+    .workout-fields { padding: 12px 13px; border-top: 1px solid var(--border); }
+    .workout-body   { padding: 10px 13px 14px; border-top: 1px solid var(--border); }
+
+    /* ── Block cards ── */
+    .block-card { border: 1px solid var(--border); border-radius: var(--r-sm);
+                  overflow: hidden; margin-bottom: 8px; }
+    .block-header { display: flex; align-items: center; gap: 8px; padding: 7px 12px;
+                    background: var(--bg); border-bottom: 1px solid var(--border); }
+    .block-name-input { font-size: 12px; font-weight: 600; text-transform: uppercase;
+                        letter-spacing: .5px; color: var(--text3); background: transparent;
+                        border: none; outline: none; width: 180px; padding: 2px 4px;
+                        border-radius: 4px; }
+    .block-name-input:focus { background: var(--surface); color: var(--text); border: 1px solid var(--accent); }
+
+    /* ── Exercise table ── */
+    .ex-table { width: 100%; border-collapse: collapse; }
+    .ex-table th { font-size: 11px; color: var(--text3); text-transform: uppercase;
+                   letter-spacing: .3px; padding: 6px 6px; text-align: left;
+                   font-weight: 600; border-bottom: 1px solid var(--border); }
+    .ex-table td { padding: 4px 3px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    .ex-table tr:last-child td { border-bottom: none; }
+    .ex-table input { padding: 5px 7px; font-size: 13px; }
+    .ex-table input[type=number] { width: 54px; text-align: center; }
+    .ex-table .ex-name { width: 100%; min-width: 160px; }
+    .ex-table .ex-reps { width: 70px; }
+    .ex-table .ex-load { min-width: 90px; }
+    .ex-table .ex-notes { min-width: 120px; }
+
+    /* ── Chevron ── */
+    .chev { display: inline-block; font-size: 11px; color: var(--text3);
+            transition: transform .18s; margin-right: 2px; }
+    .chev.open { transform: rotate(90deg); }
+
+    /* ── Modal ── */
+    .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 200;
+               display: flex; align-items: center; justify-content: center; padding: 16px; }
+    .modal { background: var(--surface); border-radius: var(--r); width: 100%;
+             max-width: 580px; max-height: 85vh; overflow-y: auto; padding: 24px; }
+    .modal h2 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .modal-desc { font-size: 14px; color: var(--text3); margin-bottom: 16px; }
+    .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+
+    /* ── Empty state ── */
+    .empty-state { text-align: center; padding: 60px 20px; }
+    .empty-icon { font-size: 48px; margin-bottom: 16px; }
+    .empty-state h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .empty-state p  { font-size: 15px; color: var(--text3); margin-bottom: 24px; }
+    .empty-actions  { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-lg { padding: 11px 22px; font-size: 15px; }
+
+    /* ── Toast ── */
+    .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+             background: var(--text); color: var(--bg); padding: 9px 20px;
+             border-radius: 99px; font-size: 14px; font-weight: 500; z-index: 300;
+             animation: t-in .2s ease, t-out .3s 1.7s ease forwards; pointer-events: none; }
+    @keyframes t-in  { from { opacity:0; transform: translateX(-50%) translateY(8px); } to { opacity:1; transform: translateX(-50%) translateY(0); } }
+    @keyframes t-out { from { opacity:1; } to { opacity:0; } }
+
+    /* ── Misc ── */
+    .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .spacer { flex: 1; }
+    .badge { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 99px;
+             background: rgba(0,122,255,.1); color: var(--accent); }
+    .note { font-size: 12px; color: var(--text3); font-style: italic; margin-top: 6px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────── -->
+<header>
+  <span class="logo">Pillar</span>
+  <span class="logo-sub">Program Builder</span>
+  <div class="header-actions">
+    <button class="btn btn-secondary" onclick="showImport()">Import JSON</button>
+    <button class="btn btn-secondary" onclick="newProgram()">New Program</button>
+    <button class="btn btn-primary" id="btn-export" onclick="showExport()" disabled>Export</button>
+  </div>
+</header>
+
+<!-- ── Import modal ───────────────────────────────────────────────── -->
+<div id="modal-import" class="overlay" hidden>
+  <div class="modal">
+    <h2>Import Program JSON</h2>
+    <p class="modal-desc">Paste a Pillar program JSON, or load a .json file.</p>
+    <div class="field-row" style="margin-bottom:12px">
+      <label>Paste JSON</label>
+      <textarea id="import-text" rows="9" placeholder='{"schemaVersion":"1.0","programs":[...]}'></textarea>
+    </div>
+    <div class="field-row">
+      <label>Or load a file</label>
+      <input type="file" id="import-file" accept=".json" onchange="handleFile(event)">
+    </div>
+    <p id="import-error" style="color:var(--danger);font-size:13px;margin-top:10px" hidden></p>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('modal-import')">Cancel</button>
+      <button class="btn btn-primary" onclick="doImport()">Import</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Export modal ───────────────────────────────────────────────── -->
+<div id="modal-export" class="overlay" hidden>
+  <div class="modal">
+    <h2>Export Program JSON</h2>
+    <p class="modal-desc">Copy to clipboard or download — then import into the Pillar app.</p>
+    <textarea id="export-text" rows="14" readonly style="font-family:monospace;font-size:12px"></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('modal-export')">Close</button>
+      <button class="btn btn-secondary" onclick="copyExport()">Copy to Clipboard</button>
+      <button class="btn btn-primary" onclick="downloadExport()">Download .json</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── App root ───────────────────────────────────────────────────── -->
+<main id="app"></main>
+<div id="toasts"></div>
+
+<script>
+'use strict';
+
+// ─── State ────────────────────────────────────────────────────────────────────
+let prog  = null;   // the single programs[0] object we're editing
+let meta  = null;   // {schemaVersion} from the wrapper
+let openP = {};     // planId → bool (body expanded)
+let openW = {};     // workoutId → bool (body expanded)
+
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+const uid = () => crypto.randomUUID();
+
+function slug(name) {
+  return 'ex_' + name.toLowerCase().trim()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_|_$/g, '');
+}
+
+function toast(msg) {
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  document.getElementById('toasts').appendChild(t);
+  setTimeout(() => t.remove(), 2200);
+}
+
+function closeModal(id) { document.getElementById(id).hidden = true; }
+
+function esc(s) {
+  return String(s ?? '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+// ─── Exercise library helpers ─────────────────────────────────────────────────
+function getExerciseName(id) {
+  return prog.exercises.find(e => e.id === id)?.name ?? id;
+}
+
+/** Get or create an exercise by name; returns its id. */
+function ensureExercise(name) {
+  const norm = name.trim();
+  if (!norm) return '';
+  const existing = prog.exercises.find(
+    e => e.name.toLowerCase() === norm.toLowerCase()
+  );
+  if (existing) return existing.id;
+  const id = slug(norm);
+  prog.exercises.push({ id, name: norm, category: 'other', equipment: [], notes: '' });
+  return id;
+}
+
+// ─── Reps helpers ─────────────────────────────────────────────────────────────
+function parseReps(str) {
+  const s = str.trim();
+  if (!s) return { repsMin: null, repsMax: null, repsText: null };
+  const range = s.match(/^(\d+)\s*[-–]\s*(\d+)$/);
+  if (range) return { repsMin: +range[1], repsMax: +range[2], repsText: null };
+  const single = s.match(/^(\d+)$/);
+  if (single) { const n = +single[1]; return { repsMin: n, repsMax: n, repsText: null }; }
+  return { repsMin: null, repsMax: null, repsText: s };
+}
+
+function displayReps(pe) {
+  if (pe.repsText) return pe.repsText;
+  if (pe.repsMin != null && pe.repsMax != null)
+    return pe.repsMin === pe.repsMax ? String(pe.repsMin) : `${pe.repsMin}–${pe.repsMax}`;
+  return pe.repsMin ?? pe.repsMax ?? '';
+}
+
+// ─── New program ──────────────────────────────────────────────────────────────
+function newProgram() {
+  meta = { schemaVersion: '1.0' };
+  prog = {
+    id: uid(),
+    name: 'My Program',
+    version: '1.0.0',
+    description: '',
+    tags: [],
+    targetProfile: '',
+    createdAt: new Date().toISOString(),
+    sourceUrl: null,
+    plans: [],
+    exercises: [],
+    mobilityRoutines: [],
+    benchmarks: [],
+    citations: [],
+    releaseNotes: null,
+  };
+  openP = {}; openW = {};
+  render();
+}
+
+// ─── Import ───────────────────────────────────────────────────────────────────
+function showImport() {
+  document.getElementById('import-text').value = '';
+  document.getElementById('import-file').value = '';
+  document.getElementById('import-error').hidden = true;
+  document.getElementById('modal-import').hidden = false;
+}
+
+function handleFile(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => { document.getElementById('import-text').value = ev.target.result; };
+  reader.readAsText(file);
+}
+
+function doImport() {
+  const text = document.getElementById('import-text').value.trim();
+  const errEl = document.getElementById('import-error');
+  errEl.hidden = true;
+  if (!text) { errEl.textContent = 'Please paste or load a JSON file.'; errEl.hidden = false; return; }
+  let data;
+  try { data = JSON.parse(text); } catch(e) {
+    errEl.textContent = `Invalid JSON: ${e.message}`; errEl.hidden = false; return;
+  }
+  // Accept either a ProgramsPayload wrapper or a bare program object
+  if (data.programs && Array.isArray(data.programs)) {
+    meta = { schemaVersion: data.schemaVersion || '1.0' };
+    prog = JSON.parse(JSON.stringify(data.programs[0]));
+  } else if (data.id && data.plans) {
+    meta = { schemaVersion: '1.0' };
+    prog = JSON.parse(JSON.stringify(data));
+  } else {
+    errEl.textContent = 'Unrecognised format — expected a Pillar programs JSON.';
+    errEl.hidden = false; return;
+  }
+  // Ensure required arrays exist
+  prog.exercises       = prog.exercises       ?? [];
+  prog.mobilityRoutines= prog.mobilityRoutines?? [];
+  prog.benchmarks      = prog.benchmarks      ?? [];
+  prog.citations       = prog.citations       ?? [];
+  prog.plans           = prog.plans           ?? [];
+  openP = {}; openW = {};
+  closeModal('modal-import');
+  render();
+  toast(`Imported "${prog.name}" v${prog.version}`);
+}
+
+// ─── Export ───────────────────────────────────────────────────────────────────
+function buildPayload() {
+  // Prune exercises not referenced by any PE, but keep all to avoid data loss
+  const payload = {
+    schemaVersion: meta?.schemaVersion ?? '1.0',
+    programs: [JSON.parse(JSON.stringify(prog))],
+  };
+  return payload;
+}
+
+function showExport() {
+  const json = JSON.stringify(buildPayload(), null, 2);
+  document.getElementById('export-text').value = json;
+  document.getElementById('modal-export').hidden = false;
+}
+
+function copyExport() {
+  const txt = document.getElementById('export-text').value;
+  navigator.clipboard.writeText(txt).then(() => toast('Copied to clipboard!'));
+}
+
+function downloadExport() {
+  const txt  = document.getElementById('export-text').value;
+  const name = (prog.name || 'program').toLowerCase().replace(/[^a-z0-9]+/g,'_');
+  const a = document.createElement('a');
+  a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(txt);
+  a.download = `${name}_v${prog.version ?? '1.0.0'}.json`;
+  a.click();
+  toast('Download started');
+}
+
+// ─── Mutations: Program info ──────────────────────────────────────────────────
+function updProg(field, val) {
+  if (field === 'tags') { prog.tags = val.split(',').map(s => s.trim()).filter(Boolean); }
+  else                  { prog[field] = val; }
+  render();
+}
+
+// ─── Mutations: Plans ─────────────────────────────────────────────────────────
+function addPlan() {
+  const id = uid();
+  prog.plans.push({
+    id, name: 'New Plan', daysPerWeek: 3, orderIndex: prog.plans.length,
+    scheduleDescription: '', phaseName: null, phaseOrder: null,
+    phaseDurationWeeks: null, deloadWeekNumber: null, dynamicEquipment: false,
+    workouts: [],
+  });
+  openP[id] = true;
+  render();
+}
+
+function removePlan(pIdx) {
+  if (!confirm('Remove this plan and all its workouts?')) return;
+  prog.plans.splice(pIdx, 1);
+  prog.plans.forEach((p, i) => p.orderIndex = i);
+  render();
+}
+
+function movePlan(pIdx, dir) {
+  const to = pIdx + dir;
+  if (to < 0 || to >= prog.plans.length) return;
+  [prog.plans[pIdx], prog.plans[to]] = [prog.plans[to], prog.plans[pIdx]];
+  prog.plans.forEach((p, i) => p.orderIndex = i);
+  render();
+}
+
+function updPlan(pIdx, field, val) {
+  const p = prog.plans[pIdx];
+  if (['daysPerWeek','phaseOrder','phaseDurationWeeks','deloadWeekNumber'].includes(field))
+    p[field] = val === '' ? null : Number(val);
+  else
+    p[field] = val === '' ? null : val;
+  render();
+}
+
+function togglePlan(id) { openP[id] = !openP[id]; render(); }
+
+// ─── Mutations: Workouts ──────────────────────────────────────────────────────
+function addWorkout(pIdx) {
+  const id = uid();
+  prog.plans[pIdx].workouts.push({
+    id, dayLabel: '', sessionType: 'New Workout', durationRange: '', location: 'home',
+    keyMetrics: '', activityType: 'strength', orderIndex: prog.plans[pIdx].workouts.length,
+    preMobilityIds: [], postMobilityIds: [], groups: [],
+  });
+  openW[id] = true;
+  render();
+}
+
+function removeWorkout(pIdx, wIdx) {
+  if (!confirm('Remove this workout?')) return;
+  prog.plans[pIdx].workouts.splice(wIdx, 1);
+  prog.plans[pIdx].workouts.forEach((w, i) => w.orderIndex = i);
+  render();
+}
+
+function moveWorkout(pIdx, wIdx, dir) {
+  const ws = prog.plans[pIdx].workouts;
+  const to = wIdx + dir;
+  if (to < 0 || to >= ws.length) return;
+  [ws[wIdx], ws[to]] = [ws[to], ws[wIdx]];
+  ws.forEach((w, i) => w.orderIndex = i);
+  render();
+}
+
+function updWorkout(pIdx, wIdx, field, val) {
+  prog.plans[pIdx].workouts[wIdx][field] = val;
+  render();
+}
+
+function toggleWorkout(id) { openW[id] = !openW[id]; render(); }
+
+// ─── Mutations: Blocks ────────────────────────────────────────────────────────
+function addBlock(pIdx, wIdx) {
+  const w = prog.plans[pIdx].workouts[wIdx];
+  w.groups.push({ name: 'Block', orderIndex: w.groups.length, exercises: [] });
+  render();
+}
+
+function removeBlock(pIdx, wIdx, bIdx) {
+  if (!confirm('Remove this block and all its exercises?')) return;
+  prog.plans[pIdx].workouts[wIdx].groups.splice(bIdx, 1);
+  prog.plans[pIdx].workouts[wIdx].groups.forEach((b, i) => b.orderIndex = i);
+  render();
+}
+
+function moveBlock(pIdx, wIdx, bIdx, dir) {
+  const gs = prog.plans[pIdx].workouts[wIdx].groups;
+  const to = bIdx + dir;
+  if (to < 0 || to >= gs.length) return;
+  [gs[bIdx], gs[to]] = [gs[to], gs[bIdx]];
+  gs.forEach((b, i) => b.orderIndex = i);
+  render();
+}
+
+function updBlock(pIdx, wIdx, bIdx, val) {
+  prog.plans[pIdx].workouts[wIdx].groups[bIdx].name = val;
+  // no re-render — block name input handles its own focus
+}
+
+// ─── Mutations: Exercises ─────────────────────────────────────────────────────
+function addExercise(pIdx, wIdx, bIdx) {
+  const exId = ensureExercise('New Exercise');
+  prog.plans[pIdx].workouts[wIdx].groups[bIdx].exercises.push({
+    exerciseId: exId, sets: 3, repsMin: 8, repsMax: 12, repsText: null,
+    durationSeconds: null, perSide: false, logMode: 'reps',
+    load: '', tempo: '', notes: '', priority: 'core',
+    orderIndex: prog.plans[pIdx].workouts[wIdx].groups[bIdx].exercises.length,
+  });
+  render();
+}
+
+function removeExercise(pIdx, wIdx, bIdx, eIdx) {
+  prog.plans[pIdx].workouts[wIdx].groups[bIdx].exercises.splice(eIdx, 1);
+  prog.plans[pIdx].workouts[wIdx].groups[bIdx].exercises.forEach((e, i) => e.orderIndex = i);
+  render();
+}
+
+function updExName(pIdx, wIdx, bIdx, eIdx, name) {
+  const id = ensureExercise(name);
+  prog.plans[pIdx].workouts[wIdx].groups[bIdx].exercises[eIdx].exerciseId = id;
+  render();
+}
+
+function updExField(pIdx, wIdx, bIdx, eIdx, field, val) {
+  const pe = prog.plans[pIdx].workouts[wIdx].groups[bIdx].exercises[eIdx];
+  if (field === 'sets') pe.sets = val === '' ? 1 : +val;
+  else if (field === 'reps') { Object.assign(pe, parseReps(val)); }
+  else pe[field] = val;
+  render();
+}
+
+// ─── Rendering ────────────────────────────────────────────────────────────────
+function render() {
+  const app = document.getElementById('app');
+  document.getElementById('btn-export').disabled = !prog;
+  if (!prog) {
+    app.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">📋</div>
+        <h2>No program loaded</h2>
+        <p>Import an existing program JSON or create a new one from scratch.</p>
+        <div class="empty-actions">
+          <button class="btn btn-secondary btn-lg" onclick="showImport()">Import JSON</button>
+          <button class="btn btn-primary btn-lg" onclick="newProgram()">New Program</button>
+        </div>
+      </div>`;
+    return;
+  }
+  app.innerHTML = programInfoHTML() + plansHTML();
+}
+
+function programInfoHTML() {
+  const p = prog;
+  return `
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Program Info</span>
+    </div>
+    <div class="card-body">
+      <div class="field-grid">
+        <div class="field-row">
+          <label>Name</label>
+          <input type="text" value="${esc(p.name)}" onblur="updProg('name',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Version</label>
+          <input type="text" value="${esc(p.version)}" placeholder="1.0.0" onblur="updProg('version',this.value)">
+        </div>
+        <div class="field-row" style="grid-column:1/-1">
+          <label>Description</label>
+          <textarea rows="2" onblur="updProg('description',this.value)">${esc(p.description)}</textarea>
+        </div>
+        <div class="field-row">
+          <label>Target Profile</label>
+          <input type="text" value="${esc(p.targetProfile)}" placeholder="e.g. Recreational athlete" onblur="updProg('targetProfile',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Tags (comma-separated)</label>
+          <input type="text" value="${esc((p.tags||[]).join(', '))}" placeholder="strength, home, beginner" onblur="updProg('tags',this.value)">
+        </div>
+      </div>
+      ${p.mobilityRoutines?.length || p.benchmarks?.length || p.citations?.length ? `
+        <p class="note">ℹ️ This program also contains ${[
+          p.mobilityRoutines?.length && `${p.mobilityRoutines.length} mobility routine(s)`,
+          p.benchmarks?.length && `${p.benchmarks.length} benchmark(s)`,
+          p.citations?.length && `${p.citations.length} citation(s)`,
+        ].filter(Boolean).join(', ')} — preserved in the export but not editable here yet.</p>` : ''}
+    </div>
+  </div>`;
+}
+
+function plansHTML() {
+  const plans = (prog.plans || []).sort((a,b) => a.orderIndex - b.orderIndex);
+  const rows = plans.map((plan, pIdx) => planHTML(plan, pIdx)).join('');
+  return `
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Plans</span>
+      <span class="plan-meta">${plans.length} plan${plans.length !== 1 ? 's' : ''}</span>
+      <button class="btn btn-sm btn-primary" onclick="addPlan()">+ Add Plan</button>
+    </div>
+    <div class="card-body" style="padding:12px">
+      ${rows || '<div class="empty-state" style="padding:24px"><p>No plans yet — add one above.</p></div>'}
+    </div>
+  </div>`;
+}
+
+function planHTML(plan, pIdx) {
+  const isOpen = !!openP[plan.id];
+  const wCount = plan.workouts?.length ?? 0;
+  const phaseBadge = plan.phaseName
+    ? `<span class="badge" style="margin-left:6px">${esc(plan.phaseName)}</span>` : '';
+
+  const workouts = (plan.workouts || []).sort((a,b) => a.orderIndex - b.orderIndex);
+  const workoutRows = workouts.map((w, wIdx) => workoutHTML(plan, w, pIdx, wIdx)).join('');
+
+  return `
+  <div class="plan-card">
+    <div class="plan-header" onclick="togglePlan('${plan.id}')">
+      <span class="chev ${isOpen ? 'open' : ''}">▶</span>
+      <span class="plan-title">${esc(plan.name)}${phaseBadge}</span>
+      <span class="plan-meta">${plan.daysPerWeek ?? '?'} days/wk · ${wCount} workout${wCount!==1?'s':''}</span>
+      <button class="btn-icon" title="Move up"    onclick="event.stopPropagation();movePlan(${pIdx},-1)">↑</button>
+      <button class="btn-icon" title="Move down"  onclick="event.stopPropagation();movePlan(${pIdx},+1)">↓</button>
+      <button class="btn-icon danger" title="Delete" onclick="event.stopPropagation();removePlan(${pIdx})">✕</button>
+    </div>
+    ${isOpen ? `
+    <div class="plan-fields">
+      <div class="field-grid">
+        <div class="field-row">
+          <label>Plan Name</label>
+          <input type="text" value="${esc(plan.name)}" onblur="updPlan(${pIdx},'name',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Days / Week</label>
+          <input type="number" min="1" max="7" value="${plan.daysPerWeek ?? ''}" onblur="updPlan(${pIdx},'daysPerWeek',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Schedule Description</label>
+          <input type="text" value="${esc(plan.scheduleDescription ?? '')}" placeholder="e.g. Mon / Wed / Fri" onblur="updPlan(${pIdx},'scheduleDescription',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Phase Name</label>
+          <input type="text" value="${esc(plan.phaseName ?? '')}" placeholder="e.g. Foundation" onblur="updPlan(${pIdx},'phaseName',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Phase Order</label>
+          <input type="number" min="1" value="${plan.phaseOrder ?? ''}" placeholder="1" onblur="updPlan(${pIdx},'phaseOrder',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Phase Duration (weeks)</label>
+          <input type="number" min="1" value="${plan.phaseDurationWeeks ?? ''}" onblur="updPlan(${pIdx},'phaseDurationWeeks',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Deload Week #</label>
+          <input type="number" min="1" value="${plan.deloadWeekNumber ?? ''}" placeholder="last week of phase" onblur="updPlan(${pIdx},'deloadWeekNumber',this.value)">
+        </div>
+      </div>
+    </div>
+    <div class="plan-body">
+      <div class="section-label">Workouts</div>
+      ${workoutRows || '<p class="note">No workouts yet.</p>'}
+      <button class="btn btn-sm btn-secondary" style="margin-top:8px" onclick="addWorkout(${pIdx})">+ Add Workout</button>
+    </div>` : ''}
+  </div>`;
+}
+
+function workoutHTML(plan, workout, pIdx, wIdx) {
+  const isOpen = !!openW[workout.id];
+  const bCount = workout.groups?.length ?? 0;
+  const blocks = (workout.groups || []).sort((a,b) => a.orderIndex - b.orderIndex);
+  const blockRows = blocks.map((b, bIdx) => blockHTML(b, pIdx, wIdx, bIdx)).join('');
+
+  const ACTIVITY_TYPES = ['strength','cardio','hiit','climbing','core','functional','mixed'];
+  const atOpts = ACTIVITY_TYPES.map(t =>
+    `<option value="${t}" ${workout.activityType===t?'selected':''}>${t}</option>`
+  ).join('');
+
+  return `
+  <div class="workout-card">
+    <div class="workout-header" onclick="toggleWorkout('${workout.id}')">
+      <span class="chev ${isOpen ? 'open' : ''}">▶</span>
+      <span class="workout-title">${esc(workout.sessionType || workout.dayLabel)}</span>
+      <span class="workout-meta">${bCount} block${bCount!==1?'s':''}</span>
+      <button class="btn-icon" title="Move up"    onclick="event.stopPropagation();moveWorkout(${pIdx},${wIdx},-1)">↑</button>
+      <button class="btn-icon" title="Move down"  onclick="event.stopPropagation();moveWorkout(${pIdx},${wIdx},+1)">↓</button>
+      <button class="btn-icon danger" title="Delete" onclick="event.stopPropagation();removeWorkout(${pIdx},${wIdx})">✕</button>
+    </div>
+    ${isOpen ? `
+    <div class="workout-fields">
+      <div class="field-grid">
+        <div class="field-row">
+          <label>Session Type / Name</label>
+          <input type="text" value="${esc(workout.sessionType)}" placeholder="e.g. Lower Body" onblur="updWorkout(${pIdx},${wIdx},'sessionType',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Day Label</label>
+          <input type="text" value="${esc(workout.dayLabel)}" placeholder="e.g. Monday" onblur="updWorkout(${pIdx},${wIdx},'dayLabel',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Duration Range</label>
+          <input type="text" value="${esc(workout.durationRange ?? '')}" placeholder="45–60 min" onblur="updWorkout(${pIdx},${wIdx},'durationRange',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Location</label>
+          <input type="text" value="${esc(workout.location ?? '')}" placeholder="home / gym" onblur="updWorkout(${pIdx},${wIdx},'location',this.value)">
+        </div>
+        <div class="field-row">
+          <label>Activity Type</label>
+          <select onchange="updWorkout(${pIdx},${wIdx},'activityType',this.value)">${atOpts}</select>
+        </div>
+        <div class="field-row">
+          <label>Key Metrics</label>
+          <input type="text" value="${esc(workout.keyMetrics ?? '')}" placeholder="e.g. Volume load, Zone 2 min" onblur="updWorkout(${pIdx},${wIdx},'keyMetrics',this.value)">
+        </div>
+      </div>
+    </div>
+    <div class="workout-body">
+      <div class="section-label">Blocks</div>
+      ${blockRows || '<p class="note">No blocks yet.</p>'}
+      <button class="btn btn-sm btn-secondary" style="margin-top:8px" onclick="addBlock(${pIdx},${wIdx})">+ Add Block</button>
+    </div>` : ''}
+  </div>`;
+}
+
+function blockHTML(block, pIdx, wIdx, bIdx) {
+  const exercises = (block.exercises || []).sort((a,b) => a.orderIndex - b.orderIndex);
+  const exRows = exercises.map((pe, eIdx) => exerciseRowHTML(pe, pIdx, wIdx, bIdx, eIdx)).join('');
+
+  return `
+  <div class="block-card">
+    <div class="block-header">
+      <input class="block-name-input" type="text" value="${esc(block.name)}"
+             onblur="updBlock(${pIdx},${wIdx},${bIdx},this.value)"
+             title="Click to rename this block">
+      <span class="spacer"></span>
+      <button class="btn-icon" title="Move up"   onclick="moveBlock(${pIdx},${wIdx},${bIdx},-1)">↑</button>
+      <button class="btn-icon" title="Move down" onclick="moveBlock(${pIdx},${wIdx},${bIdx},+1)">↓</button>
+      <button class="btn-icon danger" title="Delete block" onclick="removeBlock(${pIdx},${wIdx},${bIdx})">✕</button>
+    </div>
+    <table class="ex-table">
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+          <th>Load</th>
+          <th>Notes</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        ${exRows || `<tr><td colspan="6" style="text-align:center;padding:10px;color:var(--text3);font-size:13px">No exercises — add one below</td></tr>`}
+      </tbody>
+    </table>
+    <div style="padding:6px 10px">
+      <button class="btn btn-sm btn-secondary" onclick="addExercise(${pIdx},${wIdx},${bIdx})">+ Add Exercise</button>
+    </div>
+  </div>`;
+}
+
+function exerciseRowHTML(pe, pIdx, wIdx, bIdx, eIdx) {
+  const name = getExerciseName(pe.exerciseId);
+  const reps = displayReps(pe);
+  return `
+  <tr>
+    <td><input class="ex-name" type="text" value="${esc(name)}"
+               onblur="updExName(${pIdx},${wIdx},${bIdx},${eIdx},this.value)"
+               placeholder="Exercise name"></td>
+    <td><input type="number" min="1" value="${pe.sets ?? 3}"
+               onblur="updExField(${pIdx},${wIdx},${bIdx},${eIdx},'sets',this.value)"></td>
+    <td><input class="ex-reps" type="text" value="${esc(reps)}"
+               onblur="updExField(${pIdx},${wIdx},${bIdx},${eIdx},'reps',this.value)"
+               placeholder="8–12"></td>
+    <td><input class="ex-load" type="text" value="${esc(pe.load ?? '')}"
+               onblur="updExField(${pIdx},${wIdx},${bIdx},${eIdx},'load',this.value)"
+               placeholder="Bodyweight"></td>
+    <td><input class="ex-notes" type="text" value="${esc(pe.notes ?? '')}"
+               onblur="updExField(${pIdx},${wIdx},${bIdx},${eIdx},'notes',this.value)"
+               placeholder="Coaching cue"></td>
+    <td><button class="btn-icon danger" title="Remove" onclick="removeExercise(${pIdx},${wIdx},${bIdx},${eIdx})">✕</button></td>
+  </tr>`;
+}
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+render();
+</script>
+</body>
+</html>
