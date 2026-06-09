@@ -157,6 +157,19 @@
     .empty-actions  { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .btn-lg { padding: 11px 22px; font-size: 15px; }
 
+    /* ── Autocomplete ── */
+    .ac-dropdown { position: absolute; z-index: 500; background: var(--surface);
+                   border: 1px solid var(--border); border-radius: var(--r-sm);
+                   box-shadow: 0 4px 24px rgba(0,0,0,.18); overflow: hidden;
+                   min-width: 220px; max-height: 260px; overflow-y: auto; }
+    .ac-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px;
+               cursor: pointer; font-size: 13px; }
+    .ac-item:hover  { background: var(--surface2); }
+    .ac-item.hi     { background: rgba(0,122,255,.1); }
+    .ac-name { flex: 1; font-weight: 500; }
+    .ac-cat  { font-size: 11px; color: var(--text3); text-transform: capitalize;
+               background: var(--surface2); padding: 2px 6px; border-radius: 4px; }
+
     /* ── Template cards ── */
     .template-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 4px; }
     .template-card { border: 1px solid var(--border); border-radius: var(--r); padding: 16px;
@@ -247,6 +260,9 @@
     </div>
   </div>
 </div>
+
+<!-- ── Autocomplete dropdown (global, repositioned by JS) ────────── -->
+<div id="ac-dropdown" class="ac-dropdown" hidden></div>
 
 <!-- ── App root ───────────────────────────────────────────────────── -->
 <main id="app"></main>
@@ -800,8 +816,10 @@ function exerciseRowHTML(pe, pIdx, wIdx, bIdx, eIdx) {
   const reps = displayReps(pe);
   return `
   <tr>
-    <td><input class="ex-name" type="text" value="${esc(name)}"
-               onblur="updExName(${pIdx},${wIdx},${bIdx},${eIdx},this.value)"
+    <td><input class="ex-name" type="text" value="${esc(name)}" autocomplete="off"
+               oninput="onExInput(this,${pIdx},${wIdx},${bIdx},${eIdx})"
+               onkeydown="onExKeydown(event,${pIdx},${wIdx},${bIdx},${eIdx})"
+               onblur="onExBlur(this,${pIdx},${wIdx},${bIdx},${eIdx})"
                placeholder="Exercise name"></td>
     <td><input type="number" min="1" value="${pe.sets ?? 3}"
                onblur="updExField(${pIdx},${wIdx},${bIdx},${eIdx},'sets',this.value)"></td>
@@ -817,6 +835,125 @@ function exerciseRowHTML(pe, pIdx, wIdx, bIdx, eIdx) {
     <td><button class="btn-icon danger" title="Remove" onclick="removeExercise(${pIdx},${wIdx},${bIdx},${eIdx})">✕</button></td>
   </tr>`;
 }
+
+// ─── Autocomplete ─────────────────────────────────────────────────────────────
+
+let exercisePool = {};   // name.toLowerCase() → {id, name, category}
+let acCtx = null;        // {pIdx, wIdx, bIdx, eIdx, input}
+let acList = [];         // current suggestion list
+let acIdx  = -1;         // keyboard-selected index
+
+/** Rebuild the pool from template cache + current program (prog wins on conflict). */
+function buildExercisePool() {
+  exercisePool = {};
+  Object.values(templateCache).forEach(data => {
+    (data.programs?.[0]?.exercises ?? []).forEach(e => {
+      exercisePool[e.name.toLowerCase()] = e;
+    });
+  });
+  (prog?.exercises ?? []).forEach(e => {
+    exercisePool[e.name.toLowerCase()] = e;
+  });
+}
+
+function getExerciseSuggestions(query) {
+  const q = query.toLowerCase().trim();
+  if (!q) return [];
+  return Object.values(exercisePool)
+    .filter(e => e.name.toLowerCase().includes(q))
+    .sort((a, b) => {
+      const al = a.name.toLowerCase(), bl = b.name.toLowerCase();
+      const as = al.startsWith(q), bs = bl.startsWith(q);
+      if (as !== bs) return as ? -1 : 1;
+      return al.localeCompare(bl);
+    })
+    .slice(0, 10);
+}
+
+function renderAcDropdown() {
+  const dd = document.getElementById('ac-dropdown');
+  if (!acList.length || !acCtx) { dd.hidden = true; return; }
+
+  dd.innerHTML = acList.map((s, i) => `
+    <div class="ac-item ${i === acIdx ? 'hi' : ''}"
+         onmousedown="event.preventDefault();acSelect(${i})">
+      <span class="ac-name">${esc(s.name)}</span>
+      <span class="ac-cat">${esc(s.category ?? '')}</span>
+    </div>`).join('');
+
+  // Position below the input, escaping table overflow
+  const rect = acCtx.input.getBoundingClientRect();
+  dd.style.top   = (rect.bottom + window.scrollY + 2) + 'px';
+  dd.style.left  = (rect.left  + window.scrollX)     + 'px';
+  dd.style.width = Math.max(rect.width, 240)          + 'px';
+  dd.hidden = false;
+}
+
+function acHide() {
+  document.getElementById('ac-dropdown').hidden = true;
+  acCtx = null; acList = []; acIdx = -1;
+}
+
+function acSelect(idx) {
+  const s = acList[idx];
+  if (!s || !acCtx) return;
+  const { pIdx, wIdx, bIdx, eIdx, input } = acCtx;
+
+  // Ensure the exercise exists in this program's library
+  if (!prog.exercises.find(e => e.id === s.id)) {
+    prog.exercises.push({ id: s.id, name: s.name, category: s.category ?? 'other', equipment: s.equipment ?? [], notes: '' });
+  }
+  prog.plans[pIdx].workouts[wIdx].groups[bIdx].exercises[eIdx].exerciseId = s.id;
+  acHide();
+  render();
+}
+
+// Called on every keystroke in an exercise-name input
+function onExInput(input, pIdx, wIdx, bIdx, eIdx) {
+  buildExercisePool();
+  acCtx  = { pIdx, wIdx, bIdx, eIdx, input };
+  acList = getExerciseSuggestions(input.value);
+  acIdx  = -1;
+  renderAcDropdown();
+}
+
+// Arrow / Enter / Esc navigation
+function onExKeydown(e, pIdx, wIdx, bIdx, eIdx) {
+  if (document.getElementById('ac-dropdown').hidden) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    acIdx = Math.min(acIdx + 1, acList.length - 1);
+    renderAcDropdown();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    acIdx = Math.max(acIdx - 1, 0);
+    renderAcDropdown();
+  } else if (e.key === 'Enter' && acIdx >= 0) {
+    e.preventDefault();
+    acSelect(acIdx);
+  } else if (e.key === 'Escape') {
+    acHide();
+  }
+}
+
+// Blur: hide dropdown then commit the typed value
+function onExBlur(input, pIdx, wIdx, bIdx, eIdx) {
+  // 150 ms grace period so mousedown on a suggestion fires first
+  setTimeout(() => {
+    acHide();
+    updExName(pIdx, wIdx, bIdx, eIdx, input.value);
+  }, 150);
+}
+
+// Prefetch both template files on page load so the pool is ready immediately
+window.addEventListener('load', () => {
+  TEMPLATES.forEach(t => {
+    fetch(t.file)
+      .then(r => r.json())
+      .then(data => { templateCache[t.file] = data; buildExercisePool(); })
+      .catch(() => {});
+  });
+});
 
 // ─── Templates ────────────────────────────────────────────────────────────────
 
