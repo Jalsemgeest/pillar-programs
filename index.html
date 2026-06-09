@@ -157,6 +157,16 @@
     .empty-actions  { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .btn-lg { padding: 11px 22px; font-size: 15px; }
 
+    /* ── Template cards ── */
+    .template-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 4px; }
+    .template-card { border: 1px solid var(--border); border-radius: var(--r); padding: 16px;
+                     display: flex; flex-direction: column; gap: 8px; background: var(--surface2); }
+    .template-card h3 { font-size: 15px; font-weight: 700; }
+    .template-card p  { font-size: 13px; color: var(--text3); flex: 1; line-height: 1.4; }
+    .template-meta    { font-size: 12px; color: var(--text3); display: flex; gap: 10px; flex-wrap: wrap; }
+    .template-meta span::before { content: '· '; }
+    .template-meta span:first-child::before { content: ''; }
+
     /* ── Toast ── */
     .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
              background: var(--text); color: var(--bg); padding: 9px 20px;
@@ -183,6 +193,7 @@
   <span class="logo-sub">Program Builder</span>
   <div class="header-actions">
     <button class="btn btn-secondary" onclick="showImport()">Import JSON</button>
+    <button class="btn btn-secondary" onclick="showTemplates()">From Template</button>
     <button class="btn btn-secondary" onclick="newProgram()">New Program</button>
     <button class="btn btn-primary" id="btn-export" onclick="showExport()" disabled>Export</button>
   </div>
@@ -219,6 +230,20 @@
       <button class="btn btn-secondary" onclick="closeModal('modal-export')">Close</button>
       <button class="btn btn-secondary" onclick="copyExport()">Copy to Clipboard</button>
       <button class="btn btn-primary" onclick="downloadExport()">Download .json</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Templates modal ───────────────────────────────────────────── -->
+<div id="modal-templates" class="overlay" hidden>
+  <div class="modal" style="max-width:640px">
+    <h2>Start from a Template</h2>
+    <p class="modal-desc">Choose a bundled program as your starting point. A copy will be loaded into the editor — the originals are never modified.</p>
+    <div id="template-grid" class="template-grid">
+      <div style="color:var(--text3);font-size:14px;padding:12px 0">Loading templates…</div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('modal-templates')">Cancel</button>
     </div>
   </div>
 </div>
@@ -791,6 +816,94 @@ function exerciseRowHTML(pe, pIdx, wIdx, bIdx, eIdx) {
                placeholder="Coaching cue"></td>
     <td><button class="btn-icon danger" title="Remove" onclick="removeExercise(${pIdx},${wIdx},${bIdx},${eIdx})">✕</button></td>
   </tr>`;
+}
+
+// ─── Templates ────────────────────────────────────────────────────────────────
+
+const TEMPLATES = [
+  {
+    file: 'four_pillar_v1.json',
+    name: 'Four Pillar',
+    description: 'Longevity-focused 4-day program: lower body, upper body, climbing antagonist, and VO₂ max. Evidence base: Attia, McGill, Maffetone. Evergreen — no phases.',
+    tags: ['strength', 'cardio', 'longevity', 'home'],
+    plans: '3-day and 4-day variants',
+  },
+  {
+    file: 'general_strength_v1.json',
+    name: 'General Strength & Conditioning',
+    description: '4-phase block periodisation: Foundation → Hypertrophy → Strength → Conditioning. Home gym, adjustable dumbbells. Includes phase-themed mobility rotation and deload weeks.',
+    tags: ['strength', 'periodisation', 'home', 'gsc'],
+    plans: '4 phases × 2 day-count variants',
+  },
+];
+
+// Cached fetched payloads so we only download once per session
+const templateCache = {};
+
+async function showTemplates() {
+  document.getElementById('modal-templates').hidden = false;
+  const grid = document.getElementById('template-grid');
+
+  // Render placeholder cards immediately (no spinner delay)
+  grid.innerHTML = TEMPLATES.map((t, i) => `
+    <div class="template-card">
+      <h3>${esc(t.name)}</h3>
+      <p>${esc(t.description)}</p>
+      <div class="template-meta">
+        <span>${esc(t.plans)}</span>
+        ${t.tags.map(tag => `<span>${esc(tag)}</span>`).join('')}
+      </div>
+      <button class="btn btn-primary btn-sm" id="tpl-btn-${i}"
+              onclick="useTemplate(${i})">Use as Template</button>
+    </div>`).join('');
+
+  // Prefetch in background so the button is instant when clicked
+  TEMPLATES.forEach((t, i) => {
+    if (!templateCache[t.file]) {
+      fetch(t.file)
+        .then(r => r.json())
+        .then(data => { templateCache[t.file] = data; })
+        .catch(() => {}); // silent — will retry on click
+    }
+  });
+}
+
+async function useTemplate(idx) {
+  const tpl = TEMPLATES[idx];
+  const btn = document.getElementById(`tpl-btn-${idx}`);
+  btn.textContent = 'Loading…';
+  btn.disabled = true;
+
+  try {
+    if (!templateCache[tpl.file]) {
+      templateCache[tpl.file] = await fetch(tpl.file).then(r => r.json());
+    }
+    const data = templateCache[tpl.file];
+    const source = data.programs?.[0] ?? data;
+
+    // Deep-clone and make it a fresh fork
+    prog = JSON.parse(JSON.stringify(source));
+    prog.id         = uid();
+    prog.name       = `Copy of ${prog.name}`;
+    prog.version    = '1.0.0';
+    prog.sourceUrl  = null;     // fork has no remote URL
+    prog.createdAt  = new Date().toISOString();
+    // Ensure required arrays
+    prog.exercises        = prog.exercises        ?? [];
+    prog.mobilityRoutines = prog.mobilityRoutines ?? [];
+    prog.benchmarks       = prog.benchmarks       ?? [];
+    prog.citations        = prog.citations        ?? [];
+    meta = { schemaVersion: data.schemaVersion ?? '1.0' };
+
+    openP = {}; openW = {};
+    closeModal('modal-templates');
+    render();
+    toast(`Loaded "${prog.name}" — ready to edit`);
+  } catch (e) {
+    btn.textContent = 'Use as Template';
+    btn.disabled = false;
+    toast('Failed to load template — check your connection');
+  }
 }
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
