@@ -838,21 +838,23 @@ function exerciseRowHTML(pe, pIdx, wIdx, bIdx, eIdx) {
 
 // ─── Autocomplete ─────────────────────────────────────────────────────────────
 
-let exercisePool = {};   // name.toLowerCase() → {id, name, category}
+let exercisePool = {};   // name.toLowerCase() → {id, name, category, equipment}
 let acCtx = null;        // {pIdx, wIdx, bIdx, eIdx, input}
 let acList = [];         // current suggestion list
 let acIdx  = -1;         // keyboard-selected index
 
-/** Rebuild the pool from template cache + current program (prog wins on conflict). */
+/**
+ * Rebuild the pool: app exercise DB (base) + current program exercises (override).
+ * The DB is already loaded into exercisePool on startup; calling this again just
+ * layers the current program's exercises on top so custom names take priority.
+ */
 function buildExercisePool() {
-  exercisePool = {};
-  Object.values(templateCache).forEach(data => {
-    (data.programs?.[0]?.exercises ?? []).forEach(e => {
-      exercisePool[e.name.toLowerCase()] = e;
-    });
-  });
+  // Re-layer current program exercises on top of the DB baseline.
+  // We don't wipe the DB entries — just overwrite matching names.
   (prog?.exercises ?? []).forEach(e => {
-    exercisePool[e.name.toLowerCase()] = e;
+    exercisePool[e.name.toLowerCase()] = {
+      id: e.id, name: e.name, category: e.category ?? 'other', equipment: e.equipment ?? []
+    };
   });
 }
 
@@ -945,12 +947,26 @@ function onExBlur(input, pIdx, wIdx, bIdx, eIdx) {
   }, 150);
 }
 
-// Prefetch both template files on page load so the pool is ready immediately
+// Load the full app exercise DB on page load (~95 KB, fetched once).
+// Populates exercisePool so autocomplete works immediately when the user
+// starts editing, before any template has been opened.
 window.addEventListener('load', () => {
+  fetch('exercises.json')
+    .then(r => r.json())
+    .then(data => {
+      (data.exercises ?? []).forEach(e => {
+        exercisePool[e.name.toLowerCase()] = {
+          id: e.id, name: e.name, category: e.category ?? 'other', equipment: e.equipment ?? []
+        };
+      });
+    })
+    .catch(() => {}); // silent — autocomplete degrades to program-only if offline
+
+  // Also prefetch templates for the From Template modal
   TEMPLATES.forEach(t => {
     fetch(t.file)
       .then(r => r.json())
-      .then(data => { templateCache[t.file] = data; buildExercisePool(); })
+      .then(data => { templateCache[t.file] = data; })
       .catch(() => {});
   });
 });
