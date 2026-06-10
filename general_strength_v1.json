@@ -4,7 +4,7 @@
     {
       "id": "general_strength_v1",
       "name": "General Strength & Conditioning",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "description": "A four-phase progressive program designed to build movement quality, muscle, strength, and cardiovascular fitness across 28+ weeks. Phase 1 (Foundation, 6 wks) establishes movement patterns and connective tissue resilience. Phase 2 (Hypertrophy, 10 wks) accumulates volume for muscle growth. Phase 3 (Strength, 6 wks) converts mass to neural strength. Phase 4 (Conditioning, 6 wks) peaks VO₂ max and cardiovascular fitness. All plans use Dynamic Equipment — at workout start the app resolves each exercise to the best alternative for your available equipment automatically.",
       "tags": [
         "strength",
@@ -820,7 +820,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 6
+          "deloadWeekNumber": 6,
+          "goal": "Establish movement quality and work capacity before adding serious load. Sets are 10–15 reps at moderate weight — keep 2–3 reps in reserve on everything. Prioritise technique and consistency over pushing numbers. This base makes every phase that follows safer and more effective."
         },
         {
           "id": "gsc-foundation-3day",
@@ -1435,7 +1436,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 6
+          "deloadWeekNumber": 6,
+          "goal": "Establish movement quality and work capacity before adding serious load. Sets are 10–15 reps at moderate weight — keep 2–3 reps in reserve on everything. Prioritise technique and consistency over pushing numbers. This base makes every phase that follows safer and more effective."
         },
         {
           "id": "gsc-hypertrophy-4day",
@@ -2052,7 +2054,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 10
+          "deloadWeekNumber": 10,
+          "goal": "Accumulate enough volume and mechanical stress to drive muscle growth. 6–15 reps with progressive overload each session — add weight or reps before moving up. Keep 1–2 reps in reserve. Expect soreness early in the block; that's normal. By week 8 you should be hitting new rep-range PRs."
         },
         {
           "id": "gsc-hypertrophy-3day",
@@ -2456,7 +2459,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 10
+          "deloadWeekNumber": 10,
+          "goal": "Accumulate enough volume and mechanical stress to drive muscle growth. 6–15 reps with progressive overload each session — add weight or reps before moving up. Keep 1–2 reps in reserve. Expect soreness early in the block; that's normal. By week 8 you should be hitting new rep-range PRs."
         },
         {
           "id": "gsc-strength-4day",
@@ -2897,7 +2901,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 6
+          "deloadWeekNumber": 6,
+          "goal": "Convert hypertrophy gains into peak force output. Lower reps (3–6), heavier loads, close to technical failure on the last set. Rest 2–3 min between sets — that rest is part of the program. Numbers should climb weekly; if they stall two sessions in a row, drop 10 % and rebuild."
         },
         {
           "id": "gsc-strength-3day",
@@ -3262,7 +3267,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 6
+          "deloadWeekNumber": 6,
+          "goal": "Convert hypertrophy gains into peak force output. Lower reps (3–6), heavier loads, close to technical failure on the last set. Rest 2–3 min between sets — that rest is part of the program. Numbers should climb weekly; if they stall two sessions in a row, drop 10 % and rebuild."
         },
         {
           "id": "gsc-conditioning-4day",
@@ -3607,7 +3613,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 6
+          "deloadWeekNumber": 6,
+          "goal": "Shift emphasis toward metabolic fitness and cardiovascular capacity alongside strength maintenance. Push hard on conditioning circuits and finishers — these are meant to be uncomfortable. Keep strength sets controlled at 1–2 RIR. The goal is to be strong AND able to sustain effort."
         },
         {
           "id": "gsc-conditioning-3day",
@@ -3831,7 +3838,8 @@
               ]
             }
           ],
-          "deloadWeekNumber": 6
+          "deloadWeekNumber": 6,
+          "goal": "Shift emphasis toward metabolic fitness and cardiovascular capacity alongside strength maintenance. Push hard on conditioning circuits and finishers — these are meant to be uncomfortable. Keep strength sets controlled at 1–2 RIR. The goal is to be strong AND able to sustain effort."
         }
       ],
       "exercises": [],

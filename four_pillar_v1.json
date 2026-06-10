@@ -4,7 +4,7 @@
     {
       "id": "four_pillar",
       "name": "Four Pillar Training Program",
-      "version": "1.13.0",
+      "version": "1.14.0",
       "baseId": null,
       "upgradeFromVersion": "1.9.0",
       "description": "An evidence-based training system built around four pillars — Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Not a bodybuilder program. A longevity program.",
@@ -2024,7 +2024,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "goal": "The full Four Pillar schedule — lower body, upper body, climbing, and a VO₂ session each week. Strength blocks target 2–3 RIR; Norwegian 4×4 intervals go to near-maximal effort. Built around the four pillars of longevity fitness: strength, VO₂ max, cardiovascular endurance, and movement quality."
         },
         {
           "id": "three_day",
@@ -2600,7 +2601,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "goal": "A compressed version of the full program — lower and upper strength combined into fuller-body sessions, plus climbing and one VO₂ day. Same intensity targets as the 4-day, less weekly volume. Use this when four sessions aren't realistic."
         },
         {
           "id": "home_plan",
@@ -3645,7 +3647,8 @@
               ],
               "activityType": "climbing"
             }
-          ]
+          ],
+          "goal": "Full Four Pillar intent adapted for home equipment (Power Blocks, bench, dip bar). Covers lower and upper strength at home plus the climbing day. Use challenging loads — the program assumes access to heavy enough dumbbells. Match gym intensity: 2–3 RIR on strength work."
         }
       ],
       "releaseNotes": "Cardio now shows a target zone band on the live bar (Norwegian 4×4 → Z4–Z5). Dedicated Zone 2 blocks hold the countdown until you reach Zone 2 (tap Start Now to skip) so the prescribed time is time *in* zone.",
