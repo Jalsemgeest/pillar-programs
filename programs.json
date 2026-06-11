@@ -4,7 +4,7 @@
     {
       "id": "four_pillar",
       "name": "Four Pillar Training Program",
-      "version": "1.14.0",
+      "version": "1.15.0",
       "baseId": null,
       "upgradeFromVersion": "1.9.0",
       "description": "An evidence-based training system built around four pillars — Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Not a bodybuilder program. A longevity program.",
@@ -1306,18 +1306,16 @@
                     {
                       "exerciseId": "side_plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Isometric",
                       "notes": "",
                       "priority": "core",
                       "orderIndex": 1,
-                      "durationSeconds": 20,
+                      "durationSeconds": 30,
                       "perSide": true,
                       "alternatives": [],
-                      "citationIds": []
+                      "citationIds": [],
+                      "logMode": "timer"
                     },
                     {
                       "exerciseId": "modified_curl_up",
@@ -2206,18 +2204,16 @@
                     {
                       "exerciseId": "side_plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Isometric",
                       "notes": "",
                       "priority": "core",
                       "orderIndex": 2,
-                      "durationSeconds": 20,
+                      "durationSeconds": 30,
                       "perSide": true,
                       "alternatives": [],
-                      "citationIds": []
+                      "citationIds": [],
+                      "logMode": "timer"
                     },
                     {
                       "exerciseId": "modified_curl_up",
@@ -2891,18 +2887,16 @@
                     {
                       "exerciseId": "side_plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Isometric",
                       "notes": "",
                       "priority": "core",
                       "orderIndex": 3,
-                      "durationSeconds": 20,
+                      "durationSeconds": 30,
                       "perSide": true,
                       "alternatives": [],
-                      "citationIds": []
+                      "citationIds": [],
+                      "logMode": "timer"
                     },
                     {
                       "exerciseId": "modified_curl_up",
@@ -3657,7 +3651,7 @@
     {
       "id": "general_strength_v1",
       "name": "General Strength & Conditioning",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "description": "A four-phase progressive program designed to build movement quality, muscle, strength, and cardiovascular fitness across 28+ weeks. Phase 1 (Foundation, 6 wks) establishes movement patterns and connective tissue resilience. Phase 2 (Hypertrophy, 10 wks) accumulates volume for muscle growth. Phase 3 (Strength, 6 wks) converts mass to neural strength. Phase 4 (Conditioning, 6 wks) peaks VO₂ max and cardiovascular fitness. All plans use Dynamic Equipment — at workout start the app resolves each exercise to the best alternative for your available equipment automatically.",
       "tags": [
         "strength",
@@ -4057,28 +4051,27 @@
                     {
                       "exerciseId": "plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": "30–45s",
                       "load": "",
                       "tempo": null,
                       "notes": null,
                       "priority": "core",
                       "orderIndex": 1,
-                      "alternatives": []
+                      "alternatives": [],
+                      "logMode": "timer",
+                      "durationSeconds": 30
                     },
                     {
                       "exerciseId": "side_plank",
                       "sets": 2,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": "30s/side",
                       "load": "",
                       "tempo": null,
                       "notes": null,
                       "priority": "core",
                       "orderIndex": 2,
-                      "alternatives": []
+                      "alternatives": [],
+                      "logMode": "timer",
+                      "durationSeconds": 30,
+                      "perSide": true
                     }
                   ]
                 }
@@ -4458,15 +4451,14 @@
                     {
                       "exerciseId": "plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": "30–45s",
                       "load": "",
                       "tempo": null,
                       "notes": null,
                       "priority": "core",
                       "orderIndex": 2,
-                      "alternatives": []
+                      "alternatives": [],
+                      "logMode": "timer",
+                      "durationSeconds": 30
                     }
                   ]
                 }
@@ -4862,28 +4854,27 @@
                     {
                       "exerciseId": "plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": "30–45s",
                       "load": "",
                       "tempo": null,
                       "notes": null,
                       "priority": "core",
                       "orderIndex": 1,
-                      "alternatives": []
+                      "alternatives": [],
+                      "logMode": "timer",
+                      "durationSeconds": 30
                     },
                     {
                       "exerciseId": "side_plank",
                       "sets": 2,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": "30s/side",
                       "load": "",
                       "tempo": null,
                       "notes": null,
                       "priority": "core",
                       "orderIndex": 2,
-                      "alternatives": []
+                      "alternatives": [],
+                      "logMode": "timer",
+                      "durationSeconds": 30,
+                      "perSide": true
                     }
                   ]
                 }
@@ -7220,15 +7211,14 @@
                     {
                       "exerciseId": "plank",
                       "sets": 2,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": "45s",
                       "load": "",
                       "tempo": null,
                       "notes": null,
                       "priority": "core",
                       "orderIndex": 2,
-                      "alternatives": []
+                      "alternatives": [],
+                      "logMode": "timer",
+                      "durationSeconds": 45
                     }
                   ]
                 }

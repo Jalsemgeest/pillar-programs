@@ -4,7 +4,7 @@
     {
       "id": "four_pillar",
       "name": "Four Pillar Training Program",
-      "version": "1.14.0",
+      "version": "1.15.0",
       "baseId": null,
       "upgradeFromVersion": "1.9.0",
       "description": "An evidence-based training system built around four pillars — Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Not a bodybuilder program. A longevity program.",
@@ -1306,18 +1306,16 @@
                     {
                       "exerciseId": "side_plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Isometric",
                       "notes": "",
                       "priority": "core",
                       "orderIndex": 1,
-                      "durationSeconds": 20,
+                      "durationSeconds": 30,
                       "perSide": true,
                       "alternatives": [],
-                      "citationIds": []
+                      "citationIds": [],
+                      "logMode": "timer"
                     },
                     {
                       "exerciseId": "modified_curl_up",
@@ -2206,18 +2204,16 @@
                     {
                       "exerciseId": "side_plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Isometric",
                       "notes": "",
                       "priority": "core",
                       "orderIndex": 2,
-                      "durationSeconds": 20,
+                      "durationSeconds": 30,
                       "perSide": true,
                       "alternatives": [],
-                      "citationIds": []
+                      "citationIds": [],
+                      "logMode": "timer"
                     },
                     {
                       "exerciseId": "modified_curl_up",
@@ -2891,18 +2887,16 @@
                     {
                       "exerciseId": "side_plank",
                       "sets": 3,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Isometric",
                       "notes": "",
                       "priority": "core",
                       "orderIndex": 3,
-                      "durationSeconds": 20,
+                      "durationSeconds": 30,
                       "perSide": true,
                       "alternatives": [],
-                      "citationIds": []
+                      "citationIds": [],
+                      "logMode": "timer"
                     },
                     {
                       "exerciseId": "modified_curl_up",
