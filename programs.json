@@ -7,7 +7,7 @@
       "version": "1.15.0",
       "baseId": null,
       "upgradeFromVersion": "1.9.0",
-      "description": "An evidence-based training system built around four pillars — Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Not a bodybuilder program. A longevity program.",
+      "description": "An evidence-based training system built around four pillars \u2014 Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Not a bodybuilder program. A longevity program.",
       "tags": [
         "longevity",
         "strength",
@@ -15,21 +15,21 @@
         "mobility",
         "healthspan"
       ],
-      "targetProfile": "Intermediate, desk worker, climber, parent — 30s–40s",
+      "targetProfile": "Intermediate, desk worker, climber, parent \u2014 30s\u201340s",
       "createdAt": "2026-05-18T00:00:00Z",
       "citations": [
         {
           "id": "mandsager_2018",
-          "principle": "VO₂ max is the strongest predictor of all-cause mortality — no upper bound of benefit",
+          "principle": "VO\u2082 max is the strongest predictor of all-cause mortality \u2014 no upper bound of benefit",
           "authors": "Mandsager et al.",
           "journal": "JAMA Network Open",
           "year": 2018,
-          "keyFinding": "Low-fit men had 5.04× mortality vs. elite-fit; stronger predictor than smoking or diabetes",
+          "keyFinding": "Low-fit men had 5.04\u00d7 mortality vs. elite-fit; stronger predictor than smoking or diabetes",
           "url": null
         },
         {
           "id": "kokkinos_2022",
-          "principle": "Each 1-MET VO₂ max increase = 13–15% lower all-cause mortality",
+          "principle": "Each 1-MET VO\u2082 max increase = 13\u201315% lower all-cause mortality",
           "authors": "Kokkinos et al.",
           "journal": "J Am Coll Cardiol",
           "year": 2022,
@@ -38,17 +38,17 @@
         },
         {
           "id": "helgerud_2007",
-          "principle": "Norwegian 4×4 protocol produces 7–13% VO₂ max gain in 8 weeks",
+          "principle": "Norwegian 4\u00d74 protocol produces 7\u201313% VO\u2082 max gain in 8 weeks",
           "authors": "Helgerud et al.",
           "journal": "Med Sci Sports Exerc",
           "year": 2007,
-          "keyFinding": "4×4 outperformed all other interval protocols tested",
+          "keyFinding": "4\u00d74 outperformed all other interval protocols tested",
           "url": null
         },
         {
           "id": "sanmillan_2018",
           "principle": "Zone 2 drives mitochondrial biogenesis and fat oxidation via MCT1",
-          "authors": "San Millán & Brooks",
+          "authors": "San Mill\u00e1n & Brooks",
           "journal": "Front Physiol",
           "year": 2018,
           "keyFinding": "Lactate shuttle theory; Zone 2 uniquely targets Type I mitochondria",
@@ -57,7 +57,7 @@
         {
           "id": "toien_2023",
           "principle": "Lifelong strength training preserves Type II fiber proportion vs. endurance or untrained",
-          "authors": "Tøien, Aagaard et al.",
+          "authors": "T\u00f8ien, Aagaard et al.",
           "journal": "J Appl Physiol",
           "year": 2023,
           "keyFinding": "Strength-trained masters: 52% Type II fibers; recreationally active: 39.3%",
@@ -69,7 +69,7 @@
           "authors": "Schoenfeld, Grgic et al.",
           "journal": "J Strength Cond Res",
           "year": 2017,
-          "keyFinding": "21 RCTs; high load ~2× more effective for 1RM strength",
+          "keyFinding": "21 RCTs; high load ~2\u00d7 more effective for 1RM strength",
           "url": null
         },
         {
@@ -92,11 +92,11 @@
         },
         {
           "id": "watson_2018",
-          "principle": "Heavy resistance training (≥85% 1RM) significantly improved BMD; low-intensity did not",
+          "principle": "Heavy resistance training (\u226585% 1RM) significantly improved BMD; low-intensity did not",
           "authors": "Watson et al. LIFTMOR trial",
           "journal": "J Bone Miner Res",
           "year": 2018,
-          "keyFinding": "5×5 deadlift + squat + OHP; significant lumbar + femoral neck BMD gains",
+          "keyFinding": "5\u00d75 deadlift + squat + OHP; significant lumbar + femoral neck BMD gains",
           "url": null
         },
         {
@@ -189,7 +189,7 @@
           "name": "Nordic Curl",
           "category": "hinge",
           "equipment": [],
-          "notes": "Eccentric hamstring — anchor feet",
+          "notes": "Eccentric hamstring \u2014 anchor feet",
           "citationIds": [
             "vandyk_2019"
           ]
@@ -213,7 +213,7 @@
           "name": "McGill Big 3",
           "category": "core",
           "equipment": [],
-          "notes": "Bird Dog · Side Plank · Modified Curl-Up",
+          "notes": "Bird Dog \u00b7 Side Plank \u00b7 Modified Curl-Up",
           "citationIds": []
         },
         {
@@ -221,7 +221,7 @@
           "name": "Bird Dog",
           "category": "core",
           "equipment": [],
-          "notes": "Opposite arm and leg. Brace before moving. Straight line from heel to fingertips. Hold 2–3 s at top.",
+          "notes": "Opposite arm and leg. Brace before moving. Straight line from heel to fingertips. Hold 2\u20133 s at top.",
           "citationIds": []
         },
         {
@@ -229,7 +229,7 @@
           "name": "Side Plank",
           "category": "core",
           "equipment": [],
-          "notes": "Stack feet or stagger for an easier variation. Keep hips high — don't let them sag.",
+          "notes": "Stack feet or stagger for an easier variation. Keep hips high \u2014 don't let them sag.",
           "citationIds": []
         },
         {
@@ -237,7 +237,7 @@
           "name": "Modified Curl-Up",
           "category": "core",
           "equipment": [],
-          "notes": "Hands under lumbar spine to maintain natural curve. Lift head and shoulders only — not a full crunch. Brief hold at top.",
+          "notes": "Hands under lumbar spine to maintain natural curve. Lift head and shoulders only \u2014 not a full crunch. Brief hold at top.",
           "citationIds": []
         },
         {
@@ -319,14 +319,14 @@
         },
         {
           "id": "norwegian_4x4",
-          "name": "Norwegian 4×4 VO₂ Max Intervals",
+          "name": "Norwegian 4\u00d74 VO\u2082 Max Intervals",
           "category": "cardio",
           "equipment": [
             "bike",
             "rower",
             "treadmill"
           ],
-          "notes": "4 min @ 85–95% HRmax / 3 min easy ×4",
+          "notes": "4 min @ 85\u201395% HRmax / 3 min easy \u00d74",
           "citationIds": [
             "helgerud_2007"
           ]
@@ -336,7 +336,7 @@
           "name": "Zone 2 Cardio",
           "category": "cardio",
           "equipment": [],
-          "notes": "120–140 bpm, conversational pace",
+          "notes": "120\u2013140 bpm, conversational pace",
           "citationIds": [
             "sanmillan_2018"
           ]
@@ -348,7 +348,7 @@
           "equipment": [
             "rucksack"
           ],
-          "notes": "25–40 lb pack, conversational pace",
+          "notes": "25\u201340 lb pack, conversational pace",
           "citationIds": []
         },
         {
@@ -452,7 +452,7 @@
           "equipment": [
             "band"
           ],
-          "notes": "Climber antagonist — carry a band",
+          "notes": "Climber antagonist \u2014 carry a band",
           "citationIds": []
         },
         {
@@ -499,7 +499,7 @@
             "dip_bar",
             "dip_belt"
           ],
-          "notes": "Full ROM — shoulders below elbows at bottom",
+          "notes": "Full ROM \u2014 shoulders below elbows at bottom",
           "citationIds": []
         },
         {
@@ -509,7 +509,7 @@
           "equipment": [
             "dumbbell"
           ],
-          "notes": "Upper arms contact floor each rep — removes leg drive",
+          "notes": "Upper arms contact floor each rep \u2014 removes leg drive",
           "citationIds": []
         },
         {
@@ -531,7 +531,7 @@
             "dumbbell",
             "bench"
           ],
-          "notes": "Brace opposite hand on bench — neutral spine",
+          "notes": "Brace opposite hand on bench \u2014 neutral spine",
           "citationIds": []
         },
         {
@@ -552,7 +552,7 @@
             "dumbbell",
             "bench"
           ],
-          "notes": "Face-down on incline bench — no lower-back fatigue",
+          "notes": "Face-down on incline bench \u2014 no lower-back fatigue",
           "citationIds": []
         },
         {
@@ -572,7 +572,7 @@
           "equipment": [
             "dumbbell"
           ],
-          "notes": "Medial delt — supports overhead stability",
+          "notes": "Medial delt \u2014 supports overhead stability",
           "citationIds": []
         },
         {
@@ -595,7 +595,7 @@
             "bench",
             "squat_rack"
           ],
-          "notes": "Heavier than home DB bench — use safety bars",
+          "notes": "Heavier than home DB bench \u2014 use safety bars",
           "citationIds": []
         },
         {
@@ -605,7 +605,7 @@
           "equipment": [
             "barbell"
           ],
-          "notes": "Bilateral row — loads beyond DB limits",
+          "notes": "Bilateral row \u2014 loads beyond DB limits",
           "citationIds": []
         },
         {
@@ -613,7 +613,7 @@
           "name": "Hip CARs",
           "category": "mobility",
           "equipment": [],
-          "notes": "Controlled articular rotation — primes hip joint",
+          "notes": "Controlled articular rotation \u2014 primes hip joint",
           "citationIds": []
         },
         {
@@ -639,7 +639,7 @@
           "equipment": [
             "band"
           ],
-          "notes": "Band above knees — posterior-chain volume, zero axial load",
+          "notes": "Band above knees \u2014 posterior-chain volume, zero axial load",
           "citationIds": []
         },
         {
@@ -658,7 +658,7 @@
           "name": "Single-Leg Calf Raise",
           "category": "other",
           "equipment": [],
-          "notes": "Off step edge — slow 3s up/3s down for tendon health",
+          "notes": "Off step edge \u2014 slow 3s up/3s down for tendon health",
           "citationIds": []
         },
         {
@@ -666,7 +666,7 @@
           "name": "Shoulder CARs",
           "category": "mobility",
           "equipment": [],
-          "notes": "Full shoulder circle — critical pre-press/pull",
+          "notes": "Full shoulder circle \u2014 critical pre-press/pull",
           "citationIds": []
         },
         {
@@ -682,7 +682,7 @@
           "name": "Doorframe Pec Stretch",
           "category": "mobility",
           "equipment": [],
-          "notes": "Arm at 90° on doorframe, rotate away",
+          "notes": "Arm at 90\u00b0 on doorframe, rotate away",
           "citationIds": []
         },
         {
@@ -707,7 +707,7 @@
           "id": "morning_cars",
           "name": "Morning Routine",
           "timing": "general",
-          "durationDescription": "5–7 min",
+          "durationDescription": "5\u20137 min",
           "notes": "Do before coffee. Daily consistency beats occasional long sessions.",
           "exercises": [
             {
@@ -715,7 +715,7 @@
               "duration": "5 circles each direction/side",
               "frequency": "Daily",
               "focusArea": "Hip joint health",
-              "notes": "Full hip circle — signals nervous system you own full ROM",
+              "notes": "Full hip circle \u2014 signals nervous system you own full ROM",
               "priority": "core",
               "orderIndex": 0
             },
@@ -724,7 +724,7 @@
               "duration": "5 circles each direction",
               "frequency": "Daily",
               "focusArea": "Shoulder/scap health",
-              "notes": "Separates scapula from humeral motion — critical for climbers",
+              "notes": "Separates scapula from humeral motion \u2014 critical for climbers",
               "priority": "core",
               "orderIndex": 1
             },
@@ -739,7 +739,7 @@
             },
             {
               "name": "Chin Tucks",
-              "duration": "10 reps × 2 sec hold",
+              "duration": "10 reps \u00d7 2 sec hold",
               "frequency": "Daily",
               "focusArea": "Forward head posture",
               "notes": "Activates deep neck flexors; reverses upper crossed syndrome",
@@ -748,7 +748,7 @@
             },
             {
               "name": "Band Pull-Aparts",
-              "duration": "2 × 20 reps",
+              "duration": "2 \u00d7 20 reps",
               "frequency": "Daily",
               "focusArea": "Mid/lower trap activation",
               "notes": "Highest-leverage desk-worker corrective",
@@ -757,7 +757,7 @@
             },
             {
               "name": "Glute Bridge",
-              "duration": "1 × 15 reps",
+              "duration": "1 \u00d7 15 reps",
               "frequency": "Daily",
               "focusArea": "Glute activation",
               "notes": "Wakes glutes after sitting; prevents anterior pelvic tilt",
@@ -770,7 +770,7 @@
           "id": "desk_habits",
           "name": "Desk Worker Micro-Habits",
           "timing": "general",
-          "durationDescription": "2–3 min every 60–90 min",
+          "durationDescription": "2\u20133 min every 60\u201390 min",
           "notes": "Set a timer. These compound over a full work day into meaningful volume.",
           "exercises": [
             {
@@ -802,10 +802,10 @@
             },
             {
               "name": "Standing Glute Squeeze",
-              "duration": "10 sec holds × 5",
+              "duration": "10 sec holds \u00d7 5",
               "frequency": "Every 2 hours",
               "focusArea": "Glute activation",
-              "notes": "Prevents glute amnesia — key driver of lower back pain",
+              "notes": "Prevents glute amnesia \u2014 key driver of lower back pain",
               "priority": "core",
               "orderIndex": 3
             },
@@ -814,7 +814,7 @@
               "duration": "30 sec/hand",
               "frequency": "Every 90 min",
               "focusArea": "Wrist / forearm",
-              "notes": "Critical for climbers — prevents flexor overuse imbalance",
+              "notes": "Critical for climbers \u2014 prevents flexor overuse imbalance",
               "priority": "core",
               "orderIndex": 4
             }
@@ -832,13 +832,13 @@
               "duration": "3 min easy",
               "frequency": "Every lower day",
               "focusArea": "Core temperature",
-              "notes": "Bike, row, or walk — just get warm",
+              "notes": "Bike, row, or walk \u2014 just get warm",
               "priority": "core",
               "orderIndex": 0
             },
             {
               "name": "Glute Bridges",
-              "duration": "1 × 15",
+              "duration": "1 \u00d7 15",
               "frequency": "Every lower day",
               "focusArea": "Glute activation",
               "notes": "",
@@ -883,7 +883,7 @@
           "exercises": [
             {
               "name": "Band Pull-Aparts",
-              "duration": "2 × 20",
+              "duration": "2 \u00d7 20",
               "frequency": "Every upper day",
               "focusArea": "Rear delt + scap",
               "notes": "Activates rear delts and scapular retractors before pressing",
@@ -892,16 +892,16 @@
             },
             {
               "name": "Scap Push-Ups",
-              "duration": "1 × 10",
+              "duration": "1 \u00d7 10",
               "frequency": "Every upper day",
               "focusArea": "Serratus anterior",
-              "notes": "Activates serratus — most neglected UCS corrective muscle",
+              "notes": "Activates serratus \u2014 most neglected UCS corrective muscle",
               "priority": "core",
               "orderIndex": 1
             },
             {
               "name": "Doorway Pec Stretch",
-              "duration": "30 sec × 3 angles",
+              "duration": "30 sec \u00d7 3 angles",
               "frequency": "Every upper day",
               "focusArea": "Pec minor/major",
               "notes": "Opens thorax; prevents shoulder impingement from climbing",
@@ -923,8 +923,8 @@
           "id": "post_workout_cooldown",
           "name": "Post-Workout Cooldown",
           "timing": "post_workout",
-          "durationDescription": "10–15 min",
-          "notes": "3×/week minimum. Converts passive ROM to active usable range.",
+          "durationDescription": "10\u201315 min",
+          "notes": "3\u00d7/week minimum. Converts passive ROM to active usable range.",
           "exercises": [
             {
               "name": "Couch Stretch",
@@ -938,7 +938,7 @@
             {
               "name": "90/90 Hip Switches",
               "duration": "5 transitions + 5 lift-offs/side",
-              "frequency": "3×/week",
+              "frequency": "3\u00d7/week",
               "focusArea": "Hip IR + ER",
               "notes": "Converts passive hip mobility to active usable range",
               "priority": "core",
@@ -947,7 +947,7 @@
             {
               "name": "Pigeon Pose / Figure-4",
               "duration": "90 sec/side",
-              "frequency": "3×/week",
+              "frequency": "3\u00d7/week",
               "focusArea": "Hip external rotation",
               "notes": "Complements climbing which tends to use IR dominantly",
               "priority": "core",
@@ -964,8 +964,8 @@
             },
             {
               "name": "Dead Hang",
-              "duration": "3 × max hold",
-              "frequency": "3×/week",
+              "duration": "3 \u00d7 max hold",
+              "frequency": "3\u00d7/week",
               "focusArea": "Shoulder decompression + grip",
               "notes": "Decompresses spine, builds scap stability, trains grip",
               "priority": "core",
@@ -974,7 +974,7 @@
             {
               "name": "Jefferson Curl",
               "duration": "5 reps slow",
-              "frequency": "2×/week",
+              "frequency": "2\u00d7/week",
               "focusArea": "Spinal flexion under load",
               "notes": "Use very light weight. Controlled spinal flexion strength.",
               "priority": "optional",
@@ -983,7 +983,7 @@
             {
               "name": "Supine Hamstring Stretch",
               "duration": "60 sec/side",
-              "frequency": "3×/week",
+              "frequency": "3\u00d7/week",
               "focusArea": "Hamstrings",
               "notes": "",
               "priority": "optional",
@@ -1012,7 +1012,7 @@
               "orderIndex": 0
             },
             {
-              "label": "Elite (2× BW)",
+              "label": "Elite (2\u00d7 BW)",
               "value": 350,
               "orderIndex": 1
             }
@@ -1046,7 +1046,7 @@
         {
           "id": "farmers_carry_bw",
           "name": "Farmer's Carry",
-          "description": "Bodyweight per hand × 1 minute. Uses best carry weight from workout log.",
+          "description": "Bodyweight per hand \u00d7 1 minute. Uses best carry weight from workout log.",
           "type": "exercise_pr",
           "exerciseId": "farmers_carry",
           "metric": "weight",
@@ -1083,7 +1083,7 @@
         },
         {
           "id": "vo2max_estimate",
-          "name": "VO₂ Max",
+          "name": "VO\u2082 Max",
           "description": "Estimated from wearable or lab test. Target top 25th percentile for age.",
           "type": "standalone_test",
           "exerciseId": null,
@@ -1112,15 +1112,15 @@
         {
           "id": "four_day",
           "name": "4-Day Plan",
-          "scheduleDescription": "Mon · Wed · Thu (Climbing) · Sat",
+          "scheduleDescription": "Mon \u00b7 Wed \u00b7 Thu (Climbing) \u00b7 Sat",
           "daysPerWeek": 4,
           "orderIndex": 0,
           "workouts": [
             {
               "id": "four_day_mon",
               "dayLabel": "Monday",
-              "sessionType": "Lower Body — Hinge + Power",
-              "durationRange": "60–70 min",
+              "sessionType": "Lower Body \u2014 Hinge + Power",
+              "durationRange": "60\u201370 min",
               "location": "Gym",
               "keyMetrics": [
                 "Trap-bar DL 5RM",
@@ -1135,7 +1135,7 @@
               ],
               "groups": [
                 {
-                  "name": "HINGE — PRIMARY",
+                  "name": "HINGE \u2014 PRIMARY",
                   "orderIndex": 1,
                   "exercises": [
                     {
@@ -1144,7 +1144,7 @@
                       "repsMin": 4,
                       "repsMax": 6,
                       "repsText": null,
-                      "load": "≥85% 1RM top set",
+                      "load": "\u226585% 1RM top set",
                       "tempo": "3-1-1",
                       "notes": "Heaviest compound of the week. Prioritize form.",
                       "priority": "core",
@@ -1176,7 +1176,7 @@
                       "repsMin": 8,
                       "repsMax": 8,
                       "repsText": null,
-                      "load": "RPE 8 — challenging",
+                      "load": "RPE 8 \u2014 challenging",
                       "tempo": "3-0-1",
                       "notes": "Rear foot on bench. At high load rivals barbell squat for quad + glute stimulus.",
                       "priority": "core",
@@ -1207,7 +1207,7 @@
                       "repsMin": 5,
                       "repsMax": 5,
                       "repsText": null,
-                      "load": "Heavy — maximum intent",
+                      "load": "Heavy \u2014 maximum intent",
                       "tempo": "Explosive",
                       "notes": "Hip hinge, not squat. Drive hips through aggressively.",
                       "priority": "core",
@@ -1267,7 +1267,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": "40m",
-                      "load": "Heaviest DBs — grip is the limiter",
+                      "load": "Heaviest DBs \u2014 grip is the limiter",
                       "tempo": "Upright, controlled",
                       "notes": "Grip, traps, core, posture. Targets Centenarian Decathlon carry benchmark.",
                       "priority": "core",
@@ -1296,7 +1296,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Slow & controlled",
-                      "notes": "Non-negotiable. Hold 2–3 s at top each rep.",
+                      "notes": "Non-negotiable. Hold 2\u20133 s at top each rep.",
                       "priority": "core",
                       "orderIndex": 0,
                       "perSide": true,
@@ -1343,9 +1343,9 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "120–140 bpm",
+                      "load": "120\u2013140 bpm",
                       "tempo": null,
-                      "notes": "Target 20–25 min. Bike or incline walk. Counts toward 150 min/week Zone 2 target.",
+                      "notes": "Target 20\u201325 min. Bike or incline walk. Counts toward 150 min/week Zone 2 target.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -1371,8 +1371,8 @@
             {
               "id": "four_day_wed",
               "dayLabel": "Wednesday",
-              "sessionType": "Upper Body — Push + Pull",
-              "durationRange": "60–70 min",
+              "sessionType": "Upper Body \u2014 Push + Pull",
+              "durationRange": "60\u201370 min",
               "location": "Gym",
               "keyMetrics": [
                 "Chin-up +weight 5RM",
@@ -1387,7 +1387,7 @@
               ],
               "groups": [
                 {
-                  "name": "PULL — PRIMARY",
+                  "name": "PULL \u2014 PRIMARY",
                   "orderIndex": 0,
                   "exercises": [
                     {
@@ -1396,7 +1396,7 @@
                       "repsMin": 4,
                       "repsMax": 6,
                       "repsText": null,
-                      "load": "+10–25 kg (dip belt)",
+                      "load": "+10\u201325 kg (dip belt)",
                       "tempo": "3-0-1",
                       "notes": "Best upper-body pull indicator for longevity (grip + back strength). Add weight when you hit 6 reps.",
                       "priority": "core",
@@ -1427,7 +1427,7 @@
                       "repsText": null,
                       "load": "RPE 8",
                       "tempo": "3-0-1",
-                      "notes": "Neutral grip. Safer to push solo than barbell. Full ROM — touch chest.",
+                      "notes": "Neutral grip. Safer to push solo than barbell. Full ROM \u2014 touch chest.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -1458,7 +1458,7 @@
                       "repsMin": 10,
                       "repsMax": 12,
                       "repsText": null,
-                      "load": "RPE 8 — full retraction",
+                      "load": "RPE 8 \u2014 full retraction",
                       "tempo": "2-1-1",
                       "notes": "Chest on incline bench removes lower back from the equation.",
                       "priority": "core",
@@ -1487,7 +1487,7 @@
                       "repsMin": 8,
                       "repsMax": 10,
                       "repsText": null,
-                      "load": "Moderate — pain-free arc",
+                      "load": "Moderate \u2014 pain-free arc",
                       "tempo": "2-0-1",
                       "notes": "Arc-friendly shoulder press. Lower impingement risk than vertical press.",
                       "priority": "core",
@@ -1516,7 +1516,7 @@
                       "repsMin": 15,
                       "repsMax": 15,
                       "repsText": null,
-                      "load": "Light — form focus",
+                      "load": "Light \u2014 form focus",
                       "tempo": "2-1-2",
                       "notes": "External rotation + horizontal abduction. Essential for climbers.",
                       "priority": "core",
@@ -1591,7 +1591,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "120–140 bpm",
+                      "load": "120\u2013140 bpm",
                       "tempo": null,
                       "notes": "Bike or easy row after lifting.",
                       "priority": "core",
@@ -1613,11 +1613,11 @@
               "id": "four_day_thu",
               "dayLabel": "Thursday",
               "sessionType": "Rock Climbing + Antagonist Circuit",
-              "durationRange": "70–100 min",
+              "durationRange": "70\u2013100 min",
               "location": "Climbing Gym",
               "keyMetrics": [
                 "Sends / grade",
-                "Antagonist circuit ✓"
+                "Antagonist circuit \u2713"
               ],
               "orderIndex": 2,
               "preMobilityIds": [
@@ -1636,10 +1636,10 @@
                       "sets": 1,
                       "repsMin": null,
                       "repsMax": null,
-                      "repsText": "60–90 min",
+                      "repsText": "60\u201390 min",
                       "load": "Technique + power focus",
                       "tempo": null,
-                      "notes": "Counts as upper-body pulling volume for today. Replaces — not supplements — a separate pull session.",
+                      "notes": "Counts as upper-body pulling volume for today. Replaces \u2014 not supplements \u2014 a separate pull session.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [],
@@ -1735,7 +1735,7 @@
                       "repsMin": 10,
                       "repsMax": 10,
                       "repsText": "10 each position",
-                      "load": "Bodyweight or 1–2 kg",
+                      "load": "Bodyweight or 1\u20132 kg",
                       "tempo": "Slow controlled",
                       "notes": "",
                       "priority": "core",
@@ -1750,9 +1750,9 @@
             },
             {
               "id": "four_day_sat_a",
-              "dayLabel": "Saturday — Week A",
-              "sessionType": "VO₂ Max — Norwegian 4×4",
-              "durationRange": "38–45 min",
+              "dayLabel": "Saturday \u2014 Week A",
+              "sessionType": "VO\u2082 Max \u2014 Norwegian 4\u00d74",
+              "durationRange": "38\u201345 min",
               "location": "Gym / Bike",
               "keyMetrics": [
                 "HRmax reached",
@@ -1788,7 +1788,7 @@
                   ]
                 },
                 {
-                  "name": "NORWEGIAN 4×4",
+                  "name": "NORWEGIAN 4\u00d74",
                   "orderIndex": 1,
                   "exercises": [
                     {
@@ -1797,7 +1797,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "85–95% HRmax during intervals",
+                      "load": "85\u201395% HRmax during intervals",
                       "tempo": null,
                       "notes": "Bike, rower, or incline treadmill. You should not be able to speak during the 4 min intervals. 3 min recovery at easy pace between each.",
                       "priority": "core",
@@ -1843,9 +1843,9 @@
             },
             {
               "id": "four_day_sat_b",
-              "dayLabel": "Saturday — Week B",
+              "dayLabel": "Saturday \u2014 Week B",
               "sessionType": "Full-Body Strength",
-              "durationRange": "55–65 min",
+              "durationRange": "55\u201365 min",
               "location": "Gym",
               "keyMetrics": [
                 "Front squat weight",
@@ -1869,7 +1869,7 @@
                       "repsMin": 5,
                       "repsMax": 8,
                       "repsText": null,
-                      "load": "Challenging — RPE 8",
+                      "load": "Challenging \u2014 RPE 8",
                       "tempo": "3-1-1",
                       "notes": "Lower knee compressive force vs. back squat. Good for long-term knee health.",
                       "priority": "core",
@@ -2004,7 +2004,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "120–140 bpm",
+                      "load": "120\u2013140 bpm",
                       "tempo": null,
                       "notes": "",
                       "priority": "core",
@@ -2023,12 +2023,12 @@
               ]
             }
           ],
-          "goal": "The full Four Pillar schedule — lower body, upper body, climbing, and a VO₂ session each week. Strength blocks target 2–3 RIR; Norwegian 4×4 intervals go to near-maximal effort. Built around the four pillars of longevity fitness: strength, VO₂ max, cardiovascular endurance, and movement quality."
+          "goal": "The full Four Pillar schedule \u2014 lower body, upper body, climbing, and a VO\u2082 session each week. Strength blocks target 2\u20133 RIR; Norwegian 4\u00d74 intervals go to near-maximal effort. Built around the four pillars of longevity fitness: strength, VO\u2082 max, cardiovascular endurance, and movement quality."
         },
         {
           "id": "three_day",
           "name": "3-Day Plan",
-          "scheduleDescription": "Mon · Wed/Thu (Climbing) · Sat",
+          "scheduleDescription": "Mon \u00b7 Wed/Thu (Climbing) \u00b7 Sat",
           "daysPerWeek": 3,
           "orderIndex": 1,
           "workouts": [
@@ -2036,7 +2036,7 @@
               "id": "three_day_mon",
               "dayLabel": "Monday",
               "sessionType": "Full Lower Body + Core",
-              "durationRange": "60–70 min",
+              "durationRange": "60\u201370 min",
               "location": "Gym",
               "keyMetrics": [
                 "Trap-bar DL 5RM"
@@ -2119,7 +2119,7 @@
                       "repsMin": 5,
                       "repsMax": 5,
                       "repsText": null,
-                      "load": "Heavy — max intent",
+                      "load": "Heavy \u2014 max intent",
                       "tempo": "Explosive",
                       "notes": "",
                       "priority": "core",
@@ -2194,7 +2194,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Slow & controlled",
-                      "notes": "Hold 2–3 s at top each rep.",
+                      "notes": "Hold 2\u20133 s at top each rep.",
                       "priority": "core",
                       "orderIndex": 1,
                       "perSide": true,
@@ -2241,7 +2241,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "120–140 bpm",
+                      "load": "120\u2013140 bpm",
                       "tempo": null,
                       "notes": "",
                       "priority": "core",
@@ -2263,11 +2263,11 @@
               "id": "three_day_wed_thu",
               "dayLabel": "Wednesday / Thursday",
               "sessionType": "Rock Climbing + Antagonist Circuit",
-              "durationRange": "70–100 min",
+              "durationRange": "70\u2013100 min",
               "location": "Climbing Gym",
               "keyMetrics": [
                 "Sends / grade",
-                "Antagonist circuit ✓"
+                "Antagonist circuit \u2713"
               ],
               "orderIndex": 1,
               "preMobilityIds": [
@@ -2286,7 +2286,7 @@
                       "sets": 1,
                       "repsMin": null,
                       "repsMax": null,
-                      "repsText": "60–90 min",
+                      "repsText": "60\u201390 min",
                       "load": "Technique + power",
                       "tempo": null,
                       "notes": "Replaces upper-body pull day entirely. If no climbing this week, substitute Wednesday Upper Body from 4-day plan.",
@@ -2387,12 +2387,12 @@
             {
               "id": "three_day_sat",
               "dayLabel": "Saturday",
-              "sessionType": "Upper Body Push + Pull + VO₂ Max (alternating)",
-              "durationRange": "60–80 min",
+              "sessionType": "Upper Body Push + Pull + VO\u2082 Max (alternating)",
+              "durationRange": "60\u201380 min",
               "location": "Gym",
               "keyMetrics": [
                 "Chin-up +weight",
-                "VO₂ session or Zone 2 logged"
+                "VO\u2082 session or Zone 2 logged"
               ],
               "orderIndex": 2,
               "preMobilityIds": [
@@ -2403,7 +2403,7 @@
               ],
               "groups": [
                 {
-                  "name": "UPPER BODY — ALWAYS",
+                  "name": "UPPER BODY \u2014 ALWAYS",
                   "orderIndex": 0,
                   "exercises": [
                     {
@@ -2543,7 +2543,7 @@
                   ]
                 },
                 {
-                  "name": "WEEK A — VO₂ MAX (before lifting)",
+                  "name": "WEEK A \u2014 VO\u2082 MAX (before lifting)",
                   "orderIndex": 1,
                   "exercises": [
                     {
@@ -2552,7 +2552,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "85–95% HRmax",
+                      "load": "85\u201395% HRmax",
                       "tempo": null,
                       "notes": "Do BEFORE lifting on Week A.",
                       "priority": "optional",
@@ -2570,7 +2570,7 @@
                   ]
                 },
                 {
-                  "name": "WEEK B — ZONE 2 (after lifting)",
+                  "name": "WEEK B \u2014 ZONE 2 (after lifting)",
                   "orderIndex": 2,
                   "exercises": [
                     {
@@ -2579,7 +2579,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "120–140 bpm",
+                      "load": "120\u2013140 bpm",
                       "tempo": null,
                       "notes": "Do AFTER lifting on Week B.",
                       "priority": "optional",
@@ -2598,20 +2598,20 @@
               ]
             }
           ],
-          "goal": "A compressed version of the full program — lower and upper strength combined into fuller-body sessions, plus climbing and one VO₂ day. Same intensity targets as the 4-day, less weekly volume. Use this when four sessions aren't realistic."
+          "goal": "A compressed version of the full program \u2014 lower and upper strength combined into fuller-body sessions, plus climbing and one VO\u2082 day. Same intensity targets as the 4-day, less weekly volume. Use this when four sessions aren't realistic."
         },
         {
           "id": "home_plan",
           "name": "Home Plan",
-          "scheduleDescription": "Home Day A · Home Day B · Climbing Gym (Sat)  |  Any 3 days that work",
+          "scheduleDescription": "Home Day A \u00b7 Home Day B \u00b7 Climbing Gym (Sat)  |  Any 3 days that work",
           "daysPerWeek": 3,
           "orderIndex": 2,
           "workouts": [
             {
               "id": "home_day_a",
               "dayLabel": "Home Day A",
-              "sessionType": "Lower Body — Hinge + Squat",
-              "durationRange": "45–55 min",
+              "sessionType": "Lower Body \u2014 Hinge + Squat",
+              "durationRange": "45\u201355 min",
               "location": "Home",
               "keyMetrics": [
                 "DB RDL weight",
@@ -2633,7 +2633,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Slow & controlled",
-                      "notes": "Full hip circle — primes the joint before loading.",
+                      "notes": "Full hip circle \u2014 primes the joint before loading.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [],
@@ -2677,7 +2677,7 @@
                   ]
                 },
                 {
-                  "name": "HINGE — replaces Trap-Bar Deadlift",
+                  "name": "HINGE \u2014 replaces Trap-Bar Deadlift",
                   "orderIndex": 1,
                   "exercises": [
                     {
@@ -2686,7 +2686,7 @@
                       "repsMin": 8,
                       "repsMax": 10,
                       "repsText": null,
-                      "load": "Heavy — RPE 8 (~70–80 lb/hand)",
+                      "load": "Heavy \u2014 RPE 8 (~70\u201380 lb/hand)",
                       "tempo": "3-1",
                       "notes": "Primary hinge at home. Hip hinge from hips, soft knees, DBs track close to legs. Go as heavy as form allows.",
                       "priority": "core",
@@ -2713,7 +2713,7 @@
                       "repsMin": 8,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "Moderate (~40–50 lb/hand)",
+                      "load": "Moderate (~40\u201350 lb/hand)",
                       "tempo": "3-1",
                       "notes": "Free-standing, slight knee bend. Trains hip stability and corrects left-right asymmetry.",
                       "priority": "core",
@@ -2756,7 +2756,7 @@
                   ]
                 },
                 {
-                  "name": "SQUAT — replaces Barbell / Front Squat",
+                  "name": "SQUAT \u2014 replaces Barbell / Front Squat",
                   "orderIndex": 2,
                   "exercises": [
                     {
@@ -2765,7 +2765,7 @@
                       "repsMin": 8,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "Challenging (~50–70 lb/hand)",
+                      "load": "Challenging (~50\u201370 lb/hand)",
                       "tempo": "3-1",
                       "notes": "Rear foot on bench. At this load rivals barbell squat for quad + glute stimulus at roughly half the spinal load.",
                       "priority": "core",
@@ -2788,7 +2788,7 @@
                       "repsMin": 10,
                       "repsMax": 12,
                       "repsText": null,
-                      "load": "Moderate (~50–60 lb)",
+                      "load": "Moderate (~50\u201360 lb)",
                       "tempo": "3-1",
                       "notes": "Hold one DB at chest, sit deep. Reinforces squat pattern and adds quad volume.",
                       "priority": "core",
@@ -2811,7 +2811,7 @@
                       "repsMin": 10,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "Light–Moderate (~30–40 lb/hand)",
+                      "load": "Light\u2013Moderate (~30\u201340 lb/hand)",
                       "tempo": "Controlled",
                       "notes": "Drive through heel, stand tall at top. Extra unilateral quad volume.",
                       "priority": "optional",
@@ -2840,7 +2840,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": "40m",
-                      "load": "Heavy — RPE 8–9 (~80–90 lb/hand)",
+                      "load": "Heavy \u2014 RPE 8\u20139 (~80\u201390 lb/hand)",
                       "tempo": "Upright, controlled",
                       "notes": "Grip should be the limiting factor. Targets Centenarian Decathlon carry benchmark.",
                       "priority": "core",
@@ -2877,7 +2877,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Slow & controlled",
-                      "notes": "Hold 2–3 s at top each rep.",
+                      "notes": "Hold 2\u20133 s at top each rep.",
                       "priority": "core",
                       "orderIndex": 2,
                       "perSide": true,
@@ -2940,7 +2940,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Hold",
-                      "notes": "Couch stretch alternative — best hip flexor release after split squats.",
+                      "notes": "Couch stretch alternative \u2014 best hip flexor release after split squats.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [],
@@ -2956,7 +2956,7 @@
                       "repsText": "5 transitions + 5 lift-offs/side",
                       "load": "Bodyweight",
                       "tempo": "Controlled",
-                      "notes": "90/90 hip switches — converts passive hip mobility to active usable range.",
+                      "notes": "90/90 hip switches \u2014 converts passive hip mobility to active usable range.",
                       "priority": "core",
                       "orderIndex": 1,
                       "alternatives": [],
@@ -2994,8 +2994,8 @@
             {
               "id": "home_day_b",
               "dayLabel": "Home Day B",
-              "sessionType": "Upper Body — Press + Pull",
-              "durationRange": "45–55 min",
+              "sessionType": "Upper Body \u2014 Press + Pull",
+              "durationRange": "45\u201355 min",
               "location": "Home",
               "keyMetrics": [
                 "Dip weight",
@@ -3017,7 +3017,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Slow & controlled",
-                      "notes": "Full shoulder circle — critical joint prep before pressing and pulling.",
+                      "notes": "Full shoulder circle \u2014 critical joint prep before pressing and pulling.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [],
@@ -3054,7 +3054,7 @@
                       "repsText": "10 each",
                       "load": "Bodyweight",
                       "tempo": "Slow",
-                      "notes": "Activates serratus anterior and trains upward rotation — counters desk posture.",
+                      "notes": "Activates serratus anterior and trains upward rotation \u2014 counters desk posture.",
                       "priority": "core",
                       "orderIndex": 2,
                       "alternatives": [],
@@ -3063,7 +3063,7 @@
                   ]
                 },
                 {
-                  "name": "HORIZONTAL PRESS — replaces Neutral-Grip DB Bench + Landmine Press",
+                  "name": "HORIZONTAL PRESS \u2014 replaces Neutral-Grip DB Bench + Landmine Press",
                   "orderIndex": 1,
                   "exercises": [
                     {
@@ -3072,9 +3072,9 @@
                       "repsMin": 8,
                       "repsMax": 10,
                       "repsText": null,
-                      "load": "Heavy — RPE 8 (~70–80 lb/hand)",
+                      "load": "Heavy \u2014 RPE 8 (~70\u201380 lb/hand)",
                       "tempo": "3-1",
-                      "notes": "Full ROM — touch chest, full lockout. Safer to push hard solo than a barbell: can dump DBs safely.",
+                      "notes": "Full ROM \u2014 touch chest, full lockout. Safer to push hard solo than a barbell: can dump DBs safely.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -3122,9 +3122,9 @@
                       "repsMin": 10,
                       "repsMax": 12,
                       "repsText": null,
-                      "load": "Moderate (~55–65 lb/hand)",
+                      "load": "Moderate (~55\u201365 lb/hand)",
                       "tempo": "3-1",
-                      "notes": "Upper arms contact floor each rep — removes leg drive, isolates chest/triceps.",
+                      "notes": "Upper arms contact floor each rep \u2014 removes leg drive, isolates chest/triceps.",
                       "priority": "core",
                       "orderIndex": 2,
                       "alternatives": [
@@ -3145,7 +3145,7 @@
                       "repsMin": 10,
                       "repsMax": 10,
                       "repsText": null,
-                      "load": "Moderate (~40–50 lb/hand)",
+                      "load": "Moderate (~40\u201350 lb/hand)",
                       "tempo": "2-1",
                       "notes": "Seated for ceiling clearance. Overhead strength and shoulder stability. Replaces landmine press.",
                       "priority": "optional",
@@ -3165,7 +3165,7 @@
                   ]
                 },
                 {
-                  "name": "PULL — replaces Weighted Pull-Up + Chest-Supported Row",
+                  "name": "PULL \u2014 replaces Weighted Pull-Up + Chest-Supported Row",
                   "orderIndex": 2,
                   "exercises": [
                     {
@@ -3174,7 +3174,7 @@
                       "repsMin": 10,
                       "repsMax": null,
                       "repsText": null,
-                      "load": "Heavy — RPE 8 (~70–80 lb/hand)",
+                      "load": "Heavy \u2014 RPE 8 (~70\u201380 lb/hand)",
                       "tempo": "2-1",
                       "notes": "Brace opposite hand on bench. Elbow drives back and up. Primary pull at home.",
                       "priority": "core",
@@ -3220,7 +3220,7 @@
                       "repsMin": 12,
                       "repsMax": 12,
                       "repsText": null,
-                      "load": "Moderate (~50–60 lb/hand)",
+                      "load": "Moderate (~50\u201360 lb/hand)",
                       "tempo": "2-1",
                       "notes": "Face-down on incline bench. No lower-back fatigue. Good when rings aren't available.",
                       "priority": "optional",
@@ -3240,7 +3240,7 @@
                   ]
                 },
                 {
-                  "name": "SHOULDER HEALTH — climber antagonist (never skip)",
+                  "name": "SHOULDER HEALTH \u2014 climber antagonist (never skip)",
                   "orderIndex": 3,
                   "exercises": [
                     {
@@ -3249,7 +3249,7 @@
                       "repsMin": 15,
                       "repsMax": 15,
                       "repsText": null,
-                      "load": "Light–medium band",
+                      "load": "Light\u2013medium band",
                       "tempo": "Controlled",
                       "notes": "Anchor at eye height, pull to face with elbows high and wide. Best exercise for rotator cuff + rear delt health.",
                       "priority": "core",
@@ -3296,7 +3296,7 @@
                       "sets": 3,
                       "repsMin": null,
                       "repsMax": null,
-                      "repsText": "30–60 sec",
+                      "repsText": "30\u201360 sec",
                       "load": "Bodyweight",
                       "tempo": "Relaxed shoulders",
                       "notes": "Decompress spine, maintain grip and shoulder health. Progress toward 2-min continuous hang benchmark.",
@@ -3311,9 +3311,9 @@
                       "repsMin": 15,
                       "repsMax": 15,
                       "repsText": null,
-                      "load": "Light (~15–20 lb/hand)",
+                      "load": "Light (~15\u201320 lb/hand)",
                       "tempo": "2-1",
-                      "notes": "Medial delt — supports overhead stability. Quick to do.",
+                      "notes": "Medial delt \u2014 supports overhead stability. Quick to do.",
                       "priority": "optional",
                       "orderIndex": 3,
                       "alternatives": [],
@@ -3333,7 +3333,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Hold",
-                      "notes": "Arm at 90° on doorframe, rotate away. Opens anterior shoulder — essential after pressing.",
+                      "notes": "Arm at 90\u00b0 on doorframe, rotate away. Opens anterior shoulder \u2014 essential after pressing.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [],
@@ -3349,7 +3349,7 @@
                       "repsText": null,
                       "load": "Bodyweight",
                       "tempo": "Hold",
-                      "notes": "Walk hands to one side to bias the lat. Climber staple — keeps lats long.",
+                      "notes": "Walk hands to one side to bias the lat. Climber staple \u2014 keeps lats long.",
                       "priority": "core",
                       "orderIndex": 1,
                       "alternatives": [],
@@ -3378,8 +3378,8 @@
             {
               "id": "home_climbing_barbell",
               "dayLabel": "Saturday",
-              "sessionType": "Climbing Gym — Barbell Priority",
-              "durationRange": "2–2.5 hrs",
+              "sessionType": "Climbing Gym \u2014 Barbell Priority",
+              "durationRange": "2\u20132.5 hrs",
               "location": "Climbing Gym",
               "keyMetrics": [
                 "Barbell squat weight",
@@ -3395,7 +3395,7 @@
               ],
               "groups": [
                 {
-                  "name": "BARBELL — do before climbing",
+                  "name": "BARBELL \u2014 do before climbing",
                   "orderIndex": 0,
                   "exercises": [
                     {
@@ -3404,9 +3404,9 @@
                       "repsMin": 5,
                       "repsMax": 5,
                       "repsText": null,
-                      "load": "Heavy — RPE 8–9",
+                      "load": "Heavy \u2014 RPE 8\u20139",
                       "tempo": "3-1",
-                      "notes": "Primary reason to be here. Keep progressing — home Bulgarian split squats are maintenance; this is progression.",
+                      "notes": "Primary reason to be here. Keep progressing \u2014 home Bulgarian split squats are maintenance; this is progression.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -3433,7 +3433,7 @@
                       "repsMin": 5,
                       "repsMax": 5,
                       "repsText": null,
-                      "load": "Heavy — RPE 8–9",
+                      "load": "Heavy \u2014 RPE 8\u20139",
                       "tempo": "Reset each rep",
                       "notes": "Home RDLs preserve the pattern; this is where you push weight. Reset fully between reps.",
                       "priority": "core",
@@ -3459,7 +3459,7 @@
                       "repsMin": 6,
                       "repsMax": 8,
                       "repsText": null,
-                      "load": "Moderate–Heavy — RPE 7–8",
+                      "load": "Moderate\u2013Heavy \u2014 RPE 7\u20138",
                       "tempo": "3-1",
                       "notes": "With safeties + rack you can push harder than at home. Your heavy press day.",
                       "priority": "core",
@@ -3486,7 +3486,7 @@
                       "repsMin": 6,
                       "repsMax": 8,
                       "repsText": null,
-                      "load": "Heavy — RPE 8",
+                      "load": "Heavy \u2014 RPE 8",
                       "tempo": "Controlled",
                       "notes": "The one bilateral row where you can load beyond what DBs allow. Mid-back in a way DB rows can't fully replicate.",
                       "priority": "core",
@@ -3510,7 +3510,7 @@
                   ]
                 },
                 {
-                  "name": "CLIMBING — main event",
+                  "name": "CLIMBING \u2014 main event",
                   "orderIndex": 1,
                   "exercises": [
                     {
@@ -3518,10 +3518,10 @@
                       "sets": 1,
                       "repsMin": null,
                       "repsMax": null,
-                      "repsText": "60–90 min",
+                      "repsText": "60\u201390 min",
                       "load": "Technique + power focus",
                       "tempo": null,
-                      "notes": "This IS your Zone 2 + VO₂ stimulus + grip volume + upper pulling for the week. Don't skip climbing for more barbell work.",
+                      "notes": "This IS your Zone 2 + VO\u2082 stimulus + grip volume + upper pulling for the week. Don't skip climbing for more barbell work.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [],
@@ -3531,7 +3531,7 @@
                   ]
                 },
                 {
-                  "name": "LOADED CARRY — if energy allows",
+                  "name": "LOADED CARRY \u2014 if energy allows",
                   "orderIndex": 2,
                   "exercises": [
                     {
@@ -3540,7 +3540,7 @@
                       "repsMin": null,
                       "repsMax": null,
                       "repsText": "40m",
-                      "load": "Heavy — RPE 9",
+                      "load": "Heavy \u2014 RPE 9",
                       "tempo": "Controlled",
                       "notes": "Heavier than home. Home carries cover maintenance; this pushes the Centenarian Decathlon benchmark.",
                       "priority": "optional",
@@ -3556,7 +3556,7 @@
                   ]
                 },
                 {
-                  "name": "ANTAGONIST CIRCUIT — finish climbing session",
+                  "name": "ANTAGONIST CIRCUIT \u2014 finish climbing session",
                   "orderIndex": 3,
                   "exercises": [
                     {
@@ -3642,17 +3642,17 @@
               "activityType": "climbing"
             }
           ],
-          "goal": "Full Four Pillar intent adapted for home equipment (Power Blocks, bench, dip bar). Covers lower and upper strength at home plus the climbing day. Use challenging loads — the program assumes access to heavy enough dumbbells. Match gym intensity: 2–3 RIR on strength work."
+          "goal": "Full Four Pillar intent adapted for home equipment (Power Blocks, bench, dip bar). Covers lower and upper strength at home plus the climbing day. Use challenging loads \u2014 the program assumes access to heavy enough dumbbells. Match gym intensity: 2\u20133 RIR on strength work."
         }
       ],
-      "releaseNotes": "Cardio now shows a target zone band on the live bar (Norwegian 4×4 → Z4–Z5). Dedicated Zone 2 blocks hold the countdown until you reach Zone 2 (tap Start Now to skip) so the prescribed time is time *in* zone.",
+      "releaseNotes": "Cardio now shows a target zone band on the live bar (Norwegian 4\u00d74 \u2192 Z4\u2013Z5). Dedicated Zone 2 blocks hold the countdown until you reach Zone 2 (tap Start Now to skip) so the prescribed time is time *in* zone.",
       "sourceUrl": "https://jalsemgeest.github.io/pillar-programs/four_pillar_v1.json"
     },
     {
       "id": "general_strength_v1",
       "name": "General Strength & Conditioning",
       "version": "1.5.0",
-      "description": "A four-phase progressive program designed to build movement quality, muscle, strength, and cardiovascular fitness across 28+ weeks. Phase 1 (Foundation, 6 wks) establishes movement patterns and connective tissue resilience. Phase 2 (Hypertrophy, 10 wks) accumulates volume for muscle growth. Phase 3 (Strength, 6 wks) converts mass to neural strength. Phase 4 (Conditioning, 6 wks) peaks VO₂ max and cardiovascular fitness. All plans use Dynamic Equipment — at workout start the app resolves each exercise to the best alternative for your available equipment automatically.",
+      "description": "A four-phase progressive program designed to build movement quality, muscle, strength, and cardiovascular fitness across 28+ weeks. Phase 1 (Foundation, 6 wks) establishes movement patterns and connective tissue resilience. Phase 2 (Hypertrophy, 10 wks) accumulates volume for muscle growth. Phase 3 (Strength, 6 wks) converts mass to neural strength. Phase 4 (Conditioning, 6 wks) peaks VO\u2082 max and cardiovascular fitness. All plans use Dynamic Equipment \u2014 at workout start the app resolves each exercise to the best alternative for your available equipment automatically.",
       "tags": [
         "strength",
         "hypertrophy",
@@ -3662,13 +3662,13 @@
         "home-gym",
         "full-body"
       ],
-      "targetProfile": "General population — beginner to intermediate, home or commercial gym",
+      "targetProfile": "General population \u2014 beginner to intermediate, home or commercial gym",
       "createdAt": "2026-06-06T00:00:00Z",
       "plans": [
         {
           "id": "gsc-foundation-4day",
           "name": "4-Day | Foundation",
-          "scheduleDescription": "Mon · Tue · Thu · Sat (suggested)",
+          "scheduleDescription": "Mon \u00b7 Tue \u00b7 Thu \u00b7 Sat (suggested)",
           "daysPerWeek": 4,
           "orderIndex": 0,
           "phaseName": "Foundation",
@@ -3680,7 +3680,7 @@
               "id": "gsc-found-4d-w1",
               "dayLabel": "Day 1",
               "sessionType": "Full Body A",
-              "durationRange": "50–60 min",
+              "durationRange": "50\u201360 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -3878,7 +3878,7 @@
               "id": "gsc-found-4d-w2",
               "dayLabel": "Day 2",
               "sessionType": "Full Body B",
-              "durationRange": "50–60 min",
+              "durationRange": "50\u201360 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -4081,7 +4081,7 @@
               "id": "gsc-found-4d-w3",
               "dayLabel": "Day 3",
               "sessionType": "Full Body C",
-              "durationRange": "45–55 min",
+              "durationRange": "45\u201355 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -4280,7 +4280,7 @@
               "id": "gsc-found-4d-w4",
               "dayLabel": "Day 4",
               "sessionType": "Full Body D",
-              "durationRange": "45–55 min",
+              "durationRange": "45\u201355 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 3,
@@ -4466,12 +4466,12 @@
             }
           ],
           "deloadWeekNumber": 6,
-          "goal": "Establish movement quality and work capacity before adding serious load. Sets are 10–15 reps at moderate weight — keep 2–3 reps in reserve on everything. Prioritise technique and consistency over pushing numbers. This base makes every phase that follows safer and more effective."
+          "goal": "Establish movement quality and work capacity before adding serious load. Sets are 10\u201315 reps at moderate weight \u2014 keep 2\u20133 reps in reserve on everything. Prioritise technique and consistency over pushing numbers. This base makes every phase that follows safer and more effective."
         },
         {
           "id": "gsc-foundation-3day",
           "name": "3-Day | Foundation",
-          "scheduleDescription": "Mon · Wed · Fri (suggested)",
+          "scheduleDescription": "Mon \u00b7 Wed \u00b7 Fri (suggested)",
           "daysPerWeek": 3,
           "orderIndex": 1,
           "phaseName": "Foundation",
@@ -4483,7 +4483,7 @@
               "id": "gsc-found-3d-w1",
               "dayLabel": "Day 1",
               "sessionType": "Full Body A",
-              "durationRange": "50–60 min",
+              "durationRange": "50\u201360 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -4681,7 +4681,7 @@
               "id": "gsc-found-3d-w2",
               "dayLabel": "Day 2",
               "sessionType": "Full Body B",
-              "durationRange": "50–60 min",
+              "durationRange": "50\u201360 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -4884,7 +4884,7 @@
               "id": "gsc-found-3d-w3",
               "dayLabel": "Day 3",
               "sessionType": "Full Body C",
-              "durationRange": "45–55 min",
+              "durationRange": "45\u201355 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -5081,12 +5081,12 @@
             }
           ],
           "deloadWeekNumber": 6,
-          "goal": "Establish movement quality and work capacity before adding serious load. Sets are 10–15 reps at moderate weight — keep 2–3 reps in reserve on everything. Prioritise technique and consistency over pushing numbers. This base makes every phase that follows safer and more effective."
+          "goal": "Establish movement quality and work capacity before adding serious load. Sets are 10\u201315 reps at moderate weight \u2014 keep 2\u20133 reps in reserve on everything. Prioritise technique and consistency over pushing numbers. This base makes every phase that follows safer and more effective."
         },
         {
           "id": "gsc-hypertrophy-4day",
           "name": "4-Day | Hypertrophy",
-          "scheduleDescription": "Mon · Tue · Thu · Sat (suggested)",
+          "scheduleDescription": "Mon \u00b7 Tue \u00b7 Thu \u00b7 Sat (suggested)",
           "daysPerWeek": 4,
           "orderIndex": 2,
           "phaseName": "Hypertrophy",
@@ -5097,8 +5097,8 @@
             {
               "id": "gsc-hyp-4d-w1",
               "dayLabel": "Day 1",
-              "sessionType": "Upper A — Chest & Back",
-              "durationRange": "55–65 min",
+              "sessionType": "Upper A \u2014 Chest & Back",
+              "durationRange": "55\u201365 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -5291,8 +5291,8 @@
             {
               "id": "gsc-hyp-4d-w2",
               "dayLabel": "Day 2",
-              "sessionType": "Lower A — Quad Focus",
-              "durationRange": "55–65 min",
+              "sessionType": "Lower A \u2014 Quad Focus",
+              "durationRange": "55\u201365 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -5310,7 +5310,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": "2-0-1-0",
-                      "notes": "Mesocycle 1: 3×10–15 / Mesocycle 2: 4×8–12",
+                      "notes": "Mesocycle 1: 3\u00d710\u201315 / Mesocycle 2: 4\u00d78\u201312",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -5410,8 +5410,8 @@
             {
               "id": "gsc-hyp-4d-w3",
               "dayLabel": "Day 3",
-              "sessionType": "Upper B — Shoulders & Arms",
-              "durationRange": "50–60 min",
+              "sessionType": "Upper B \u2014 Shoulders & Arms",
+              "durationRange": "50\u201360 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -5568,8 +5568,8 @@
             {
               "id": "gsc-hyp-4d-w4",
               "dayLabel": "Day 4",
-              "sessionType": "Lower B — Hinge & Glute",
-              "durationRange": "55–65 min",
+              "sessionType": "Lower B \u2014 Hinge & Glute",
+              "durationRange": "55\u201365 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 3,
@@ -5699,12 +5699,12 @@
             }
           ],
           "deloadWeekNumber": 10,
-          "goal": "Accumulate enough volume and mechanical stress to drive muscle growth. 6–15 reps with progressive overload each session — add weight or reps before moving up. Keep 1–2 reps in reserve. Expect soreness early in the block; that's normal. By week 8 you should be hitting new rep-range PRs."
+          "goal": "Accumulate enough volume and mechanical stress to drive muscle growth. 6\u201315 reps with progressive overload each session \u2014 add weight or reps before moving up. Keep 1\u20132 reps in reserve. Expect soreness early in the block; that's normal. By week 8 you should be hitting new rep-range PRs."
         },
         {
           "id": "gsc-hypertrophy-3day",
           "name": "3-Day | Hypertrophy",
-          "scheduleDescription": "Mon · Wed · Fri (suggested)",
+          "scheduleDescription": "Mon \u00b7 Wed \u00b7 Fri (suggested)",
           "daysPerWeek": 3,
           "orderIndex": 3,
           "phaseName": "Hypertrophy",
@@ -5716,7 +5716,7 @@
               "id": "gsc-hyp-3d-w1",
               "dayLabel": "Day 1",
               "sessionType": "Push",
-              "durationRange": "55–65 min",
+              "durationRange": "55\u201365 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -5841,7 +5841,7 @@
               "id": "gsc-hyp-3d-w2",
               "dayLabel": "Day 2",
               "sessionType": "Pull",
-              "durationRange": "55–65 min",
+              "durationRange": "55\u201365 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -5974,7 +5974,7 @@
               "id": "gsc-hyp-3d-w3",
               "dayLabel": "Day 3",
               "sessionType": "Legs",
-              "durationRange": "55–65 min",
+              "durationRange": "55\u201365 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -6104,12 +6104,12 @@
             }
           ],
           "deloadWeekNumber": 10,
-          "goal": "Accumulate enough volume and mechanical stress to drive muscle growth. 6–15 reps with progressive overload each session — add weight or reps before moving up. Keep 1–2 reps in reserve. Expect soreness early in the block; that's normal. By week 8 you should be hitting new rep-range PRs."
+          "goal": "Accumulate enough volume and mechanical stress to drive muscle growth. 6\u201315 reps with progressive overload each session \u2014 add weight or reps before moving up. Keep 1\u20132 reps in reserve. Expect soreness early in the block; that's normal. By week 8 you should be hitting new rep-range PRs."
         },
         {
           "id": "gsc-strength-4day",
           "name": "4-Day | Strength",
-          "scheduleDescription": "Mon · Tue · Thu · Sat (suggested)",
+          "scheduleDescription": "Mon \u00b7 Tue \u00b7 Thu \u00b7 Sat (suggested)",
           "daysPerWeek": 4,
           "orderIndex": 4,
           "phaseName": "Strength",
@@ -6120,8 +6120,8 @@
             {
               "id": "gsc-str-4d-w1",
               "dayLabel": "Day 1",
-              "sessionType": "Lower A — Squat",
-              "durationRange": "60–75 min",
+              "sessionType": "Lower A \u2014 Squat",
+              "durationRange": "60\u201375 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -6139,7 +6139,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": "1-0-1-0",
-                      "notes": "Heavy compound — prioritize depth and bracing",
+                      "notes": "Heavy compound \u2014 prioritize depth and bracing",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -6228,8 +6228,8 @@
             {
               "id": "gsc-str-4d-w2",
               "dayLabel": "Day 2",
-              "sessionType": "Upper A — Bench",
-              "durationRange": "60–70 min",
+              "sessionType": "Upper A \u2014 Bench",
+              "durationRange": "60\u201370 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -6331,8 +6331,8 @@
             {
               "id": "gsc-str-4d-w3",
               "dayLabel": "Day 3",
-              "sessionType": "Lower B — Deadlift",
-              "durationRange": "60–75 min",
+              "sessionType": "Lower B \u2014 Deadlift",
+              "durationRange": "60\u201375 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -6433,8 +6433,8 @@
             {
               "id": "gsc-str-4d-w4",
               "dayLabel": "Day 4",
-              "sessionType": "Upper B — Overhead Press",
-              "durationRange": "60–70 min",
+              "sessionType": "Upper B \u2014 Overhead Press",
+              "durationRange": "60\u201370 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 3,
@@ -6546,12 +6546,12 @@
             }
           ],
           "deloadWeekNumber": 6,
-          "goal": "Convert hypertrophy gains into peak force output. Lower reps (3–6), heavier loads, close to technical failure on the last set. Rest 2–3 min between sets — that rest is part of the program. Numbers should climb weekly; if they stall two sessions in a row, drop 10 % and rebuild."
+          "goal": "Convert hypertrophy gains into peak force output. Lower reps (3\u20136), heavier loads, close to technical failure on the last set. Rest 2\u20133 min between sets \u2014 that rest is part of the program. Numbers should climb weekly; if they stall two sessions in a row, drop 10 % and rebuild."
         },
         {
           "id": "gsc-strength-3day",
           "name": "3-Day | Strength",
-          "scheduleDescription": "Mon · Wed · Fri (suggested)",
+          "scheduleDescription": "Mon \u00b7 Wed \u00b7 Fri (suggested)",
           "daysPerWeek": 3,
           "orderIndex": 5,
           "phaseName": "Strength",
@@ -6563,7 +6563,7 @@
               "id": "gsc-str-3d-w1",
               "dayLabel": "Day 1",
               "sessionType": "Lower",
-              "durationRange": "65–75 min",
+              "durationRange": "65\u201375 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -6679,7 +6679,7 @@
               "id": "gsc-str-3d-w2",
               "dayLabel": "Day 2",
               "sessionType": "Upper A",
-              "durationRange": "60–70 min",
+              "durationRange": "60\u201370 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -6787,7 +6787,7 @@
               "id": "gsc-str-3d-w3",
               "dayLabel": "Day 3",
               "sessionType": "Upper B",
-              "durationRange": "60–70 min",
+              "durationRange": "60\u201370 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -6912,12 +6912,12 @@
             }
           ],
           "deloadWeekNumber": 6,
-          "goal": "Convert hypertrophy gains into peak force output. Lower reps (3–6), heavier loads, close to technical failure on the last set. Rest 2–3 min between sets — that rest is part of the program. Numbers should climb weekly; if they stall two sessions in a row, drop 10 % and rebuild."
+          "goal": "Convert hypertrophy gains into peak force output. Lower reps (3\u20136), heavier loads, close to technical failure on the last set. Rest 2\u20133 min between sets \u2014 that rest is part of the program. Numbers should climb weekly; if they stall two sessions in a row, drop 10 % and rebuild."
         },
         {
           "id": "gsc-conditioning-4day",
           "name": "4-Day | Conditioning",
-          "scheduleDescription": "Mon · Wed · Thu · Sat (suggested)",
+          "scheduleDescription": "Mon \u00b7 Wed \u00b7 Thu \u00b7 Sat (suggested)",
           "daysPerWeek": 4,
           "orderIndex": 6,
           "phaseName": "Conditioning",
@@ -6929,7 +6929,7 @@
               "id": "gsc-cond-4d-w1",
               "dayLabel": "Day 1",
               "sessionType": "Full Body Lift A",
-              "durationRange": "40–50 min",
+              "durationRange": "40\u201350 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -6947,7 +6947,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": "2-0-1-0",
-                      "notes": "Maintenance — moderate load",
+                      "notes": "Maintenance \u2014 moderate load",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -7064,7 +7064,7 @@
               "id": "gsc-cond-4d-w2",
               "dayLabel": "Day 2",
               "sessionType": "Zone 2 Cardio",
-              "durationRange": "40–50 min",
+              "durationRange": "40\u201350 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -7082,7 +7082,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": null,
-                      "notes": "40–45 min at conversational pace, 65–75% max HR. Prefer cycling or rowing.",
+                      "notes": "40\u201345 min at conversational pace, 65\u201375% max HR. Prefer cycling or rowing.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": []
@@ -7095,7 +7095,7 @@
               "id": "gsc-cond-4d-w3",
               "dayLabel": "Day 3",
               "sessionType": "Full Body Lift B",
-              "durationRange": "40–50 min",
+              "durationRange": "40\u201350 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -7227,8 +7227,8 @@
             {
               "id": "gsc-cond-4d-w4",
               "dayLabel": "Day 4",
-              "sessionType": "4×4 Intervals",
-              "durationRange": "30–35 min",
+              "sessionType": "4\u00d74 Intervals",
+              "durationRange": "30\u201335 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 3,
@@ -7246,7 +7246,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": null,
-                      "notes": "4 rounds × 4 min at 90–95% max HR. 3 min active recovery between rounds. Warm up 10 min, cool down 5 min. Prefer bike or rower.",
+                      "notes": "4 rounds \u00d7 4 min at 90\u201395% max HR. 3 min active recovery between rounds. Warm up 10 min, cool down 5 min. Prefer bike or rower.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": []
@@ -7257,12 +7257,12 @@
             }
           ],
           "deloadWeekNumber": 6,
-          "goal": "Shift emphasis toward metabolic fitness and cardiovascular capacity alongside strength maintenance. Push hard on conditioning circuits and finishers — these are meant to be uncomfortable. Keep strength sets controlled at 1–2 RIR. The goal is to be strong AND able to sustain effort."
+          "goal": "Shift emphasis toward metabolic fitness and cardiovascular capacity alongside strength maintenance. Push hard on conditioning circuits and finishers \u2014 these are meant to be uncomfortable. Keep strength sets controlled at 1\u20132 RIR. The goal is to be strong AND able to sustain effort."
         },
         {
           "id": "gsc-conditioning-3day",
           "name": "3-Day | Conditioning",
-          "scheduleDescription": "Mon · Wed · Fri (suggested)",
+          "scheduleDescription": "Mon \u00b7 Wed \u00b7 Fri (suggested)",
           "daysPerWeek": 3,
           "orderIndex": 7,
           "phaseName": "Conditioning",
@@ -7274,7 +7274,7 @@
               "id": "gsc-cond-3d-w1",
               "dayLabel": "Day 1",
               "sessionType": "Full Body Lift",
-              "durationRange": "40–50 min",
+              "durationRange": "40\u201350 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 0,
@@ -7292,7 +7292,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": "2-0-1-0",
-                      "notes": "Maintenance lifting — 2–3 sets × 10–12 reps",
+                      "notes": "Maintenance lifting \u2014 2\u20133 sets \u00d7 10\u201312 reps",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [
@@ -7422,7 +7422,7 @@
               "id": "gsc-cond-3d-w2",
               "dayLabel": "Day 2",
               "sessionType": "Zone 2 Cardio",
-              "durationRange": "40–50 min",
+              "durationRange": "40\u201350 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 1,
@@ -7440,7 +7440,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": null,
-                      "notes": "40–45 min at conversational pace, 65–75% max HR.",
+                      "notes": "40\u201345 min at conversational pace, 65\u201375% max HR.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": []
@@ -7452,8 +7452,8 @@
             {
               "id": "gsc-cond-3d-w3",
               "dayLabel": "Day 3",
-              "sessionType": "4×4 Intervals",
-              "durationRange": "30–35 min",
+              "sessionType": "4\u00d74 Intervals",
+              "durationRange": "30\u201335 min",
               "location": "",
               "keyMetrics": [],
               "orderIndex": 2,
@@ -7471,7 +7471,7 @@
                       "repsText": null,
                       "load": "",
                       "tempo": null,
-                      "notes": "4 rounds × 4 min at 90–95% max HR. 3 min active recovery. Warm up 10 min, cool down 5 min.",
+                      "notes": "4 rounds \u00d7 4 min at 90\u201395% max HR. 3 min active recovery. Warm up 10 min, cool down 5 min.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": []
@@ -7482,7 +7482,7 @@
             }
           ],
           "deloadWeekNumber": 6,
-          "goal": "Shift emphasis toward metabolic fitness and cardiovascular capacity alongside strength maintenance. Push hard on conditioning circuits and finishers — these are meant to be uncomfortable. Keep strength sets controlled at 1–2 RIR. The goal is to be strong AND able to sustain effort."
+          "goal": "Shift emphasis toward metabolic fitness and cardiovascular capacity alongside strength maintenance. Push hard on conditioning circuits and finishers \u2014 these are meant to be uncomfortable. Keep strength sets controlled at 1\u20132 RIR. The goal is to be strong AND able to sustain effort."
         }
       ],
       "exercises": [],
@@ -7491,15 +7491,15 @@
           "id": "gsc_morning_cars",
           "name": "Morning CARs",
           "timing": "general",
-          "durationDescription": "7–9 min",
-          "notes": "Do daily — before coffee if possible. CARs (Controlled Articular Rotations) signal the nervous system that you own full joint range. Daily repetition is the mechanism; skipping days reduces the adaptation signal.",
+          "durationDescription": "7\u20139 min",
+          "notes": "Do daily \u2014 before coffee if possible. CARs (Controlled Articular Rotations) signal the nervous system that you own full joint range. Daily repetition is the mechanism; skipping days reduces the adaptation signal.",
           "exercises": [
             {
               "name": "Hip CARs",
               "duration": "5 circles each direction / side",
               "frequency": "Daily",
               "focusArea": "Hip joint health + ROM",
-              "notes": "Standing, one hand on wall for balance. Maximise the circle — reach forward, out, back, and through. Full tension throughout.",
+              "notes": "Standing, one hand on wall for balance. Maximise the circle \u2014 reach forward, out, back, and through. Full tension throughout.",
               "priority": "core",
               "orderIndex": 0
             },
@@ -7508,7 +7508,7 @@
               "duration": "5 circles each direction / arm",
               "frequency": "Daily",
               "focusArea": "Shoulder capsule health + scapular control",
-              "notes": "Keep the rest of the body still. Reach long through the full arc. Critical for climbers — maintains capsular health and scapular dissociation.",
+              "notes": "Keep the rest of the body still. Reach long through the full arc. Critical for climbers \u2014 maintains capsular health and scapular dissociation.",
               "priority": "core",
               "orderIndex": 1
             },
@@ -7517,7 +7517,7 @@
               "duration": "5 rotations / side",
               "frequency": "Daily",
               "focusArea": "Mid-back mobility + desk posture",
-              "notes": "Seated or quadruped. Isolate the T-spine — keep the lumbar quiet. Desk work kills thoracic extension; this is the daily antidote.",
+              "notes": "Seated or quadruped. Isolate the T-spine \u2014 keep the lumbar quiet. Desk work kills thoracic extension; this is the daily antidote.",
               "priority": "core",
               "orderIndex": 2
             },
@@ -7526,22 +7526,22 @@
               "duration": "10 slow circles each direction",
               "frequency": "Daily",
               "focusArea": "Wrist + forearm joint health",
-              "notes": "Both wrists together or one at a time. Maximise the circle in both directions. Underused but essential for climbers — prepares the wrist joint before any gripping or loading.",
+              "notes": "Both wrists together or one at a time. Maximise the circle in both directions. Underused but essential for climbers \u2014 prepares the wrist joint before any gripping or loading.",
               "priority": "core",
               "orderIndex": 3
             },
             {
               "name": "Chin Tucks",
-              "duration": "10 reps × 2 sec hold",
+              "duration": "10 reps \u00d7 2 sec hold",
               "frequency": "Daily",
               "focusArea": "Forward head posture / deep neck flexors",
-              "notes": "Activates longus colli — the muscles that atrophy from screen work. Neurological stimulus; no fatigue cost. Draw chin straight back, not down.",
+              "notes": "Activates longus colli \u2014 the muscles that atrophy from screen work. Neurological stimulus; no fatigue cost. Draw chin straight back, not down.",
               "priority": "core",
               "orderIndex": 4
             },
             {
               "name": "Band Pull-Aparts",
-              "duration": "2 × 20 reps",
+              "duration": "2 \u00d7 20 reps",
               "frequency": "Daily",
               "focusArea": "Mid/lower trap + rear delt activation",
               "notes": "Highest-leverage desk-worker and climber corrective. Climbers are chronically dominant in lat/pec/biceps; this rebalances the shoulder girdle daily with near-zero cost. Keep arms straight, squeeze shoulder blades together at end range.",
@@ -7552,19 +7552,19 @@
         },
         {
           "id": "gsc_theme_a_thoracic",
-          "name": "Theme A — Thoracic",
+          "name": "Theme A \u2014 Thoracic",
           "timing": "general",
           "themeTag": "A",
           "phaseNames": [
             "Foundation"
           ],
           "durationDescription": "~15 min",
-          "notes": "Desk work drives thoracic kyphosis. Climbing locks the T-spine in flexion under load. Combined, this limits overhead reach, bench press depth, and breathing mechanics. No equipment needed — floor only.",
+          "notes": "Desk work drives thoracic kyphosis. Climbing locks the T-spine in flexion under load. Combined, this limits overhead reach, bench press depth, and breathing mechanics. No equipment needed \u2014 floor only.",
           "exercises": [
             {
               "name": "Cat-Cow",
-              "duration": "10 reps slow — full end-range extension and flexion",
-              "frequency": "2–3×/week",
+              "duration": "10 reps slow \u2014 full end-range extension and flexion",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Spinal segmentation + T-spine awareness",
               "notes": "Emphasise the full arch (extension) as much as the curl. Most people underdo the extension end.",
               "priority": "core",
@@ -7572,8 +7572,8 @@
             },
             {
               "name": "Thread-the-Needle",
-              "duration": "5 reps/side — 3 sec hold at end range",
-              "frequency": "2–3×/week",
+              "duration": "5 reps/side \u2014 3 sec hold at end range",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Thoracic rotation",
               "notes": "From quadruped. Thread one arm under the body and rotate. Use the exhale to sink deeper. Keep hips level.",
               "priority": "core",
@@ -7582,35 +7582,35 @@
             {
               "name": "Quadruped T-Spine Rotation (hand behind head)",
               "duration": "8 reps/side",
-              "frequency": "2–3×/week",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "T-spine rotation under load",
-              "notes": "From quadruped, one hand behind head. Rotate elbow up toward ceiling. Keep lower back still — movement comes from mid-back only.",
+              "notes": "From quadruped, one hand behind head. Rotate elbow up toward ceiling. Keep lower back still \u2014 movement comes from mid-back only.",
               "priority": "core",
               "orderIndex": 2
             },
             {
               "name": "Book Opener (side-lying)",
-              "duration": "5 reps/side — 5 sec hold at end range",
-              "frequency": "2–3×/week",
+              "duration": "5 reps/side \u2014 5 sec hold at end range",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "T-spine rotation + anterior chest opening",
-              "notes": "Side-lying, knees stacked at 90°. Sweep top arm across and open chest toward ceiling. Breathe into the stretch. Let gravity do the work.",
+              "notes": "Side-lying, knees stacked at 90\u00b0. Sweep top arm across and open chest toward ceiling. Breathe into the stretch. Let gravity do the work.",
               "priority": "core",
               "orderIndex": 3
             },
             {
               "name": "Prone Cobra Hold",
-              "duration": "5 × 3 sec holds",
-              "frequency": "2–3×/week",
+              "duration": "5 \u00d7 3 sec holds",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "T-spine extension + lower trap activation",
-              "notes": "Face down, arms at sides. Lift chest using mid-back — not lower back. Squeeze shoulder blades down and back. Progress from elbows bent to arms straight.",
+              "notes": "Face down, arms at sides. Lift chest using mid-back \u2014 not lower back. Squeeze shoulder blades down and back. Progress from elbows bent to arms straight.",
               "priority": "core",
               "orderIndex": 4
             },
             {
               "name": "Seated T-Spine Rotation over Bench Back",
               "duration": "10 reps/side",
-              "frequency": "2–3×/week",
-              "focusArea": "T-spine rotation — seated variant",
+              "frequency": "2\u20133\u00d7/week",
+              "focusArea": "T-spine rotation \u2014 seated variant",
               "notes": "Sit astride a bench facing the back. Rotate and hook elbows on the bench back. Adds a mechanical fulcrum that isolates T-spine better than floor rotations.",
               "priority": "optional",
               "orderIndex": 5
@@ -7619,7 +7619,7 @@
         },
         {
           "id": "gsc_theme_c_shoulder",
-          "name": "Theme C — Shoulder & Posterior Capsule",
+          "name": "Theme C \u2014 Shoulder & Posterior Capsule",
           "timing": "general",
           "themeTag": "C",
           "phaseNames": [
@@ -7631,54 +7631,54 @@
             {
               "name": "Sleeper Stretch",
               "duration": "60 sec/side",
-              "frequency": "2–3×/week",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Posterior capsule / glenohumeral IR",
-              "notes": "Side-lying, bottom arm at 90° shoulder/elbow. Use top hand to gently push forearm toward floor. This is the most direct treatment for GIRD — do not skip. Stop at pain; discomfort is expected.",
+              "notes": "Side-lying, bottom arm at 90\u00b0 shoulder/elbow. Use top hand to gently push forearm toward floor. This is the most direct treatment for GIRD \u2014 do not skip. Stop at pain; discomfort is expected.",
               "priority": "core",
               "orderIndex": 0
             },
             {
               "name": "Cross-Body Shoulder Stretch",
               "duration": "60 sec/side",
-              "frequency": "2–3×/week",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Posterior capsule / infraspinatus + teres minor",
-              "notes": "Pull the arm across the chest using the opposite hand at the elbow. Keep shoulder packed down — do not let it shrug up. Complements sleeper stretch with a different capsular angle.",
+              "notes": "Pull the arm across the chest using the opposite hand at the elbow. Keep shoulder packed down \u2014 do not let it shrug up. Complements sleeper stretch with a different capsular angle.",
               "priority": "core",
               "orderIndex": 1
             },
             {
-              "name": "Band External Rotation (elbow at side, 90°)",
-              "duration": "3 × 15 reps slow",
-              "frequency": "2–3×/week",
-              "focusArea": "Rotator cuff ER strength — short range",
-              "notes": "Band anchored to side. Elbow pinned to hip. Rotate forearm out slowly (2 sec), resist return (2 sec). This is strengthening, not stretching — control the negative.",
+              "name": "Band External Rotation (elbow at side, 90\u00b0)",
+              "duration": "3 \u00d7 15 reps slow",
+              "frequency": "2\u20133\u00d7/week",
+              "focusArea": "Rotator cuff ER strength \u2014 short range",
+              "notes": "Band anchored to side. Elbow pinned to hip. Rotate forearm out slowly (2 sec), resist return (2 sec). This is strengthening, not stretching \u2014 control the negative.",
               "priority": "core",
               "orderIndex": 2
             },
             {
-              "name": "Band External Rotation at 90° Abduction",
-              "duration": "3 × 12 reps slow",
-              "frequency": "2–3×/week",
-              "focusArea": "Rotator cuff ER strength — end range (most deficient in climbers)",
+              "name": "Band External Rotation at 90\u00b0 Abduction",
+              "duration": "3 \u00d7 12 reps slow",
+              "frequency": "2\u20133\u00d7/week",
+              "focusArea": "Rotator cuff ER strength \u2014 end range (most deficient in climbers)",
               "notes": "Arm out to side at shoulder height. Band from below. Rotate forearm from pointing down to pointing up. This late-range ER position is where climbers have the most deficit and highest injury risk.",
               "priority": "core",
               "orderIndex": 3
             },
             {
               "name": "Dead Hang",
-              "duration": "3 × 30–45 sec",
-              "frequency": "2–3×/week",
+              "duration": "3 \u00d7 30\u201345 sec",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Glenohumeral decompression + scapular loading",
-              "notes": "Full passive hang, allow shoulders to rise toward ears. Then actively depress scapulae (pull shoulders away from ears) — hold 5 sec. Alternate between passive and active. Decompresses the joint and trains scapular retraction under load.",
+              "notes": "Full passive hang, allow shoulders to rise toward ears. Then actively depress scapulae (pull shoulders away from ears) \u2014 hold 5 sec. Alternate between passive and active. Decompresses the joint and trains scapular retraction under load.",
               "priority": "core",
               "orderIndex": 4
             },
             {
               "name": "Wall Slide with Posterior Tilt",
-              "duration": "2 × 10 reps",
-              "frequency": "2–3×/week",
+              "duration": "2 \u00d7 10 reps",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Lower trap + serratus anterior in overhead position",
-              "notes": "Hands on wall at shoulder height. Slide arms up while maintaining light contact. Keep ribs down (posterior pelvic tilt equivalent for the thorax). This trains the muscles that stabilise the scapula overhead — the primary failure point in shoulder impingement.",
+              "notes": "Hands on wall at shoulder height. Slide arms up while maintaining light contact. Keep ribs down (posterior pelvic tilt equivalent for the thorax). This trains the muscles that stabilise the scapula overhead \u2014 the primary failure point in shoulder impingement.",
               "priority": "optional",
               "orderIndex": 5
             }
@@ -7686,46 +7686,46 @@
         },
         {
           "id": "gsc_theme_d_posterior",
-          "name": "Theme D — Posterior Chain & Hamstrings",
+          "name": "Theme D \u2014 Posterior Chain & Hamstrings",
           "timing": "general",
           "themeTag": "D",
           "phaseNames": [
             "Strength"
           ],
           "durationDescription": "~18 min",
-          "notes": "Heavy deadlifts and RDLs at 80–90%+ demand full posterior chain length-tension. Desk sitting means hamstrings never get loaded at length. This theme targets the length-tension relationship under load, not just passive flexibility. Equipment: light dumbbell (5–15 lb), bench.",
+          "notes": "Heavy deadlifts and RDLs at 80\u201390%+ demand full posterior chain length-tension. Desk sitting means hamstrings never get loaded at length. This theme targets the length-tension relationship under load, not just passive flexibility. Equipment: light dumbbell (5\u201315 lb), bench.",
           "exercises": [
             {
               "name": "Supine Hamstring Stretch (band or strap)",
               "duration": "90 sec/side",
-              "frequency": "2–3×/week",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Passive hamstring length baseline",
-              "notes": "Loop a band around the foot. Straighten the leg toward the ceiling. Do not force — let the weight of the leg do the work over 90 seconds. Establish the passive range before loading it.",
+              "notes": "Loop a band around the foot. Straighten the leg toward the ceiling. Do not force \u2014 let the weight of the leg do the work over 90 seconds. Establish the passive range before loading it.",
               "priority": "core",
               "orderIndex": 0
             },
             {
               "name": "Active Straight Leg Raise",
-              "duration": "10 reps/side — kick to end range",
-              "frequency": "2–3×/week",
+              "duration": "10 reps/side \u2014 kick to end range",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Nervous system buy-in for hamstring length",
-              "notes": "Supine, one leg flat. Kick the other leg up as high as possible using hip flexors — no momentum. Hold 2 sec at top. The contrast between passive range (previous exercise) and active range reveals where the nervous system is restricting you.",
+              "notes": "Supine, one leg flat. Kick the other leg up as high as possible using hip flexors \u2014 no momentum. Hold 2 sec at top. The contrast between passive range (previous exercise) and active range reveals where the nervous system is restricting you.",
               "priority": "core",
               "orderIndex": 1
             },
             {
-              "name": "Jefferson Curl (5–15 lb DB)",
-              "duration": "5 reps slow — 3 sec down, 1 sec hold, 3 sec up",
-              "frequency": "2–3×/week",
+              "name": "Jefferson Curl (5\u201315 lb DB)",
+              "duration": "5 reps slow \u2014 3 sec down, 1 sec hold, 3 sec up",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Full posterior chain under spinal flexion load",
-              "notes": "Stand on a step or bench edge. Hold a light DB. Curl down vertebra by vertebra into full spinal flexion, reaching toward the floor. Do not rush. This builds posterior chain strength through full range — including ranges that conventional deadlifts avoid.",
+              "notes": "Stand on a step or bench edge. Hold a light DB. Curl down vertebra by vertebra into full spinal flexion, reaching toward the floor. Do not rush. This builds posterior chain strength through full range \u2014 including ranges that conventional deadlifts avoid.",
               "priority": "core",
               "orderIndex": 2
             },
             {
               "name": "Single-Leg RDL with Pause (light DB or bodyweight)",
-              "duration": "3 × 8 reps/side — 2 sec hold at bottom",
-              "frequency": "2–3×/week",
+              "duration": "3 \u00d7 8 reps/side \u2014 2 sec hold at bottom",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Eccentric hamstring strengthening + hip hinge pattern",
               "notes": "Hinge at hip, send the free leg back. Pause 2 sec at the bottom in maximum hip flexion. Stand by squeezing the glute of the working leg. The pause removes momentum and maximises time under tension at end range.",
               "priority": "core",
@@ -7733,17 +7733,17 @@
             },
             {
               "name": "Nordic Hamstring Curl (feet under bench)",
-              "duration": "3 × 3–6 reps eccentric only",
-              "frequency": "2–3×/week",
-              "focusArea": "Eccentric hamstring strength — highest evidence for injury prevention",
+              "duration": "3 \u00d7 3\u20136 reps eccentric only",
+              "frequency": "2\u20133\u00d7/week",
+              "focusArea": "Eccentric hamstring strength \u2014 highest evidence for injury prevention",
               "notes": "Kneel, feet anchored under the bench. Lower the body toward the floor as slowly as possible (aim for 5+ sec). Catch yourself with hands. Pull back up using hands as needed. Highest-evidence exercise for hamstring strain prevention. Progress by increasing reps before adding sets.",
               "priority": "core",
               "orderIndex": 4
             },
             {
               "name": "Hip Hinge with Band (band looped over hips, anchored forward)",
-              "duration": "10 reps — 3 sec hold at bottom",
-              "frequency": "2–3×/week",
+              "duration": "10 reps \u2014 3 sec hold at bottom",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Hip hinge motor pattern + posterior loading",
               "notes": "Loop a band over the hip crease, anchored to something in front. Hinge back into the band's resistance. Hold 3 sec. The band provides tactile feedback for where the hinge axis should be and teaches posterior hip loading.",
               "priority": "optional",
@@ -7753,46 +7753,46 @@
         },
         {
           "id": "gsc_theme_e_ankle",
-          "name": "Theme E — Ankle Dorsiflexion & Calf",
+          "name": "Theme E \u2014 Ankle Dorsiflexion & Calf",
           "timing": "general",
           "themeTag": "E",
           "phaseNames": [
             "Conditioning"
           ],
           "durationDescription": "~16 min",
-          "notes": "Limited ankle dorsiflexion accounts for up to 43% of variance in squat depth. Zone 2 and VO2 interval sessions create the highest cumulative ankle and calf load of the program — Achilles tendinopathy risk peaks here. Equipment: wall, step edge or bench, resistance band.",
+          "notes": "Limited ankle dorsiflexion accounts for up to 43% of variance in squat depth. Zone 2 and VO2 interval sessions create the highest cumulative ankle and calf load of the program \u2014 Achilles tendinopathy risk peaks here. Equipment: wall, step edge or bench, resistance band.",
           "exercises": [
             {
               "name": "Ankle DF Wall Drill",
-              "duration": "3 × 10 reps/side",
-              "frequency": "2–3×/week",
+              "duration": "3 \u00d7 10 reps/side",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Dorsiflexion range assessment + mobilisation",
-              "notes": "Toes touching the wall, knee drives toward wall keeping heel flat. Move foot back until the furthest distance where knee can touch. Measure weekly — asymmetry of >2 cm is worth addressing. Keep this as your benchmark.",
+              "notes": "Toes touching the wall, knee drives toward wall keeping heel flat. Move foot back until the furthest distance where knee can touch. Measure weekly \u2014 asymmetry of >2 cm is worth addressing. Keep this as your benchmark.",
               "priority": "core",
               "orderIndex": 0
             },
             {
               "name": "Half-Kneeling Ankle Mobilization (banded)",
-              "duration": "2 × 60 sec/side",
-              "frequency": "2–3×/week",
+              "duration": "2 \u00d7 60 sec/side",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Talocrural joint-space opening",
-              "notes": "Loop a band around the ankle/heel. Anchor band behind you. Drive the knee forward over the toes — the band provides posterior traction on the talus, creating joint space. This addresses the bony restriction component, not just soft tissue.",
+              "notes": "Loop a band around the ankle/heel. Anchor band behind you. Drive the knee forward over the toes \u2014 the band provides posterior traction on the talus, creating joint space. This addresses the bony restriction component, not just soft tissue.",
               "priority": "core",
               "orderIndex": 1
             },
             {
-              "name": "Calf Stretch — Bent Knee (soleus bias)",
+              "name": "Calf Stretch \u2014 Bent Knee (soleus bias)",
               "duration": "60 sec/side",
-              "frequency": "2–3×/week",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Soleus + Achilles length",
               "notes": "Against wall, foot flat, knee bent and pushed forward. Soleus is the primary dorsiflexion restrictor in most people (not gastrocnemius). If you feel this more than the straight-knee version, the soleus is your limiting factor.",
               "priority": "core",
               "orderIndex": 2
             },
             {
-              "name": "Calf Stretch — Straight Knee (gastrocnemius bias)",
+              "name": "Calf Stretch \u2014 Straight Knee (gastrocnemius bias)",
               "duration": "60 sec/side",
-              "frequency": "2–3×/week",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Gastrocnemius length",
               "notes": "Against wall or on a step, heel dropped, knee locked. Target the upper calf/back of knee. Do this after the bent-knee version to hit both heads.",
               "priority": "core",
@@ -7800,19 +7800,19 @@
             },
             {
               "name": "Single-Leg Eccentric Calf Raise (off step edge)",
-              "duration": "3 × 15 reps — 3 sec down, 1 sec hold, 3 sec up",
-              "frequency": "2–3×/week",
+              "duration": "3 \u00d7 15 reps \u2014 3 sec down, 1 sec hold, 3 sec up",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Achilles tendon health + strength in dorsiflexion",
-              "notes": "Stand on one leg on a step edge. Rise up with both legs if needed; lower on one leg only (3 sec). This is the Alfredson eccentric protocol — the highest-evidence intervention for Achilles tendinopathy prevention and treatment. Also builds calf strength at end-range dorsiflexion.",
+              "notes": "Stand on one leg on a step edge. Rise up with both legs if needed; lower on one leg only (3 sec). This is the Alfredson eccentric protocol \u2014 the highest-evidence intervention for Achilles tendinopathy prevention and treatment. Also builds calf strength at end-range dorsiflexion.",
               "priority": "core",
               "orderIndex": 4
             },
             {
               "name": "Toe Spreading + Foot Intrinsic Activation",
               "duration": "30 sec each foot",
-              "frequency": "2–3×/week",
+              "frequency": "2\u20133\u00d7/week",
               "focusArea": "Foot intrinsic muscles + arch support",
-              "notes": "Seated. Spread all toes as wide as possible. Then lift just the big toe while keeping the others down; then lift the four small toes while keeping the big toe down. These intrinsic muscles prevent pronation compensation when DF is limited — the chain starts at the foot.",
+              "notes": "Seated. Spread all toes as wide as possible. Then lift just the big toe while keeping the others down; then lift the four small toes while keeping the big toe down. These intrinsic muscles prevent pronation compensation when DF is limited \u2014 the chain starts at the foot.",
               "priority": "optional",
               "orderIndex": 5
             }
@@ -7823,6 +7823,396 @@
       "citations": null,
       "releaseNotes": null,
       "sourceUrl": "https://jalsemgeest.github.io/pillar-programs/general_strength_v1.json"
+    },
+    {
+      "id": "quick_strength",
+      "name": "Quick Strength",
+      "version": "1.0.0",
+      "description": "Full-body home gym training for limited time. Three interchangeable sessions each cover every major movement pattern in 20\u201330 minutes via compound supersets. Built on minimum-effective-dose research: 2\u20133 hard sets per muscle group at RPE 8\u20139, taken close to failure, is sufficient to maintain and build strength at 1\u20133 sessions per week (Bickel 2011; Ralston 2017; Schoenfeld 2019). Agonist-antagonist supersets cut session time by ~40% with no loss in performance (Kelleher 2010). Pull:push ratio is 2:1 to support climbing shoulder health.",
+      "tags": [
+        "home",
+        "dumbbell",
+        "time-efficient",
+        "full-body",
+        "minimum-effective-dose"
+      ],
+      "targetProfile": "intermediate",
+      "createdAt": "2026-06-11",
+      "sourceUrl": null,
+      "releaseNotes": null,
+      "plans": [
+        {
+          "id": "qs_3day",
+          "name": "3-Day Rotation",
+          "scheduleDescription": "Any 1\u20133 days/week \u2014 each session stands alone",
+          "daysPerWeek": 3,
+          "orderIndex": 0,
+          "goal": "Maintain and build full-body strength with minimal time. Each session hits every major pattern: hinge, squat, push, pull. Lift heavy \u2014 compounds should feel challenging by rep 4\u20135 (RPE 8\u20139). Two sessions per week produces gradual progress; one session per week preserves what you have. Do the days in any order, skip freely \u2014 they're designed to be independent.",
+          "workouts": [
+            {
+              "id": "qs_day_a",
+              "dayLabel": "Day A",
+              "sessionType": "Hinge + Horizontal",
+              "durationRange": "22\u201328 min",
+              "location": "Home",
+              "keyMetrics": [
+                "DB RDL weight",
+                "Bench press weight"
+              ],
+              "orderIndex": 0,
+              "activityType": "strength",
+              "preMobilityIds": [
+                "qs_warmup"
+              ],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "HINGE + PRESS",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_rdl",
+                      "sets": 3,
+                      "repsMin": 5,
+                      "repsMax": 6,
+                      "load": "Heavy \u2014 RPE 8 by set 3",
+                      "tempo": null,
+                      "notes": "Push hips back, soft knee. Feel the hamstring stretch at the bottom \u2014 that's the load, not a lower back pull. Drive hips through to stand tall. Do 1\u20132 lighter ramp-up sets before your first working set.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": [
+                        "bent_over_two_dumbbell_row"
+                      ]
+                    },
+                    {
+                      "exerciseId": "db_bench_press",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "load": "Moderate-heavy \u2014 RPE 8",
+                      "tempo": null,
+                      "notes": "2-second controlled descent, explosive press. Full stretch at the bottom. Superset \u2014 go directly from the RDL without sitting down.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": [
+                        "dumbbell_floor_press"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SQUAT + ROW",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "goblet_squat",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "load": "Moderate-heavy \u2014 RPE 8",
+                      "tempo": null,
+                      "notes": "Elbows track inside knees. Pause 1 second at the bottom. Stay upright.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "one_arm_dumbbell_row",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Heavy \u2014 as heavy as the RDL if possible",
+                      "tempo": null,
+                      "notes": "Row the elbow to the hip, full range of motion. Brace the core \u2014 don't rotate the torso. Complete both sides before resting.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": [
+                        "bent_over_two_dumbbell_row"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LOADED CARRY",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "farmers_carry",
+                      "sets": 2,
+                      "repsText": "40m",
+                      "load": "Heavy \u2014 grip should be the limiting factor",
+                      "tempo": null,
+                      "notes": "Stand tall, core braced. Walk at a controlled pace. Turn around at 20m. Skip if time is short \u2014 the supersets above are the priority.",
+                      "priority": "optional",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        "suitcase_carry"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "qs_day_b",
+              "dayLabel": "Day B",
+              "sessionType": "Squat + Overhead",
+              "durationRange": "22\u201328 min",
+              "location": "Home",
+              "keyMetrics": [
+                "Split squat weight",
+                "Row weight"
+              ],
+              "orderIndex": 1,
+              "activityType": "strength",
+              "preMobilityIds": [
+                "qs_warmup"
+              ],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "SPLIT SQUAT + ROW",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_bulgarian_split_squat",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "perSide": true,
+                      "load": "Moderate-heavy \u2014 RPE 8 on last set",
+                      "tempo": null,
+                      "notes": "Front foot far enough forward that your shin stays vertical at the bottom. Hold dumbbells at your sides. Complete both legs before the row.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": [
+                        "db_rdl",
+                        "goblet_squat"
+                      ]
+                    },
+                    {
+                      "exerciseId": "one_arm_dumbbell_row",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Heavy",
+                      "tempo": null,
+                      "notes": "Pull elbow to hip. Keep chest square to the floor \u2014 don't twist.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": [
+                        "bent_over_two_dumbbell_row"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "PRESS + SHOULDER HEALTH",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "dumbbell_one_arm_shoulder_press",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Moderate \u2014 RPE 8",
+                      "tempo": null,
+                      "notes": "Seated or standing. Neutral grip (palm facing in) to reduce shoulder stress. Full lockout at top, controlled descent.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "band_pull_aparts",
+                      "sets": 3,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "load": "Light resistance band",
+                      "tempo": null,
+                      "notes": "Arms straight. Squeeze shoulder blades together at end range. Keeps the rotator cuff and rear deltoids healthy for climbing \u2014 do not skip this one.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        "face_pulls"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "FINISHER",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "dips_triceps_version",
+                      "sets": 2,
+                      "repsMin": 6,
+                      "repsMax": 10,
+                      "load": "Bodyweight \u2014 add dumbbell between feet if too easy",
+                      "tempo": null,
+                      "notes": "Keep torso upright to bias triceps. Lower to 90\u00b0 elbow flexion.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "dead_bug",
+                      "sets": 2,
+                      "repsMin": 8,
+                      "repsMax": 8,
+                      "perSide": true,
+                      "load": "Bodyweight",
+                      "tempo": null,
+                      "notes": "Lower back pressed into the floor throughout \u2014 that's the whole point. Extend opposite arm and leg slowly, return, switch sides. Never let the back arch.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        "bird_dog"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "qs_day_c",
+              "dayLabel": "Day C",
+              "sessionType": "Express Full Body",
+              "durationRange": "18\u201322 min",
+              "location": "Home",
+              "keyMetrics": [
+                "DB RDL weight",
+                "Row weight"
+              ],
+              "orderIndex": 2,
+              "activityType": "strength",
+              "preMobilityIds": [
+                "qs_warmup"
+              ],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "HINGE + ROW",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_rdl",
+                      "sets": 3,
+                      "repsMin": 5,
+                      "repsMax": 6,
+                      "load": "Heavy \u2014 same target as Day A",
+                      "tempo": null,
+                      "notes": "This is your lower body work for the session \u2014 push the load. Hip hinge, feel the hamstring stretch.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "one_arm_dumbbell_row",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Heavy",
+                      "tempo": null,
+                      "notes": "Short session means every set counts. Push to RPE 8\u20139. Full range.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": [
+                        "bent_over_two_dumbbell_row"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SQUAT + PRESS",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "goblet_squat",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "load": "Moderate-heavy",
+                      "tempo": null,
+                      "notes": "Elbows track knees. Pause 1s at the bottom. Add weight vs. Day A if you've done it recently.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "dumbbell_floor_press",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "load": "Moderate-heavy",
+                      "tempo": null,
+                      "notes": "No bench setup required. Lower until elbows touch the floor, press to full lockout. Same movement as bench press with a slightly shorter range.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        "db_bench_press"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mobilityRoutines": [
+        {
+          "id": "qs_warmup",
+          "name": "Quick Warm-Up",
+          "timing": "preWorkout",
+          "durationDescription": "2\u20133 min",
+          "notes": "Do before your first working set. Light, controlled movements only \u2014 you're preparing joints, not tiring muscles.",
+          "exercises": [
+            {
+              "name": "Bodyweight Hip Hinge",
+              "duration": "10 slow reps",
+              "focusArea": "Hip hinge pattern, hamstring prep",
+              "notes": "Push hips back, arms reach forward for balance. Feel the hamstring stretch each rep.",
+              "orderIndex": 0
+            },
+            {
+              "name": "World's Greatest Stretch",
+              "duration": "3 reps per side",
+              "focusArea": "Hip flexor, thoracic rotation, adductors",
+              "notes": "Lunge forward, plant hand inside foot, rotate thoracic spine toward ceiling.",
+              "orderIndex": 1
+            },
+            {
+              "name": "Arm Circles + Shoulder Rolls",
+              "duration": "10 reps each direction",
+              "focusArea": "Shoulder joint prep",
+              "notes": "Large, controlled circles. Finish with 5 shoulder rolls forward and back.",
+              "orderIndex": 2
+            }
+          ]
+        }
+      ],
+      "exercises": [],
+      "benchmarks": [],
+      "citations": []
     }
   ]
 }

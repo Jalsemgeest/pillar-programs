@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "1.0",
+  "programs": [
+    {
+      "id": "quick_strength",
+      "name": "Quick Strength",
+      "version": "1.0.0",
+      "description": "Full-body home gym training for limited time. Three interchangeable sessions each cover every major movement pattern in 20–30 minutes via compound supersets. Built on minimum-effective-dose research: 2–3 hard sets per muscle group at RPE 8–9, taken close to failure, is sufficient to maintain and build strength at 1–3 sessions per week (Bickel 2011; Ralston 2017; Schoenfeld 2019). Agonist-antagonist supersets cut session time by ~40% with no loss in performance (Kelleher 2010). Pull:push ratio is 2:1 to support climbing shoulder health.",
+      "tags": ["home", "dumbbell", "time-efficient", "full-body", "minimum-effective-dose"],
+      "targetProfile": "intermediate",
+      "createdAt": "2026-06-11",
+      "sourceUrl": null,
+      "releaseNotes": null,
+      "plans": [
+        {
+          "id": "qs_3day",
+          "name": "3-Day Rotation",
+          "scheduleDescription": "Any 1–3 days/week — each session stands alone",
+          "daysPerWeek": 3,
+          "orderIndex": 0,
+          "goal": "Maintain and build full-body strength with minimal time. Each session hits every major pattern: hinge, squat, push, pull. Lift heavy — compounds should feel challenging by rep 4–5 (RPE 8–9). Two sessions per week produces gradual progress; one session per week preserves what you have. Do the days in any order, skip freely — they're designed to be independent.",
+          "workouts": [
+            {
+              "id": "qs_day_a",
+              "dayLabel": "Day A",
+              "sessionType": "Hinge + Horizontal",
+              "durationRange": "22–28 min",
+              "location": "Home",
+              "keyMetrics": ["DB RDL weight", "Bench press weight"],
+              "orderIndex": 0,
+              "activityType": "strength",
+              "preMobilityIds": ["qs_warmup"],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "HINGE + PRESS",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_rdl",
+                      "sets": 3,
+                      "repsMin": 5,
+                      "repsMax": 6,
+                      "load": "Heavy — RPE 8 by set 3",
+                      "tempo": null,
+                      "notes": "Push hips back, soft knee. Feel the hamstring stretch at the bottom — that's the load, not a lower back pull. Drive hips through to stand tall. Do 1–2 lighter ramp-up sets before your first working set.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": ["bent_over_two_dumbbell_row"]
+                    },
+                    {
+                      "exerciseId": "db_bench_press",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "load": "Moderate-heavy — RPE 8",
+                      "tempo": null,
+                      "notes": "2-second controlled descent, explosive press. Full stretch at the bottom. Superset — go directly from the RDL without sitting down.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": ["dumbbell_floor_press"]
+                    }
+                  ]
+                },
+                {
+                  "name": "SQUAT + ROW",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "goblet_squat",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "load": "Moderate-heavy — RPE 8",
+                      "tempo": null,
+                      "notes": "Elbows track inside knees. Pause 1 second at the bottom. Stay upright.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "one_arm_dumbbell_row",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Heavy — as heavy as the RDL if possible",
+                      "tempo": null,
+                      "notes": "Row the elbow to the hip, full range of motion. Brace the core — don't rotate the torso. Complete both sides before resting.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": ["bent_over_two_dumbbell_row"]
+                    }
+                  ]
+                },
+                {
+                  "name": "LOADED CARRY",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "farmers_carry",
+                      "sets": 2,
+                      "repsText": "40m",
+                      "load": "Heavy — grip should be the limiting factor",
+                      "tempo": null,
+                      "notes": "Stand tall, core braced. Walk at a controlled pace. Turn around at 20m. Skip if time is short — the supersets above are the priority.",
+                      "priority": "optional",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": ["suitcase_carry"]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "qs_day_b",
+              "dayLabel": "Day B",
+              "sessionType": "Squat + Overhead",
+              "durationRange": "22–28 min",
+              "location": "Home",
+              "keyMetrics": ["Split squat weight", "Row weight"],
+              "orderIndex": 1,
+              "activityType": "strength",
+              "preMobilityIds": ["qs_warmup"],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "SPLIT SQUAT + ROW",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_bulgarian_split_squat",
+                      "sets": 3,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "perSide": true,
+                      "load": "Moderate-heavy — RPE 8 on last set",
+                      "tempo": null,
+                      "notes": "Front foot far enough forward that your shin stays vertical at the bottom. Hold dumbbells at your sides. Complete both legs before the row.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": ["db_rdl", "goblet_squat"]
+                    },
+                    {
+                      "exerciseId": "one_arm_dumbbell_row",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Heavy",
+                      "tempo": null,
+                      "notes": "Pull elbow to hip. Keep chest square to the floor — don't twist.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": ["bent_over_two_dumbbell_row"]
+                    }
+                  ]
+                },
+                {
+                  "name": "PRESS + SHOULDER HEALTH",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "dumbbell_one_arm_shoulder_press",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Moderate — RPE 8",
+                      "tempo": null,
+                      "notes": "Seated or standing. Neutral grip (palm facing in) to reduce shoulder stress. Full lockout at top, controlled descent.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "band_pull_aparts",
+                      "sets": 3,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "load": "Light resistance band",
+                      "tempo": null,
+                      "notes": "Arms straight. Squeeze shoulder blades together at end range. Keeps the rotator cuff and rear deltoids healthy for climbing — do not skip this one.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": ["face_pulls"]
+                    }
+                  ]
+                },
+                {
+                  "name": "FINISHER",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "dips_triceps_version",
+                      "sets": 2,
+                      "repsMin": 6,
+                      "repsMax": 10,
+                      "load": "Bodyweight — add dumbbell between feet if too easy",
+                      "tempo": null,
+                      "notes": "Keep torso upright to bias triceps. Lower to 90° elbow flexion.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "dead_bug",
+                      "sets": 2,
+                      "repsMin": 8,
+                      "repsMax": 8,
+                      "perSide": true,
+                      "load": "Bodyweight",
+                      "tempo": null,
+                      "notes": "Lower back pressed into the floor throughout — that's the whole point. Extend opposite arm and leg slowly, return, switch sides. Never let the back arch.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": ["bird_dog"]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "qs_day_c",
+              "dayLabel": "Day C",
+              "sessionType": "Express Full Body",
+              "durationRange": "18–22 min",
+              "location": "Home",
+              "keyMetrics": ["DB RDL weight", "Row weight"],
+              "orderIndex": 2,
+              "activityType": "strength",
+              "preMobilityIds": ["qs_warmup"],
+              "postMobilityIds": [],
+              "groups": [
+                {
+                  "name": "HINGE + ROW",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_rdl",
+                      "sets": 3,
+                      "repsMin": 5,
+                      "repsMax": 6,
+                      "load": "Heavy — same target as Day A",
+                      "tempo": null,
+                      "notes": "This is your lower body work for the session — push the load. Hip hinge, feel the hamstring stretch.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "one_arm_dumbbell_row",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Heavy",
+                      "tempo": null,
+                      "notes": "Short session means every set counts. Push to RPE 8–9. Full range.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 75,
+                      "alternatives": ["bent_over_two_dumbbell_row"]
+                    }
+                  ]
+                },
+                {
+                  "name": "SQUAT + PRESS",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "goblet_squat",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "load": "Moderate-heavy",
+                      "tempo": null,
+                      "notes": "Elbows track knees. Pause 1s at the bottom. Add weight vs. Day A if you've done it recently.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": []
+                    },
+                    {
+                      "exerciseId": "dumbbell_floor_press",
+                      "sets": 3,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "load": "Moderate-heavy",
+                      "tempo": null,
+                      "notes": "No bench setup required. Lower until elbows touch the floor, press to full lockout. Same movement as bench press with a slightly shorter range.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": ["db_bench_press"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mobilityRoutines": [
+        {
+          "id": "qs_warmup",
+          "name": "Quick Warm-Up",
+          "timing": "preWorkout",
+          "durationDescription": "2–3 min",
+          "notes": "Do before your first working set. Light, controlled movements only — you're preparing joints, not tiring muscles.",
+          "exercises": [
+            {
+              "name": "Bodyweight Hip Hinge",
+              "duration": "10 slow reps",
+              "focusArea": "Hip hinge pattern, hamstring prep",
+              "notes": "Push hips back, arms reach forward for balance. Feel the hamstring stretch each rep.",
+              "orderIndex": 0
+            },
+            {
+              "name": "World's Greatest Stretch",
+              "duration": "3 reps per side",
+              "focusArea": "Hip flexor, thoracic rotation, adductors",
+              "notes": "Lunge forward, plant hand inside foot, rotate thoracic spine toward ceiling.",
+              "orderIndex": 1
+            },
+            {
+              "name": "Arm Circles + Shoulder Rolls",
+              "duration": "10 reps each direction",
+              "focusArea": "Shoulder joint prep",
+              "notes": "Large, controlled circles. Finish with 5 shoulder rolls forward and back.",
+              "orderIndex": 2
+            }
+          ]
+        }
+      ],
+      "exercises": [],
+      "benchmarks": [],
+      "citations": []
+    }
+  ]
+}
