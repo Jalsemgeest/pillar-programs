@@ -2866,6 +2866,7 @@
                       "orderIndex": 1,
                       "alternatives": [],
                       "citationIds": [],
+                      "logMode": "timer",
                       "durationSeconds": 60,
                       "perSide": true
                     },
