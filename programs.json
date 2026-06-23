@@ -7828,7 +7828,7 @@
     {
       "id": "quick_strength",
       "name": "Quick Strength",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Full-body home gym training for limited time. Three interchangeable sessions each cover every major movement pattern in 20\u201330 minutes via compound supersets. Built on minimum-effective-dose research: 2\u20133 hard sets per muscle group at RPE 8\u20139, taken close to failure, is sufficient to maintain and build strength at 1\u20133 sessions per week (Bickel 2011; Ralston 2017; Schoenfeld 2019). Agonist-antagonist supersets cut session time by ~40% with no loss in performance (Kelleher 2010). Pull:push ratio is 2:1 to support climbing shoulder health.",
       "tags": [
         "home",
@@ -7882,9 +7882,7 @@
                       "priority": "primary",
                       "orderIndex": 0,
                       "restSeconds": 15,
-                      "alternatives": [
-                        "bent_over_two_dumbbell_row"
-                      ]
+                      "alternatives": []
                     },
                     {
                       "exerciseId": "db_bench_press",
@@ -7897,9 +7895,7 @@
                       "priority": "primary",
                       "orderIndex": 1,
                       "restSeconds": 75,
-                      "alternatives": [
-                        "dumbbell_floor_press"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 },
@@ -7932,9 +7928,7 @@
                       "priority": "primary",
                       "orderIndex": 1,
                       "restSeconds": 75,
-                      "alternatives": [
-                        "bent_over_two_dumbbell_row"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 },
@@ -7952,9 +7946,7 @@
                       "priority": "optional",
                       "orderIndex": 0,
                       "restSeconds": 60,
-                      "alternatives": [
-                        "suitcase_carry"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 }
@@ -7993,10 +7985,7 @@
                       "priority": "primary",
                       "orderIndex": 0,
                       "restSeconds": 15,
-                      "alternatives": [
-                        "db_rdl",
-                        "goblet_squat"
-                      ]
+                      "alternatives": []
                     },
                     {
                       "exerciseId": "one_arm_dumbbell_row",
@@ -8010,9 +7999,7 @@
                       "priority": "primary",
                       "orderIndex": 1,
                       "restSeconds": 75,
-                      "alternatives": [
-                        "bent_over_two_dumbbell_row"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 },
@@ -8045,9 +8032,7 @@
                       "priority": "primary",
                       "orderIndex": 1,
                       "restSeconds": 60,
-                      "alternatives": [
-                        "face_pulls"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 },
@@ -8080,9 +8065,7 @@
                       "priority": "primary",
                       "orderIndex": 1,
                       "restSeconds": 60,
-                      "alternatives": [
-                        "bird_dog"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 }
@@ -8134,9 +8117,7 @@
                       "priority": "primary",
                       "orderIndex": 1,
                       "restSeconds": 75,
-                      "alternatives": [
-                        "bent_over_two_dumbbell_row"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 },
@@ -8168,9 +8149,7 @@
                       "priority": "primary",
                       "orderIndex": 1,
                       "restSeconds": 60,
-                      "alternatives": [
-                        "db_bench_press"
-                      ]
+                      "alternatives": []
                     }
                   ]
                 }
