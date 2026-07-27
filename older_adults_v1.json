@@ -1,0 +1,841 @@
+{
+  "schemaVersion": "1.0",
+  "programs": [
+    {
+      "id": "older_adults_v1",
+      "name": "Functional Strength for Active Adults",
+      "version": "1.1.0",
+      "description": "A 2-day full-body strength program designed for adults 55 and older. Exercise selection mirrors real-life demands — sit-to-stand, bending to pick things up, carrying loads, and controlled single-leg loading for stair safety. Two sessions per week delivers approximately 80–85% of the adaptation of three sessions while allowing 3–4 days of recovery between sessions, which becomes increasingly important as repair capacity slows with age. Shoulder and rotator cuff health work is built directly into Day B rather than treated as optional, because shoulder injuries are one of the leading causes of functional decline in this age group.",
+      "tags": [
+        "home",
+        "dumbbell",
+        "older-adults",
+        "functional",
+        "balance",
+        "fall-prevention"
+      ],
+      "targetProfile": "beginner",
+      "createdAt": "2026-07-27",
+      "sourceUrl": "https://jalsemgeest.github.io/pillar-programs/older_adults_v1.json",
+      "releaseNotes": "1.1.0: Rebuilt with evidence-based exercise selection, progression triggers, and coaching notes grounded in fall-prevention and functional strength research.",
+      "plans": [
+        {
+          "id": "oa_2day",
+          "name": "2-Day Plan",
+          "scheduleDescription": "2–3 days/week with at least one rest day between sessions",
+          "daysPerWeek": 2,
+          "orderIndex": 0,
+          "goal": "Build functional strength, improve balance, and maintain independence. Day A targets the lower body and core — the foundation for safe, confident movement. Day B targets the upper body and core — the foundation for lifting, reaching, and carrying. Alternate between A and B with at least one rest day between sessions. Rest between sets as long as you need. In the first 2–4 weeks, do 2 sets of each group; add a third set once form is consistent.",
+          "workouts": [
+            {
+              "id": "oa_day_a",
+              "dayLabel": "Day A",
+              "sessionType": "Lower Body + Core",
+              "durationRange": "35–45 min",
+              "location": "Home",
+              "keyMetrics": [
+                "Squat depth and control",
+                "Step-up balance"
+              ],
+              "orderIndex": 0,
+              "activityType": "strength",
+              "preMobilityIds": [
+                "oa_warmup"
+              ],
+              "postMobilityIds": [
+                "oa_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "SQUAT PATTERN",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "chair_squat",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 15,
+                      "load": "Bodyweight — hands crossed at chest or lightly on thighs. Do not push off with hands.",
+                      "tempo": null,
+                      "notes": "This mirrors the most common real-life movement — getting up from a chair, toilet, or car seat. Stand in front of a firm chair, sit back slowly (3 count down), lightly touch the seat, then drive up through both feet equally. Cue: \"sit back, not down\" — hips travel behind the heels so the knees track over the toes rather than caving inward.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "box_squat"
+                        },
+                        {
+                          "exerciseId": "bodyweight_squat"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "goblet_squat",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "You're completing all sets with controlled form — time to add a light dumbbell held at your chest. Start at 8–15 lb and work up from there."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "HIP HINGE",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "db_rdl",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "load": "Start with 10–20 lb dumbbells. Increase by 5 lb when all sets are completed with a flat spine.",
+                      "tempo": null,
+                      "notes": "The RDL teaches the hinge pattern that prevents rounding the lower back when picking things off the floor or out of the trunk of a car. Push the hips back like closing a car door with your glutes — let the weights travel down the front of the legs. Stop the moment the lower back begins to round. Two-second lower, pause, drive hips forward to stand.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "glute_bridge_march"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SINGLE-LEG STABILITY",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "step_up",
+                      "sets": 2,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "perSide": true,
+                      "load": "Bodyweight only — use a step height of 6–8 inches. Hand can lightly touch a wall for balance but should carry no weight.",
+                      "tempo": null,
+                      "notes": "Single-leg loading is the most important category for fall prevention, because falls typically occur during the single-leg stance phase of walking. Drive the heel of the working foot into the step, stand tall at the top, then step back down slowly (3-count). Complete all reps on one side before switching. Do not push off the back foot — all effort comes from the working leg.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "split_squat"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "step_up_with_knee_raise",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "When you can complete all sets per side with steady balance and a controlled lowering phase, add the knee drive at the top — it trains single-leg balance directly."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "GLUTE BRIDGE",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "glute_bridge_march",
+                      "sets": 2,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Bodyweight only. A resistance band across the hips adds load once the movement is easy.",
+                      "tempo": null,
+                      "notes": "Drive both heels into the floor to lift hips until shoulders-to-knees form a straight line, then slowly raise one knee toward the chest (marching) and hold 2 seconds before switching. The hips must stay level — any rotation means the working glute is too weak and reps should be reduced. Hip extension strength is the single most absent capacity in sedentary older adults.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "single_leg_glute_bridge"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "single_leg_glute_bridge",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "Once you complete all sets per side without any hip drop or rotation, move to the single-leg glute bridge — full hip extension with the non-working leg held in the air."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "CORE STABILITY",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "dead_bug",
+                      "sets": 2,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "perSide": true,
+                      "load": "Bodyweight only. Progression comes through range and tempo, not load.",
+                      "tempo": null,
+                      "notes": "Lie on your back, arms straight to the ceiling, knees bent 90 degrees over hips. Press the lower back firmly into the floor — this is the entire job of the core. Slowly lower the opposite arm and leg toward the floor, 3-second count. If the lower back lifts off at any point, reduce the range of motion. Quality over depth.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "bird_dog"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ANKLE STABILITY",
+                  "orderIndex": 5,
+                  "exercises": [
+                    {
+                      "exerciseId": "standing_calf_raises",
+                      "sets": 2,
+                      "repsMin": 12,
+                      "repsMax": 15,
+                      "load": "Bodyweight — fingertips on a wall or countertop for light balance support only.",
+                      "tempo": null,
+                      "notes": "Ankle plantarflexor strength is independently predictive of fall risk. Rise to the full tiptoe position, hold 1 second at the top, then lower slowly (2 seconds) to a full stretch at the bottom — the slow eccentric is the bone-density stimulus. Avoid bouncing at the bottom. As this becomes easy, progress to single-leg.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "seated_calf_raise"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "oa_day_b",
+              "dayLabel": "Day B",
+              "sessionType": "Upper Body + Core",
+              "durationRange": "35–45 min",
+              "location": "Home",
+              "keyMetrics": [
+                "Push-up variation and incline height",
+                "Row weight"
+              ],
+              "orderIndex": 1,
+              "activityType": "strength",
+              "preMobilityIds": [
+                "oa_warmup"
+              ],
+              "postMobilityIds": [
+                "oa_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "PUSH",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "incline_pushup",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 15,
+                      "load": "Bodyweight at whatever incline brings you 3–4 reps shy of failure at rep 15. A kitchen counter (~36 in) is easier; a low bench (~18 in) is harder. Reduce surface height as strength improves.",
+                      "tempo": null,
+                      "notes": "The incline push-up trains the same muscles as a floor push-up — chest, front shoulder, triceps — but the elevated surface reduces the percentage of bodyweight lifted. The body must move as a single rigid plank; a common error is the hips sagging or the head lurching forward. Cue: \"armpits squeeze toward your hips as you push up.\" Three-second lower, brief pause, push up.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "knee_pushup",
+                          "context": "If incline is not available"
+                        },
+                        {
+                          "exerciseId": "pushups",
+                          "context": "If incline pushup is too easy"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "knee_pushup",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "When 3×15 is comfortable at bench height, transition to knee push-ups on the floor — same full range of motion but closer to horizontal."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "PULL",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "chest_supported_row",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "load": "Start with 10–20 lb dumbbells. Increase by 5 lb when all 3 sets of 12 are completed with full shoulder-blade movement.",
+                      "tempo": null,
+                      "notes": "Lie chest-down on a bench set to a slight incline (30–45 degrees), dumbbells hanging straight down. Drive the elbows toward the ceiling and squeeze the shoulder blades together at the top — elbows finish roughly at hip height, not ear height. The chest support removes lower back stress, making this the safest row variant for this population. Lower slowly over 3 seconds to a full stretch.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "one_arm_dumbbell_row"
+                        },
+                        {
+                          "exerciseId": "bent_over_two_dumbbell_row"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "OVERHEAD PRESS",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "seated_db_ohp",
+                      "sets": 2,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "load": "Start lighter than expected — 5–12 lb. Shoulder stabilizers are frequently undertrained and will be the limiting factor. Increase by 2.5–5 lb per session once form is established.",
+                      "tempo": null,
+                      "notes": "Seated to reduce spinal compressive load and eliminate the tendency to lean back aggressively. Sit upright, dumbbells at shoulder height with palms forward. Press straight overhead until arms are fully extended, then lower under control. Keep the ribcage down throughout — do not arch the lower back to get the weight up. Trains the overhead reach needed for cabinet use and lifting luggage.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "dumbbell_one_arm_shoulder_press"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SHOULDER HEALTH",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "band_pull_aparts",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "load": "Light resistance band — last 3–4 reps should feel challenging but the arms stay straight throughout.",
+                      "tempo": null,
+                      "notes": "Hold the band at shoulder height with straight arms. Pull apart until your arms form a T and hold 1 second at end range. Directly strengthens rear deltoids and lower trapezius — essential for upright posture and counteracting the rounded-shoulder pattern that develops from a lifetime of desk work and driving. Go straight into the face pull with no rest.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": [
+                        {
+                          "exerciseId": "band_external_rotation"
+                        }
+                      ]
+                    },
+                    {
+                      "exerciseId": "band_face_pull",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "load": "Light band anchored at eye level (loop around a door handle). Resistance should allow full external rotation at end range.",
+                      "tempo": null,
+                      "notes": "Pull the band toward your face with elbows flared high (above shoulder height), externally rotating the shoulders so knuckles end up near the ears. The single most effective remedial exercise for rotator cuff health — the antidote to the internal rotation pattern from forward head posture. Shoulder impingement is largely preventable with consistent posterior shoulder work.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "band_external_rotation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LOADED CARRY",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "farmers_carry",
+                      "sets": 2,
+                      "repsText": "30–45 sec",
+                      "load": "Start with 15–25 lb per hand — the discomfort of carrying moderately heavy grocery bags. Increase by 5 lb per hand when the full 45 seconds is completed upright for both sets.",
+                      "tempo": null,
+                      "notes": "Directly replicates bilateral grocery bag carrying. Walk slowly: shoulders back and down, tall spine, small measured steps. The training stimulus comes from maintaining posture against the downward pull — it builds grip strength, scapular stability, and anti-lateral-flexion core strength simultaneously. If grip fails before the prescribed time, reduce load by 5 lb.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                {
+                  "name": "ANTI-ROTATION CORE",
+                  "orderIndex": 5,
+                  "exercises": [
+                    {
+                      "exerciseId": "bird_dog",
+                      "sets": 2,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Bodyweight only.",
+                      "tempo": null,
+                      "notes": "On hands and knees with a flat back — imagine balancing a glass of water on your lower back. Extend opposite arm and leg until both are parallel with the floor, hold 2 seconds, then return with control. The key error is the hip rotating upward on the raised-leg side. Cue \"reach long\" rather than \"lift high\" to prevent this. Trains spinal stabilizers to resist rotation — exactly the demand of asymmetrical carrying.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "dead_bug"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "oa_bw_2day",
+          "name": "Bodyweight & Bands",
+          "scheduleDescription": "2–3 days/week with at least one rest day between sessions — no dumbbells required",
+          "daysPerWeek": 2,
+          "orderIndex": 1,
+          "goal": "The same functional goals as the dumbbell plan — fall prevention, pushing, pulling, hinging — using only bodyweight and a light resistance band. A single loop band costs under $15 and fits in a pocket. Substitute for the dumbbell plan when traveling, visiting family, or waiting for equipment to arrive. Progress by slowing the tempo, adding pauses, or moving to more challenging exercise variants rather than adding load.",
+          "workouts": [
+            {
+              "id": "oa_bw_day_a",
+              "dayLabel": "Day A",
+              "sessionType": "Lower Body + Core",
+              "durationRange": "30–40 min",
+              "location": "Home",
+              "keyMetrics": [
+                "Squat depth and control",
+                "Step-up balance"
+              ],
+              "orderIndex": 0,
+              "activityType": "strength",
+              "preMobilityIds": [
+                "oa_warmup"
+              ],
+              "postMobilityIds": [
+                "oa_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "SQUAT PATTERN",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "chair_squat",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 15,
+                      "load": "Bodyweight — hands crossed at chest. Do not push off with hands.",
+                      "tempo": null,
+                      "notes": "Stand in front of a firm chair, sit back slowly (3 count down), lightly touch the seat, then drive up through both feet. Cue: \"sit back, not down\" — hips travel behind the heels so knees track over the toes. This directly trains the sit-to-stand movement used dozens of times daily.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "bodyweight_squat"
+                        },
+                        {
+                          "exerciseId": "box_squat"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "split_squat",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "When 3×15 chair squats feel fully controlled, the split squat adds single-leg demand and better mirrors walking and stair mechanics."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "HIP HINGE",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "band_good_morning",
+                      "sets": 3,
+                      "repsMin": 12,
+                      "repsMax": 15,
+                      "load": "Light resistance band looped under feet and over shoulders. Tension should be mild — this is about pattern, not load.",
+                      "tempo": null,
+                      "notes": "Stand on the band, ends over your shoulders. Soft bend in the knees, push hips back until the torso is roughly parallel with the floor, feeling a gentle stretch in the back of the thighs, then drive hips forward to stand. Keep the lower back flat — stop the range where the back begins to round. Teaches the same safe lifting pattern as the RDL.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "glute_bridge_march"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SINGLE-LEG STABILITY",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "step_up",
+                      "sets": 2,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "perSide": true,
+                      "load": "Bodyweight only — use a bottom stair step or low box (6–8 inches). Light fingertip touch on wall for balance only.",
+                      "tempo": null,
+                      "notes": "Drive the heel of the working foot into the step, stand tall at the top, step back down slowly (3-count). Do not push off the back foot. Single-leg loading is the most important fall-prevention exercise in this program because falls happen during the single-leg phase of walking.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "split_squat"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "step_up_with_knee_raise",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "Add the knee drive at the top of each rep — it trains single-leg balance and hip flexor strength directly."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "GLUTE BRIDGE",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "glute_bridge_march",
+                      "sets": 2,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Bodyweight only. Loop a band around thighs just above the knees for added glute challenge.",
+                      "tempo": null,
+                      "notes": "Drive both heels into the floor to lift hips, then slowly raise one knee toward the chest and hold 2 seconds. Hips must stay level — any rotation means reduce the reps. Hip extension strength is the single most absent capacity in sedentary older adults and is foundational for safe stair climbing.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "single_leg_glute_bridge"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "single_leg_glute_bridge",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "Ready for the single-leg glute bridge — full hip extension with the non-working leg held in the air."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "CORE STABILITY",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "dead_bug",
+                      "sets": 2,
+                      "repsMin": 6,
+                      "repsMax": 8,
+                      "perSide": true,
+                      "load": "Bodyweight only.",
+                      "tempo": null,
+                      "notes": "Lie on your back, arms to the ceiling, knees bent 90 degrees. Press the lower back firmly into the floor — that is the entire job. Slowly lower opposite arm and leg (3-count). If the lower back lifts off, reduce the range of motion. Quality over depth.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "bird_dog"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ANKLE STABILITY",
+                  "orderIndex": 5,
+                  "exercises": [
+                    {
+                      "exerciseId": "standing_calf_raises",
+                      "sets": 2,
+                      "repsMin": 12,
+                      "repsMax": 15,
+                      "load": "Bodyweight — fingertips on a wall for light balance support only.",
+                      "tempo": null,
+                      "notes": "Rise to the full tiptoe position, hold 1 second, lower slowly (2 seconds) to a full stretch. The slow eccentric is the bone-density stimulus. Avoid bouncing at the bottom. Progress to single-leg calf raises when this becomes easy.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "oa_bw_day_b",
+              "dayLabel": "Day B",
+              "sessionType": "Upper Body + Core",
+              "durationRange": "30–40 min",
+              "location": "Home",
+              "keyMetrics": [
+                "Push-up variation",
+                "Row control"
+              ],
+              "orderIndex": 1,
+              "activityType": "strength",
+              "preMobilityIds": [
+                "oa_warmup"
+              ],
+              "postMobilityIds": [
+                "oa_cooldown"
+              ],
+              "groups": [
+                {
+                  "name": "PUSH",
+                  "orderIndex": 0,
+                  "exercises": [
+                    {
+                      "exerciseId": "incline_pushup",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 15,
+                      "load": "Bodyweight — use a kitchen counter (~36 in) to start; lower the surface as strength improves.",
+                      "tempo": null,
+                      "notes": "Body must move as a single rigid plank — no hips sagging, no head lurching forward. Cue: \"armpits squeeze toward your hips as you push up.\" Three-second lower, brief pause, push. As the counter gets easy, move to a bench, then to the floor as a knee pushup.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "knee_pushup",
+                          "context": "More challenging variant on the floor"
+                        },
+                        {
+                          "exerciseId": "pushups",
+                          "context": "Full floor push-up"
+                        }
+                      ],
+                      "progressionTrigger": {
+                        "progressTo": "knee_pushup",
+                        "condition": "allComplete",
+                        "threshold": null,
+                        "message": "When 3×15 is comfortable at bench height, transition to knee push-ups on the floor for more challenge."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "PULL",
+                  "orderIndex": 1,
+                  "exercises": [
+                    {
+                      "exerciseId": "bodyweight_mid_row",
+                      "sets": 3,
+                      "repsMin": 10,
+                      "repsMax": 12,
+                      "load": "Bodyweight — use a sturdy table edge or low bar. Harder = more horizontal body angle.",
+                      "tempo": null,
+                      "notes": "Grip the edge of a sturdy table, arms straight, body angled back. Pull your chest toward the table edge by driving the elbows back and squeezing the shoulder blades together. Lower slowly (3 counts). The more horizontal your body, the harder the exercise. This directly trains the pulling muscles used for opening heavy doors and lifting objects toward you.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 90,
+                      "alternatives": [
+                        {
+                          "exerciseId": "band_pull_aparts"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SHOULDER HEALTH",
+                  "orderIndex": 2,
+                  "exercises": [
+                    {
+                      "exerciseId": "band_pull_aparts",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "load": "Light resistance band.",
+                      "tempo": null,
+                      "notes": "Arms at shoulder height, straight. Pull apart until arms form a T, hold 1 second at end range. Strengthens rear deltoids and lower trapezius — essential for upright posture. Go straight into the face pull with minimal rest.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 15,
+                      "alternatives": [
+                        {
+                          "exerciseId": "band_external_rotation"
+                        }
+                      ]
+                    },
+                    {
+                      "exerciseId": "band_face_pull",
+                      "sets": 2,
+                      "repsMin": 15,
+                      "repsMax": 20,
+                      "load": "Light band anchored at eye level (loop around a door handle).",
+                      "tempo": null,
+                      "notes": "Pull the band toward your face with elbows flared high, externally rotating the shoulders so knuckles end up near the ears. The best preventive exercise for rotator cuff health and the antidote to the forward head posture pattern. Do not skip this one.",
+                      "priority": "primary",
+                      "orderIndex": 1,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "band_external_rotation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "OVERHEAD PRESS",
+                  "orderIndex": 3,
+                  "exercises": [
+                    {
+                      "exerciseId": "band_external_rotation",
+                      "sets": 2,
+                      "repsMin": 12,
+                      "repsMax": 15,
+                      "perSide": true,
+                      "load": "Very light band — this is a shoulder health exercise, not a strength exercise.",
+                      "tempo": null,
+                      "notes": "Elbow bent 90 degrees and tucked at your side. Rotate the forearm outward against band resistance, hold 2 seconds, return slowly. This directly strengthens the rotator cuff muscles that stabilize the shoulder joint during any overhead reach or pressing movement. Include this when no dumbbells are available for overhead pressing.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": []
+                    }
+                  ]
+                },
+                {
+                  "name": "CORE STABILITY",
+                  "orderIndex": 4,
+                  "exercises": [
+                    {
+                      "exerciseId": "bird_dog",
+                      "sets": 2,
+                      "repsMin": 8,
+                      "repsMax": 10,
+                      "perSide": true,
+                      "load": "Bodyweight only.",
+                      "tempo": null,
+                      "notes": "On hands and knees with a flat back. Extend opposite arm and leg until both are parallel with the floor, hold 2 seconds, return with control. Cue \"reach long\" rather than \"lift high\" to prevent the hip from rotating up. Trains spinal stabilizers to resist rotation — exactly the demand of asymmetrical daily tasks.",
+                      "priority": "primary",
+                      "orderIndex": 0,
+                      "restSeconds": 60,
+                      "alternatives": [
+                        {
+                          "exerciseId": "dead_bug"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mobilityRoutines": [
+        {
+          "id": "oa_warmup",
+          "name": "Gentle Warm-Up",
+          "timing": "preWorkout",
+          "durationDescription": "5–7 min",
+          "notes": "Move slowly and comfortably. You should feel warm and a little looser by the end, not tired. Hold a chair or wall for balance wherever needed.",
+          "exercises": [
+            {
+              "name": "March in Place",
+              "duration": "1 min",
+              "focusArea": "Circulation, hip flexors",
+              "notes": "Lift knees to a comfortable height, arms swinging gently.",
+              "orderIndex": 0
+            },
+            {
+              "name": "Hip Circles",
+              "duration": "5 reps each direction per side",
+              "focusArea": "Hip mobility",
+              "notes": "Hold a chair with one hand. Lift outside knee and draw a slow circle in the air. Forward 5, backward 5. Switch sides.",
+              "orderIndex": 1
+            },
+            {
+              "name": "Ankle Circles",
+              "duration": "5 reps each direction per foot",
+              "focusArea": "Ankle mobility and stability",
+              "notes": "Lift one foot slightly and draw slow circles with your toes. Forward 5, backward 5. Switch feet.",
+              "orderIndex": 2
+            },
+            {
+              "name": "Shoulder Rolls",
+              "duration": "10 reps forward, 10 backward",
+              "focusArea": "Shoulder joint prep",
+              "notes": "Large, slow rolls. Breathe in as shoulders come up, breathe out as they roll back and down.",
+              "orderIndex": 3
+            },
+            {
+              "name": "Gentle Torso Rotation",
+              "duration": "5 reps per side",
+              "focusArea": "Thoracic spine mobility",
+              "notes": "Arms crossed on chest. Rotate slowly left, pause, rotate right. Breathe throughout. Do not twist sharply.",
+              "orderIndex": 4
+            }
+          ]
+        },
+        {
+          "id": "oa_cooldown",
+          "name": "Cool-Down Stretch",
+          "timing": "postWorkout",
+          "durationDescription": "5 min",
+          "notes": "Hold each stretch comfortably — no bouncing, no pain. Breathe slowly and steadily.",
+          "exercises": [
+            {
+              "name": "Seated Hamstring Stretch",
+              "duration": "30 sec per side",
+              "focusArea": "Hamstrings, lower back",
+              "notes": "Sit on the edge of a chair. Straighten one leg, heel on the floor. Sit tall and gently lean forward until you feel a pull in the back of the thigh. Switch sides.",
+              "orderIndex": 0
+            },
+            {
+              "name": "Chest Opener",
+              "duration": "30 sec",
+              "focusArea": "Chest, shoulders, posture",
+              "notes": "Clasp hands behind your back. Gently draw elbows together and lift the chest. Counters rounded-shoulder posture.",
+              "orderIndex": 1
+            },
+            {
+              "name": "Seated Glute Stretch",
+              "duration": "30 sec per side",
+              "focusArea": "Glutes, hips",
+              "notes": "Sit in a chair. Cross one ankle over the opposite knee. Gently lean forward until you feel a stretch in the crossed-leg buttock. Switch sides.",
+              "orderIndex": 2
+            },
+            {
+              "name": "Calf Stretch",
+              "duration": "30 sec per side",
+              "focusArea": "Calf, ankle",
+              "notes": "Stand facing a wall, hands on wall. Step one foot back, heel flat on floor, front knee gently bent. Lean into the wall until you feel a stretch in the back calf. Switch sides.",
+              "orderIndex": 3
+            }
+          ]
+        }
+      ],
+      "exercises": [],
+      "benchmarks": [],
+      "citations": []
+    }
+  ]
+}
