@@ -16,7 +16,7 @@
       ],
       "targetProfile": "beginner",
       "createdAt": "2026-07-27",
-      "sourceUrl": "https://jalsemgeest.github.io/pillar-programs/older_adults_v1.json",
+      "sourceUrl": null,
       "releaseNotes": "1.1.0: Rebuilt with evidence-based exercise selection, progression triggers, and coaching notes grounded in fall-prevention and functional strength research.",
       "plans": [
         {
@@ -61,14 +61,7 @@
                       "priority": "primary",
                       "orderIndex": 0,
                       "restSeconds": 90,
-                      "alternatives": [
-                        {
-                          "exerciseId": "box_squat"
-                        },
-                        {
-                          "exerciseId": "bodyweight_squat"
-                        }
-                      ],
+                      "alternatives": [],
                       "progressionTrigger": {
                         "progressTo": "goblet_squat",
                         "condition": "allComplete",
@@ -94,9 +87,7 @@
                       "orderIndex": 0,
                       "restSeconds": 90,
                       "alternatives": [
-                        {
-                          "exerciseId": "glute_bridge_march"
-                        }
+                        { "exerciseId": "glute_bridge_march" }
                       ]
                     }
                   ]
@@ -118,9 +109,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "split_squat"
-                        }
+                        { "exerciseId": "split_squat" }
                       ],
                       "progressionTrigger": {
                         "progressTo": "step_up_with_knee_raise",
@@ -148,9 +137,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "single_leg_glute_bridge"
-                        }
+                        { "exerciseId": "single_leg_glute_bridge" }
                       ],
                       "progressionTrigger": {
                         "progressTo": "single_leg_glute_bridge",
@@ -178,9 +165,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "bird_dog"
-                        }
+                        { "exerciseId": "bird_dog" }
                       ]
                     }
                   ]
@@ -201,9 +186,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "seated_calf_raise"
-                        }
+                        { "exerciseId": "seated_calf_raise" }
                       ]
                     }
                   ]
@@ -245,14 +228,8 @@
                       "orderIndex": 0,
                       "restSeconds": 90,
                       "alternatives": [
-                        {
-                          "exerciseId": "knee_pushup",
-                          "context": "If incline is not available"
-                        },
-                        {
-                          "exerciseId": "pushups",
-                          "context": "If incline pushup is too easy"
-                        }
+                        { "exerciseId": "knee_pushup", "context": "If incline is not available" },
+                        { "exerciseId": "pushups", "context": "If incline pushup is too easy" }
                       ],
                       "progressionTrigger": {
                         "progressTo": "knee_pushup",
@@ -279,12 +256,8 @@
                       "orderIndex": 0,
                       "restSeconds": 90,
                       "alternatives": [
-                        {
-                          "exerciseId": "one_arm_dumbbell_row"
-                        },
-                        {
-                          "exerciseId": "bent_over_two_dumbbell_row"
-                        }
+                        { "exerciseId": "one_arm_dumbbell_row" },
+                        { "exerciseId": "bent_over_two_dumbbell_row" }
                       ]
                     }
                   ]
@@ -305,9 +278,7 @@
                       "orderIndex": 0,
                       "restSeconds": 90,
                       "alternatives": [
-                        {
-                          "exerciseId": "dumbbell_one_arm_shoulder_press"
-                        }
+                        { "exerciseId": "dumbbell_one_arm_shoulder_press" }
                       ]
                     }
                   ]
@@ -328,9 +299,7 @@
                       "orderIndex": 0,
                       "restSeconds": 15,
                       "alternatives": [
-                        {
-                          "exerciseId": "band_external_rotation"
-                        }
+                        { "exerciseId": "band_external_rotation" }
                       ]
                     },
                     {
@@ -345,9 +314,7 @@
                       "orderIndex": 1,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "band_external_rotation"
-                        }
+                        { "exerciseId": "band_external_rotation" }
                       ]
                     }
                   ]
@@ -387,9 +354,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "dead_bug"
-                        }
+                        { "exerciseId": "dead_bug" }
                       ]
                     }
                   ]
@@ -440,14 +405,7 @@
                       "priority": "primary",
                       "orderIndex": 0,
                       "restSeconds": 90,
-                      "alternatives": [
-                        {
-                          "exerciseId": "bodyweight_squat"
-                        },
-                        {
-                          "exerciseId": "box_squat"
-                        }
-                      ],
+                      "alternatives": [],
                       "progressionTrigger": {
                         "progressTo": "split_squat",
                         "condition": "allComplete",
@@ -473,9 +431,7 @@
                       "orderIndex": 0,
                       "restSeconds": 90,
                       "alternatives": [
-                        {
-                          "exerciseId": "glute_bridge_march"
-                        }
+                        { "exerciseId": "glute_bridge_march" }
                       ]
                     }
                   ]
@@ -497,9 +453,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "split_squat"
-                        }
+                        { "exerciseId": "split_squat" }
                       ],
                       "progressionTrigger": {
                         "progressTo": "step_up_with_knee_raise",
@@ -527,9 +481,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "single_leg_glute_bridge"
-                        }
+                        { "exerciseId": "single_leg_glute_bridge" }
                       ],
                       "progressionTrigger": {
                         "progressTo": "single_leg_glute_bridge",
@@ -557,9 +509,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "bird_dog"
-                        }
+                        { "exerciseId": "bird_dog" }
                       ]
                     }
                   ]
@@ -620,14 +570,8 @@
                       "orderIndex": 0,
                       "restSeconds": 90,
                       "alternatives": [
-                        {
-                          "exerciseId": "knee_pushup",
-                          "context": "More challenging variant on the floor"
-                        },
-                        {
-                          "exerciseId": "pushups",
-                          "context": "Full floor push-up"
-                        }
+                        { "exerciseId": "knee_pushup", "context": "More challenging variant on the floor" },
+                        { "exerciseId": "pushups", "context": "Full floor push-up" }
                       ],
                       "progressionTrigger": {
                         "progressTo": "knee_pushup",
@@ -654,9 +598,7 @@
                       "orderIndex": 0,
                       "restSeconds": 90,
                       "alternatives": [
-                        {
-                          "exerciseId": "band_pull_aparts"
-                        }
+                        { "exerciseId": "band_pull_aparts" }
                       ]
                     }
                   ]
@@ -677,9 +619,7 @@
                       "orderIndex": 0,
                       "restSeconds": 15,
                       "alternatives": [
-                        {
-                          "exerciseId": "band_external_rotation"
-                        }
+                        { "exerciseId": "band_external_rotation" }
                       ]
                     },
                     {
@@ -694,9 +634,7 @@
                       "orderIndex": 1,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "band_external_rotation"
-                        }
+                        { "exerciseId": "band_external_rotation" }
                       ]
                     }
                   ]
@@ -738,9 +676,7 @@
                       "orderIndex": 0,
                       "restSeconds": 60,
                       "alternatives": [
-                        {
-                          "exerciseId": "dead_bug"
-                        }
+                        { "exerciseId": "dead_bug" }
                       ]
                     }
                   ]
