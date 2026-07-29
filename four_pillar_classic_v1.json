@@ -2,12 +2,12 @@
   "schemaVersion": "1.0",
   "programs": [
     {
-      "id": "four_pillar",
-      "name": "Jake's Program with Climbing",
-      "version": "1.16.0",
+      "id": "four_pillar_classic",
+      "name": "Four Pillar Training Program",
+      "version": "1.0.0",
       "baseId": null,
-      "upgradeFromVersion": "1.9.0",
-      "description": "Jake's personal Four Pillar build — same evidence-based pillars (Strength, Endurance, Mobility, Healthspan) with Thursday reserved for the climbing gym. Rock climbing counts as the week's upper-body pulling volume.",
+      "upgradeFromVersion": null,
+      "description": "An evidence-based training system built around four pillars — Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Thursday is a dedicated Zone 2 endurance session with grip and pull accessories, replacing rock climbing as the week's aerobic base and upper-body pulling balance.",
       "tags": [
         "longevity",
         "strength",
@@ -15,8 +15,8 @@
         "mobility",
         "healthspan"
       ],
-      "targetProfile": "Jake — desk worker, active climber, 30s, 4-day split",
-      "createdAt": "2026-05-18T00:00:00Z",
+      "targetProfile": "Intermediate, desk worker — 30s–40s, no specialist equipment needed",
+      "createdAt": "2026-07-29T00:00:00Z",
       "citations": [
         {
           "id": "mandsager_2018",
@@ -1612,12 +1612,12 @@
             {
               "id": "four_day_thu",
               "dayLabel": "Thursday",
-              "sessionType": "Rock Climbing + Antagonist Circuit",
-              "durationRange": "70–100 min",
-              "location": "Climbing Gym",
+              "sessionType": "Zone 2 Endurance + Grip & Pull",
+              "durationRange": "65–75 min",
+              "location": "Gym / Outdoors",
               "keyMetrics": [
-                "Sends / grade",
-                "Antagonist circuit ✓"
+                "Zone confirmed via HR",
+                "Dead hang logged"
               ],
               "orderIndex": 2,
               "preMobilityIds": [
@@ -1628,125 +1628,87 @@
               ],
               "groups": [
                 {
-                  "name": "CLIMBING",
+                  "name": "ZONE 2 CARDIO",
                   "orderIndex": 0,
                   "exercises": [
                     {
-                      "exerciseId": "bouldering",
+                      "exerciseId": "zone2_cardio",
                       "sets": 1,
                       "repsMin": null,
                       "repsMax": null,
-                      "repsText": "60–90 min",
-                      "load": "Technique + power focus",
+                      "repsText": "45 min",
+                      "load": "Conversational pace — full sentences",
                       "tempo": null,
-                      "notes": "Counts as upper-body pulling volume for today. Replaces — not supplements — a separate pull session.",
+                      "notes": "Run, bike, or row at Zone 2 (65–75% HRmax). This is the aerobic base work that underpins VO₂ max gains and metabolic health. You should be able to hold a conversation throughout.",
                       "priority": "core",
                       "orderIndex": 0,
                       "alternatives": [],
-                      "citationIds": [],
+                      "citationIds": [
+                        "sanmillan_2018",
+                        "mandsager_2018"
+                      ],
+                      "durationSeconds": 2700,
+                      "perSide": false,
+                      "showHeartRateZones": true,
                       "logMode": "duration"
                     }
                   ]
                 },
                 {
-                  "name": "ANTAGONIST CIRCUIT (10 min)",
+                  "name": "GRIP & PULL ACCESSORY (15 min)",
                   "orderIndex": 1,
                   "exercises": [
                     {
-                      "exerciseId": "pushups",
-                      "sets": 2,
+                      "exerciseId": "dead_hang",
+                      "sets": 3,
+                      "repsMin": null,
+                      "repsMax": null,
+                      "repsText": "Max hold",
+                      "load": "Bodyweight",
+                      "tempo": null,
+                      "notes": "Hang to failure. Rest 90s between sets. Builds grip strength and shoulder decompression. Add weight via belt once you exceed 60s.",
+                      "priority": "core",
+                      "orderIndex": 0,
+                      "alternatives": [],
+                      "citationIds": [],
+                      "logMode": "duration"
+                    },
+                    {
+                      "exerciseId": "face_pulls",
+                      "sets": 3,
                       "repsMin": 15,
                       "repsMax": 20,
                       "repsText": null,
-                      "load": "Bodyweight",
-                      "tempo": "2-0-1",
-                      "notes": "Balances the climbing pulling volume.",
-                      "priority": "core",
-                      "orderIndex": 0,
-                      "alternatives": [
-                        {
-                          "context": "Add load",
-                          "exerciseId": "db_bench_press"
-                        },
-                        {
-                          "context": "No bench needed",
-                          "exerciseId": "db_floor_press"
-                        }
-                      ],
-                      "citationIds": []
-                    },
-                    {
-                      "exerciseId": "band_external_rotation",
-                      "sets": 2,
-                      "repsMin": 15,
-                      "repsMax": null,
-                      "repsText": null,
-                      "load": "Light band",
+                      "load": "Light band or cable",
                       "tempo": "Slow controlled",
-                      "notes": "Essential for climbers. Carry a band in your chalk bag.",
+                      "notes": "External rotation at ear height. Balances the horizontal push volume from Wednesday and keeps the shoulder healthy.",
                       "priority": "core",
                       "orderIndex": 1,
                       "alternatives": [
                         {
-                          "context": "More posterior chain",
-                          "exerciseId": "band_face_pull"
-                        },
-                        {
-                          "context": "No band",
-                          "exerciseId": "prone_ytw"
+                          "context": "Cable machine",
+                          "exerciseId": "cable_face_pull"
                         }
                       ],
-                      "citationIds": [],
-                      "perSide": true
-                    },
-                    {
-                      "exerciseId": "reverse_wrist_curls",
-                      "sets": 2,
-                      "repsMin": 15,
-                      "repsMax": 15,
-                      "repsText": null,
-                      "load": "Light DB or plate",
-                      "tempo": "2-0-2",
-                      "notes": "Extensor balance for climbing flexors.",
-                      "priority": "core",
-                      "orderIndex": 2,
-                      "alternatives": [],
                       "citationIds": []
-                    },
-                    {
-                      "exerciseId": "finger_extensor",
-                      "sets": 2,
-                      "repsMin": null,
-                      "repsMax": null,
-                      "repsText": null,
-                      "load": "Rubber band on fingers",
-                      "tempo": "Open and close",
-                      "notes": "",
-                      "priority": "core",
-                      "orderIndex": 3,
-                      "alternatives": [],
-                      "citationIds": [],
-                      "durationSeconds": 30,
-                      "logMode": "timer"
                     },
                     {
                       "exerciseId": "prone_ytw",
                       "sets": 2,
                       "repsMin": 10,
-                      "repsMax": 10,
-                      "repsText": "10 each position",
-                      "load": "Bodyweight or 1–2 kg",
-                      "tempo": "Slow controlled",
-                      "notes": "",
+                      "repsMax": null,
+                      "repsText": null,
+                      "load": "Bodyweight or light plates (2.5–5 lb)",
+                      "tempo": "Slow — 3s hold at top",
+                      "notes": "Scapular stability and lower-trap activation. One of the best bang-for-your-buck shoulder exercises.",
                       "priority": "core",
-                      "orderIndex": 4,
+                      "orderIndex": 2,
                       "alternatives": [],
                       "citationIds": []
                     }
                   ]
                 }
-              ],
-              "activityType": "climbing"
+              ]
             },
             {
               "id": "four_day_sat_a",

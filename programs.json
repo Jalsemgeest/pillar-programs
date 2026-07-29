@@ -3,11 +3,11 @@
   "programs": [
     {
       "id": "four_pillar",
-      "name": "Four Pillar Training Program",
-      "version": "1.15.0",
+      "name": "Jake's Program with Climbing",
+      "version": "1.16.0",
       "baseId": null,
       "upgradeFromVersion": "1.9.0",
-      "description": "An evidence-based training system built around four pillars — Strength, Endurance, Mobility, and Healthspan. Every exercise and protocol is selected from peer-reviewed research with the goal of keeping you strong, mobile, and capable for life. Not a bodybuilder program. A longevity program.",
+      "description": "Jake's personal Four Pillar build — evidence-based pillars (Strength, Endurance, Mobility, Healthspan) with Thursday reserved for the climbing gym.",
       "tags": [
         "longevity",
         "strength",
@@ -3647,7 +3647,8 @@
         }
       ],
       "releaseNotes": "Cardio now shows a target zone band on the live bar (Norwegian 4×4 → Z4–Z5). Dedicated Zone 2 blocks hold the countdown until you reach Zone 2 (tap Start Now to skip) so the prescribed time is time *in* zone.",
-      "sourceUrl": "https://jalsemgeest.github.io/pillar-programs/four_pillar_v1.json"
+      "sourceUrl": "https://jalsemgeest.github.io/pillar-programs/four_pillar_v1.json",
+      "file": "four_pillar_v1.json"
     },
     {
       "id": "general_strength_v1",
@@ -9031,6 +9032,19 @@
       "citations": [],
       "baseId": null,
       "upgradeFromVersion": null
+    },
+    {
+      "id": "four_pillar_classic",
+      "name": "Four Pillar Training Program",
+      "version": "1.0.0",
+      "description": "Evidence-based 4-day split — Strength, Endurance, Mobility, Healthspan. Thursday is Zone 2 endurance + grip/pull accessories. No specialist equipment beyond a gym.",
+      "tags": [
+        "longevity",
+        "strength",
+        "endurance",
+        "mobility"
+      ],
+      "file": "four_pillar_classic_v1.json"
     }
   ]
 }
