@@ -19,7 +19,7 @@
       "createdAt": "2026-07-29T00:00:00Z",
       "citations": [
         {
-          "id": "mandsager_2018",
+          "id": "fpc_mandsager_2018",
           "principle": "VO₂ max is the strongest predictor of all-cause mortality — no upper bound of benefit",
           "authors": "Mandsager et al.",
           "journal": "JAMA Network Open",
@@ -28,7 +28,7 @@
           "url": null
         },
         {
-          "id": "kokkinos_2022",
+          "id": "fpc_kokkinos_2022",
           "principle": "Each 1-MET VO₂ max increase = 13–15% lower all-cause mortality",
           "authors": "Kokkinos et al.",
           "journal": "J Am Coll Cardiol",
@@ -37,7 +37,7 @@
           "url": null
         },
         {
-          "id": "helgerud_2007",
+          "id": "fpc_helgerud_2007",
           "principle": "Norwegian 4×4 protocol produces 7–13% VO₂ max gain in 8 weeks",
           "authors": "Helgerud et al.",
           "journal": "Med Sci Sports Exerc",
@@ -46,7 +46,7 @@
           "url": null
         },
         {
-          "id": "sanmillan_2018",
+          "id": "fpc_sanmillan_2018",
           "principle": "Zone 2 drives mitochondrial biogenesis and fat oxidation via MCT1",
           "authors": "San Millán & Brooks",
           "journal": "Front Physiol",
@@ -55,7 +55,7 @@
           "url": null
         },
         {
-          "id": "toien_2023",
+          "id": "fpc_toien_2023",
           "principle": "Lifelong strength training preserves Type II fiber proportion vs. endurance or untrained",
           "authors": "Tøien, Aagaard et al.",
           "journal": "J Appl Physiol",
@@ -64,7 +64,7 @@
           "url": null
         },
         {
-          "id": "schoenfeld_2017",
+          "id": "fpc_schoenfeld_2017",
           "principle": "Hypertrophy equal across load spectrum when taken to failure; strength favors heavy load",
           "authors": "Schoenfeld, Grgic et al.",
           "journal": "J Strength Cond Res",
@@ -73,7 +73,7 @@
           "url": null
         },
         {
-          "id": "pelland_2024",
+          "id": "fpc_pelland_2024",
           "principle": "Minimum effective dose: 4 sets/muscle/week for growth; 1 set/week for maintenance",
           "authors": "Pelland, Schoenfeld, Krieger",
           "journal": "SportRxiv",
@@ -82,7 +82,7 @@
           "url": null
         },
         {
-          "id": "leong_2015",
+          "id": "fpc_leong_2015",
           "principle": "Each 5 kg lower grip strength = 16% higher all-cause mortality, 17% cardiovascular mortality",
           "authors": "Leong et al. (PURE study)",
           "journal": "The Lancet",
@@ -91,7 +91,7 @@
           "url": null
         },
         {
-          "id": "watson_2018",
+          "id": "fpc_watson_2018",
           "principle": "Heavy resistance training (≥85% 1RM) significantly improved BMD; low-intensity did not",
           "authors": "Watson et al. LIFTMOR trial",
           "journal": "J Bone Miner Res",
@@ -100,7 +100,7 @@
           "url": null
         },
         {
-          "id": "vandyk_2019",
+          "id": "fpc_vandyk_2019",
           "principle": "Nordic curl inclusion halves hamstring injury rates",
           "authors": "van Dyk et al.",
           "journal": "Br J Sports Med",
@@ -109,7 +109,7 @@
           "url": null
         },
         {
-          "id": "swinton_2011",
+          "id": "fpc_swinton_2011",
           "principle": "Trap-bar deadlift: ~10% lower spinal moment, higher power vs. conventional",
           "authors": "Swinton et al.",
           "journal": "J Strength Cond Res",
@@ -118,7 +118,7 @@
           "url": null
         },
         {
-          "id": "speirs_2016",
+          "id": "fpc_speirs_2016",
           "principle": "Unilateral training matches bilateral for strength; outperforms for speed + agility",
           "authors": "Speirs et al.",
           "journal": "J Strength Cond Res",
@@ -127,7 +127,7 @@
           "url": null
         },
         {
-          "id": "schumann_2022",
+          "id": "fpc_schumann_2022",
           "principle": "Concurrent training causes negligible hypertrophy or strength loss when programmed correctly",
           "authors": "Schumann et al.",
           "journal": "Sports Med",
@@ -704,7 +704,7 @@
       ],
       "mobilityRoutines": [
         {
-          "id": "morning_cars",
+          "id": "fpc_morning_cars",
           "name": "Morning Routine",
           "timing": "general",
           "durationDescription": "5–7 min",
@@ -767,7 +767,7 @@
           ]
         },
         {
-          "id": "desk_habits",
+          "id": "fpc_desk_habits",
           "name": "Desk Worker Micro-Habits",
           "timing": "general",
           "durationDescription": "2–3 min every 60–90 min",
@@ -821,7 +821,7 @@
           ]
         },
         {
-          "id": "pre_lower_ramp",
+          "id": "fpc_pre_lower_ramp",
           "name": "Lower Body RAMP",
           "timing": "pre_workout",
           "durationDescription": "8 min",
@@ -875,7 +875,7 @@
           ]
         },
         {
-          "id": "pre_upper_ramp",
+          "id": "fpc_pre_upper_ramp",
           "name": "Upper Body RAMP",
           "timing": "pre_workout",
           "durationDescription": "8 min",
@@ -920,7 +920,7 @@
           ]
         },
         {
-          "id": "post_workout_cooldown",
+          "id": "fpc_post_workout_cooldown",
           "name": "Post-Workout Cooldown",
           "timing": "post_workout",
           "durationDescription": "10–15 min",
@@ -994,7 +994,7 @@
       ],
       "benchmarks": [
         {
-          "id": "trap_bar_dl_5rm",
+          "id": "fpc_trap_bar_dl_5rm",
           "name": "Trap-Bar Deadlift",
           "description": "Best set weight across any rep range. Target is your 5RM.",
           "type": "exercise_pr",
@@ -1019,7 +1019,7 @@
           ]
         },
         {
-          "id": "dead_hang_time",
+          "id": "fpc_dead_hang_time",
           "name": "Dead Hang",
           "description": "Continuous timed hang from pull-up bar.",
           "type": "standalone_test",
@@ -1044,7 +1044,7 @@
           ]
         },
         {
-          "id": "farmers_carry_bw",
+          "id": "fpc_farmers_carry_bw",
           "name": "Farmer's Carry",
           "description": "Bodyweight per hand × 1 minute. Uses best carry weight from workout log.",
           "type": "exercise_pr",
@@ -1064,7 +1064,7 @@
           ]
         },
         {
-          "id": "chin_up_pr",
+          "id": "fpc_chin_up_pr",
           "name": "Weighted Pull-Up",
           "description": "Best additional weight used for any rep.",
           "type": "exercise_pr",
@@ -1082,7 +1082,7 @@
           ]
         },
         {
-          "id": "vo2max_estimate",
+          "id": "fpc_vo2max_estimate",
           "name": "VO₂ Max",
           "description": "Estimated from wearable or lab test. Target top 25th percentile for age.",
           "type": "standalone_test",
@@ -1110,14 +1110,14 @@
       ],
       "plans": [
         {
-          "id": "four_day",
+          "id": "fpc_four_day",
           "name": "4-Day Plan",
           "scheduleDescription": "Mon · Wed · Thu (Climbing) · Sat",
           "daysPerWeek": 4,
           "orderIndex": 0,
           "workouts": [
             {
-              "id": "four_day_mon",
+              "id": "fpc_four_day_mon",
               "dayLabel": "Monday",
               "sessionType": "Lower Body — Hinge + Power",
               "durationRange": "60–70 min",
@@ -1128,10 +1128,10 @@
               ],
               "orderIndex": 0,
               "preMobilityIds": [
-                "pre_lower_ramp"
+                "fpc_pre_lower_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -1160,8 +1160,8 @@
                         }
                       ],
                       "citationIds": [
-                        "swinton_2011",
-                        "watson_2018"
+                        "fpc_swinton_2011",
+                        "fpc_watson_2018"
                       ]
                     }
                   ]
@@ -1192,7 +1192,7 @@
                         }
                       ],
                       "citationIds": [
-                        "speirs_2016"
+                        "fpc_speirs_2016"
                       ]
                     }
                   ]
@@ -1252,7 +1252,7 @@
                         }
                       ],
                       "citationIds": [
-                        "vandyk_2019"
+                        "fpc_vandyk_2019"
                       ]
                     }
                   ]
@@ -1279,7 +1279,7 @@
                         }
                       ],
                       "citationIds": [
-                        "leong_2015"
+                        "fpc_leong_2015"
                       ]
                     }
                   ]
@@ -1355,7 +1355,7 @@
                         }
                       ],
                       "citationIds": [
-                        "sanmillan_2018"
+                        "fpc_sanmillan_2018"
                       ],
                       "durationSeconds": 1200,
                       "perSide": false,
@@ -1369,7 +1369,7 @@
               ]
             },
             {
-              "id": "four_day_wed",
+              "id": "fpc_four_day_wed",
               "dayLabel": "Wednesday",
               "sessionType": "Upper Body — Push + Pull",
               "durationRange": "60–70 min",
@@ -1380,10 +1380,10 @@
               ],
               "orderIndex": 1,
               "preMobilityIds": [
-                "pre_upper_ramp"
+                "fpc_pre_upper_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -1576,7 +1576,7 @@
                       "orderIndex": 0,
                       "alternatives": [],
                       "citationIds": [
-                        "leong_2015"
+                        "fpc_leong_2015"
                       ]
                     }
                   ]
@@ -1610,7 +1610,7 @@
               ]
             },
             {
-              "id": "four_day_thu",
+              "id": "fpc_four_day_thu",
               "dayLabel": "Thursday",
               "sessionType": "Zone 2 Endurance + Grip & Pull",
               "durationRange": "65–75 min",
@@ -1621,10 +1621,10 @@
               ],
               "orderIndex": 2,
               "preMobilityIds": [
-                "pre_upper_ramp"
+                "fpc_pre_upper_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -1644,8 +1644,8 @@
                       "orderIndex": 0,
                       "alternatives": [],
                       "citationIds": [
-                        "sanmillan_2018",
-                        "mandsager_2018"
+                        "fpc_sanmillan_2018",
+                        "fpc_mandsager_2018"
                       ],
                       "durationSeconds": 2700,
                       "perSide": false,
@@ -1711,7 +1711,7 @@
               ]
             },
             {
-              "id": "four_day_sat_a",
+              "id": "fpc_four_day_sat_a",
               "dayLabel": "Saturday — Week A",
               "sessionType": "VO₂ Max — Norwegian 4×4",
               "durationRange": "38–45 min",
@@ -1723,7 +1723,7 @@
               "orderIndex": 3,
               "preMobilityIds": [],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -1766,8 +1766,8 @@
                       "orderIndex": 0,
                       "alternatives": [],
                       "citationIds": [
-                        "helgerud_2007",
-                        "mandsager_2018"
+                        "fpc_helgerud_2007",
+                        "fpc_mandsager_2018"
                       ],
                       "showHeartRateZones": true,
                       "durationSeconds": 240,
@@ -1804,7 +1804,7 @@
               "activityType": "hiit"
             },
             {
-              "id": "four_day_sat_b",
+              "id": "fpc_four_day_sat_b",
               "dayLabel": "Saturday — Week B",
               "sessionType": "Full-Body Strength",
               "durationRange": "55–65 min",
@@ -1815,10 +1815,10 @@
               ],
               "orderIndex": 4,
               "preMobilityIds": [
-                "pre_lower_ramp"
+                "fpc_pre_lower_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -1988,14 +1988,14 @@
           "goal": "The full Four Pillar schedule — lower body, upper body, climbing, and a VO₂ session each week. Strength blocks target 2–3 RIR; Norwegian 4×4 intervals go to near-maximal effort. Built around the four pillars of longevity fitness: strength, VO₂ max, cardiovascular endurance, and movement quality."
         },
         {
-          "id": "three_day",
+          "id": "fpc_three_day",
           "name": "3-Day Plan",
           "scheduleDescription": "Mon · Wed/Thu (Climbing) · Sat",
           "daysPerWeek": 3,
           "orderIndex": 1,
           "workouts": [
             {
-              "id": "three_day_mon",
+              "id": "fpc_three_day_mon",
               "dayLabel": "Monday",
               "sessionType": "Full Lower Body + Core",
               "durationRange": "60–70 min",
@@ -2005,10 +2005,10 @@
               ],
               "orderIndex": 0,
               "preMobilityIds": [
-                "pre_lower_ramp"
+                "fpc_pre_lower_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -2037,7 +2037,7 @@
                         }
                       ],
                       "citationIds": [
-                        "swinton_2011"
+                        "fpc_swinton_2011"
                       ]
                     }
                   ]
@@ -2120,7 +2120,7 @@
                         }
                       ],
                       "citationIds": [
-                        "vandyk_2019"
+                        "fpc_vandyk_2019"
                       ]
                     }
                   ]
@@ -2222,7 +2222,7 @@
               ]
             },
             {
-              "id": "three_day_wed_thu",
+              "id": "fpc_three_day_wed_thu",
               "dayLabel": "Wednesday / Thursday",
               "sessionType": "Rock Climbing + Antagonist Circuit",
               "durationRange": "70–100 min",
@@ -2233,10 +2233,10 @@
               ],
               "orderIndex": 1,
               "preMobilityIds": [
-                "pre_upper_ramp"
+                "fpc_pre_upper_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -2347,7 +2347,7 @@
               "activityType": "climbing"
             },
             {
-              "id": "three_day_sat",
+              "id": "fpc_three_day_sat",
               "dayLabel": "Saturday",
               "sessionType": "Upper Body Push + Pull + VO₂ Max (alternating)",
               "durationRange": "60–80 min",
@@ -2358,10 +2358,10 @@
               ],
               "orderIndex": 2,
               "preMobilityIds": [
-                "pre_upper_ramp"
+                "fpc_pre_upper_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -2521,7 +2521,7 @@
                       "orderIndex": 0,
                       "alternatives": [],
                       "citationIds": [
-                        "helgerud_2007"
+                        "fpc_helgerud_2007"
                       ],
                       "showHeartRateZones": true,
                       "durationSeconds": 240,
@@ -2563,14 +2563,14 @@
           "goal": "A compressed version of the full program — lower and upper strength combined into fuller-body sessions, plus climbing and one VO₂ day. Same intensity targets as the 4-day, less weekly volume. Use this when four sessions aren't realistic."
         },
         {
-          "id": "home_plan",
+          "id": "fpc_home_plan",
           "name": "Home Plan",
           "scheduleDescription": "Home Day A · Home Day B · Climbing Gym (Sat)  |  Any 3 days that work",
           "daysPerWeek": 3,
           "orderIndex": 2,
           "workouts": [
             {
-              "id": "home_day_a",
+              "id": "fpc_home_day_a",
               "dayLabel": "Home Day A",
               "sessionType": "Lower Body — Hinge + Squat",
               "durationRange": "45–55 min",
@@ -2955,7 +2955,7 @@
               ]
             },
             {
-              "id": "home_day_b",
+              "id": "fpc_home_day_b",
               "dayLabel": "Home Day B",
               "sessionType": "Upper Body — Press + Pull",
               "durationRange": "45–55 min",
@@ -3339,7 +3339,7 @@
               ]
             },
             {
-              "id": "home_climbing_barbell",
+              "id": "fpc_home_climbing_barbell",
               "dayLabel": "Saturday",
               "sessionType": "Climbing Gym — Barbell Priority",
               "durationRange": "2–2.5 hrs",
@@ -3351,10 +3351,10 @@
               ],
               "orderIndex": 2,
               "preMobilityIds": [
-                "pre_lower_ramp"
+                "fpc_pre_lower_ramp"
               ],
               "postMobilityIds": [
-                "post_workout_cooldown"
+                "fpc_post_workout_cooldown"
               ],
               "groups": [
                 {
@@ -3387,7 +3387,7 @@
                         }
                       ],
                       "citationIds": [
-                        "swinton_2011"
+                        "fpc_swinton_2011"
                       ]
                     },
                     {
@@ -3412,8 +3412,8 @@
                         }
                       ],
                       "citationIds": [
-                        "swinton_2011",
-                        "watson_2018"
+                        "fpc_swinton_2011",
+                        "fpc_watson_2018"
                       ]
                     },
                     {
